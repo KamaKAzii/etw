@@ -159,7 +159,7 @@ a:hover {
 .header {
   padding-top: 1.23077em;
   position: relative;
-  height: 119px;
+  height: 123px;
 }
 
 /* line 27, ../sass/_global/_base-layout-structure.sass */
@@ -256,4 +256,26 @@ h1 {
   background: white url("images/background-footer-fade.png") repeat-x left bottom;
   min-height: 400px;
   margin-top: 5px;
+}
+
+/* line 3, ../sass/_global/_carousel.sass */
+.mask {
+  background: blue;
+  width: 1120px;
+  height: 486px;
+  position: fixed;
+  top: 140px;
+  left: 50%;
+  margin-left: -560px;
+  background: transparent url("images/carousel-mask.png") no-repeat left top;
+  z-index: 3;
+}
+
+/* line 15, ../sass/_global/_carousel.sass */
+.carousel {
+  background: red;
+}
+/* line 17, ../sass/_global/_carousel.sass */
+.carousel .dots {
+  background: green;
 }
