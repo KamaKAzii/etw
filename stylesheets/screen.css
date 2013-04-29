@@ -66,3 +66,46 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
+
+/* line 44, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-lucid-grid-0.5.1/stylesheets/lucid/_public.scss */
+.grid-clearfix, .grid-container, .layout-main {
+  *zoom: 1;
+}
+/* line 38, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.grid-clearfix:after, .grid-container:after, .layout-main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 46, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-lucid-grid-0.5.1/stylesheets/lucid/_public.scss */
+.grid-container, .layout-main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+
+/* line 47, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-lucid-grid-0.5.1/stylesheets/lucid/_public.scss */
+.grid-element {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* line 48, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-lucid-grid-0.5.1/stylesheets/lucid/_public.scss */
+.grid-column-gutterless {
+  display: inline;
+  float: left;
+}
+
+/* line 3, ../sass/_global/_base-layout-structure.sass */
+.layout-main {
+  *zoom: 1;
+}
+/* line 38, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.layout-main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
