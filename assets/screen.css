@@ -99,6 +99,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   float: left;
 }
 
+/* line 6, ../sass/_global/_type.sass */
+body {
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: black;
+}
+/* line 58, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+body body {
+  font-size: 81.25%;
+  line-height: 1.23077em;
+}
+/* line 62, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+body html > body {
+  font-size: 13px;
+}
+
+/* line 12, ../sass/_global/_type.sass */
+a {
+  text-decoration: none;
+  color: #005983;
+}
+/* line 15, ../sass/_global/_type.sass */
+a:hover {
+  text-decoration: none;
+  color: #1db7ff;
+}
+
 /* line 3, ../sass/_global/_base-layout-structure.sass */
 .layout-main {
   *zoom: 1;
@@ -108,4 +135,125 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   content: "";
   display: table;
   clear: both;
+}
+
+/* line 8, ../sass/_global/_base-layout-structure.sass */
+.layout-stripe {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 135px;
+  background: white;
+  border-bottom: 5px solid #005983;
+}
+
+/* line 18, ../sass/_global/_base-layout-structure.sass */
+.outer-background {
+  position: relative;
+  z-index: 2;
+}
+
+/* line 22, ../sass/_global/_base-layout-structure.sass */
+.header {
+  padding-top: 1.23077em;
+  position: relative;
+  height: 119px;
+}
+
+/* line 27, ../sass/_global/_base-layout-structure.sass */
+h1 {
+  text-indent: -999em;
+  width: 123px;
+  height: 108px;
+  background: transparent url("images/logo-top.jpg") no-repeat left top;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+/* line 36, ../sass/_global/_base-layout-structure.sass */
+.social-navigation {
+  display: inline;
+  float: right;
+  *zoom: 1;
+}
+/* line 38, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.social-navigation:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 39, ../sass/_global/_base-layout-structure.sass */
+.social-navigation ul {
+  width: 96px;
+}
+/* line 41, ../sass/_global/_base-layout-structure.sass */
+.social-navigation li {
+  display: inline;
+  float: left;
+  text-indent: -999em;
+  width: 27px;
+  height: 26px;
+  margin-left: 5px;
+}
+/* line 47, ../sass/_global/_base-layout-structure.sass */
+.social-navigation .twitter {
+  background: transparent url("images/social-twitter.jpg") no-repeat left top;
+}
+/* line 49, ../sass/_global/_base-layout-structure.sass */
+.social-navigation .facebook {
+  background: transparent url("images/social-facebook.jpg") no-repeat left top;
+}
+/* line 51, ../sass/_global/_base-layout-structure.sass */
+.social-navigation .vimeo {
+  background: transparent url("images/social-vimeo.jpg") no-repeat left top;
+}
+
+/* line 54, ../sass/_global/_base-layout-structure.sass */
+.member-navigation {
+  display: inline;
+  float: right;
+  margin-top: 7px;
+  margin-right: 10px;
+}
+
+/* line 59, ../sass/_global/_base-layout-structure.sass */
+.main-navigation {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 780px;
+  height: 60px;
+}
+/* line 65, ../sass/_global/_base-layout-structure.sass */
+.main-navigation li {
+  display: inline;
+  float: left;
+  width: 150px;
+  height: 60px;
+  border-right: 1px solid #b2cdda;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* line 72, ../sass/_global/_base-layout-structure.sass */
+.main-navigation span {
+  display: block;
+}
+/* line 74, ../sass/_global/_base-layout-structure.sass */
+.main-navigation .link {
+  margin-bottom: 0.61538em;
+}
+/* line 76, ../sass/_global/_base-layout-structure.sass */
+.main-navigation .description {
+  font-size: 12px;
+  color: black;
+}
+
+/* line 80, ../sass/_global/_base-layout-structure.sass */
+.section {
+  background: white url("images/background-footer-fade.png") repeat-x left bottom;
+  min-height: 400px;
+  margin-top: 5px;
 }

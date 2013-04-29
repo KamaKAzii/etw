@@ -1,0 +1,17 @@
+// _type.sass
+
+$base-font-size: 13px
+$base-line-height: 16px
+
+body
+  +establish-baseline
+  font-family: $font
+  font-size: $font-size-normal
+  color: $text-color
+
+a
+  text-decoration: none
+  color: $link-color
+  &:hover
+    text-decoration: none
+    color: lighten($link-color, 30%)
