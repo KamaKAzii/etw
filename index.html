@@ -2,9 +2,12 @@
   <head>
     <title>ETW</title>
     <link rel="stylesheet" href="assets/screen.css" type="text/css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="assets/scripts/carousel.jquery.js"></script>
   </head>
   <body>
     <div class="layout-stripe"></div>
+    <div class="mask"></div>
     <div class="outer-background">
       <div class="layout-main">
 
@@ -62,34 +65,42 @@
         <div class="section">
           <section>
 
-            <div class="mask"></div>
             <div class="carousel">
-              <div class="dots"></div>
-              <div class="item one">
-                <h2>
-                  Evolution unites us as individuals to reach our own personal goals.
-                  Fun and fitness is our lifestyle.
-                </h2>
-                <a href="btuton-like">Tell me more about Evo</a>
-              </div>
+              <div class="carousel-wrapper">
+                <ul class="line-up">
+                  <li class="one">
+                    <h2>
+                      Evolution unites us as individuals to reach our own personal goals.
+                      Fun and fitness is our lifestyle.
+                    </h2>
+                    <a href="button-like">Tell me more about Evo</a>
+                  </li>
 
-              <div class="item two">
-                <h2>
-                  Evolution unites us as individuals to reach our own personal goals.
-                  Fun and fitness is our lifestyle.
-                </h2>
-                <a href="btuton-like">Tell me more about Evo</a>
-              </div>
+                  <li class="hideMe two">
+                    <h2>
+                      Evolution unites us as individuals to reach our own personal goals.
+                      Fun and fitness is our lifestyle.
+                    </h2>
+                    <a href="button-like">Tell me more about Evo</a>
+                  </li>
 
-              <div class="item three">
-                <h2>
-                  Evolution unites us as individuals to reach our own personal goals.
-                  Fun and fitness is our lifestyle.
-                </h2>
-                <a href="btuton-like">Tell me more about Evo</a>
+                  <li class="hideMe three">
+                    <h2>
+                      Evolution unites us as individuals to reach our own personal goals.
+                      Fun and fitness is our lifestyle.
+                    </h2>
+                    <a href="button-like">Tell me more about Evo</a>
+                  </li>
+                </ul>
               </div>
 
             </div>
+
+            <script type="text/javascript">
+
+              $(".carousel .line-up").carousel();
+
+            </script>
 
             <div class="articles">
               <div class="article">

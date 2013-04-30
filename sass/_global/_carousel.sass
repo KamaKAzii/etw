@@ -1,18 +1,56 @@
 // _carousel.sass
 
+$carousel-height: 486px
+$item-width: 1120px
+$carousel-count: 3
+$carousel-offset: -70px
+
+// Mask is actually at the top of th epage
 .mask
   background: blue
-  $carousel-width: 1120px
-  width: $carousel-width
-  height: 486px
-  position: fixed
+  width: $item-width
+  height: $carousel-height
+  position: absolute
   top: 140px
   left: 50%
-  margin-left: - $carousel-width / 2
+  // margin-left: -$carousel-width / 2
+  // This aligns nicer than above.
+  margin-left: -550px
   background: transparent url('images/carousel-mask.png') no-repeat left top
   z-index: 3
 
+.carouselNav
+  position: fixed
+  left: 0
+  top: 0
+  z-index: 100
+.carouselPrev
+.carouselDot
+.carouselNext
 .carousel
-  background: red
+  position: relative
+  height: $carousel-height
+  width: $item-width
+  overflow: hidden
+  margin-left: -70px
+  .line-up
+    position: absolute
+    top: 0
+    left: 0
+    height: $carousel-height
+    width: $item-width * $carousel-count
+  .hideMe
+    display: none
+  .line-up li
+    // +float(left)
+    float: left
+    width: $item-width
+    height: $carousel-height
+  .one
+    background: transparent url('images/carousel_01.jpg') no-repeat left top
+  .two
+    background: transparent url('images/carousel_02.jpg') no-repeat left top
+  .three
+    background: transparent url('images/carousel_03.jpg') no-repeat left top
   .dots
     background: green

@@ -6,7 +6,7 @@
 
 
 .layout-stripe
-  position: fixed
+  position: absolute
   left: 0
   top: 0
   z-index: 1
@@ -22,7 +22,9 @@
 .header
   +padding-leader
   position: relative
-  height: 123px
+  height: 119px
+  top: 0
+  left: 0
 
 h1
   text-indent: -999em
@@ -79,6 +81,6 @@ h1
 
 .section
   background: $background-color url('images/background-footer-fade.png') repeat-x left bottom
-  min-height: 400px
+  min-height: 880px
   // Offset for the stripe
   margin-top: 5px

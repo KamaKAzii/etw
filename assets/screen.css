@@ -139,7 +139,7 @@ a:hover {
 
 /* line 8, ../sass/_global/_base-layout-structure.sass */
 .layout-stripe {
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   z-index: 1;
@@ -159,10 +159,12 @@ a:hover {
 .header {
   padding-top: 1.23077em;
   position: relative;
-  height: 123px;
+  height: 119px;
+  top: 0;
+  left: 0;
 }
 
-/* line 27, ../sass/_global/_base-layout-structure.sass */
+/* line 29, ../sass/_global/_base-layout-structure.sass */
 h1 {
   text-indent: -999em;
   width: 123px;
@@ -173,7 +175,7 @@ h1 {
   left: 0;
 }
 
-/* line 36, ../sass/_global/_base-layout-structure.sass */
+/* line 38, ../sass/_global/_base-layout-structure.sass */
 .social-navigation {
   display: inline;
   float: right;
@@ -185,11 +187,11 @@ h1 {
   display: table;
   clear: both;
 }
-/* line 39, ../sass/_global/_base-layout-structure.sass */
+/* line 41, ../sass/_global/_base-layout-structure.sass */
 .social-navigation ul {
   width: 96px;
 }
-/* line 41, ../sass/_global/_base-layout-structure.sass */
+/* line 43, ../sass/_global/_base-layout-structure.sass */
 .social-navigation li {
   display: inline;
   float: left;
@@ -198,20 +200,20 @@ h1 {
   height: 26px;
   margin-left: 5px;
 }
-/* line 47, ../sass/_global/_base-layout-structure.sass */
+/* line 49, ../sass/_global/_base-layout-structure.sass */
 .social-navigation .twitter {
   background: transparent url("images/social-twitter.jpg") no-repeat left top;
 }
-/* line 49, ../sass/_global/_base-layout-structure.sass */
+/* line 51, ../sass/_global/_base-layout-structure.sass */
 .social-navigation .facebook {
   background: transparent url("images/social-facebook.jpg") no-repeat left top;
 }
-/* line 51, ../sass/_global/_base-layout-structure.sass */
+/* line 53, ../sass/_global/_base-layout-structure.sass */
 .social-navigation .vimeo {
   background: transparent url("images/social-vimeo.jpg") no-repeat left top;
 }
 
-/* line 54, ../sass/_global/_base-layout-structure.sass */
+/* line 56, ../sass/_global/_base-layout-structure.sass */
 .member-navigation {
   display: inline;
   float: right;
@@ -219,7 +221,7 @@ h1 {
   margin-right: 10px;
 }
 
-/* line 59, ../sass/_global/_base-layout-structure.sass */
+/* line 61, ../sass/_global/_base-layout-structure.sass */
 .main-navigation {
   position: absolute;
   right: 0;
@@ -227,7 +229,7 @@ h1 {
   width: 780px;
   height: 60px;
 }
-/* line 65, ../sass/_global/_base-layout-structure.sass */
+/* line 67, ../sass/_global/_base-layout-structure.sass */
 .main-navigation li {
   display: inline;
   float: left;
@@ -237,45 +239,87 @@ h1 {
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 72, ../sass/_global/_base-layout-structure.sass */
+/* line 74, ../sass/_global/_base-layout-structure.sass */
 .main-navigation span {
   display: block;
 }
-/* line 74, ../sass/_global/_base-layout-structure.sass */
+/* line 76, ../sass/_global/_base-layout-structure.sass */
 .main-navigation .link {
   margin-bottom: 0.61538em;
 }
-/* line 76, ../sass/_global/_base-layout-structure.sass */
+/* line 78, ../sass/_global/_base-layout-structure.sass */
 .main-navigation .description {
   font-size: 12px;
   color: black;
 }
 
-/* line 80, ../sass/_global/_base-layout-structure.sass */
+/* line 82, ../sass/_global/_base-layout-structure.sass */
 .section {
   background: white url("images/background-footer-fade.png") repeat-x left bottom;
-  min-height: 400px;
+  min-height: 880px;
   margin-top: 5px;
 }
 
-/* line 3, ../sass/_global/_carousel.sass */
+/* line 9, ../sass/_global/_carousel.sass */
 .mask {
   background: blue;
   width: 1120px;
   height: 486px;
-  position: fixed;
+  position: absolute;
   top: 140px;
   left: 50%;
-  margin-left: -560px;
+  margin-left: -550px;
   background: transparent url("images/carousel-mask.png") no-repeat left top;
   z-index: 3;
 }
 
-/* line 15, ../sass/_global/_carousel.sass */
-.carousel {
-  background: red;
+/* line 22, ../sass/_global/_carousel.sass */
+.carouselNav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
 }
-/* line 17, ../sass/_global/_carousel.sass */
+
+/* line 30, ../sass/_global/_carousel.sass */
+.carousel {
+  position: relative;
+  height: 486px;
+  width: 1120px;
+  overflow: hidden;
+  margin-left: -70px;
+}
+/* line 36, ../sass/_global/_carousel.sass */
+.carousel .line-up {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 486px;
+  width: 3360px;
+}
+/* line 42, ../sass/_global/_carousel.sass */
+.carousel .hideMe {
+  display: none;
+}
+/* line 44, ../sass/_global/_carousel.sass */
+.carousel .line-up li {
+  float: left;
+  width: 1120px;
+  height: 486px;
+}
+/* line 49, ../sass/_global/_carousel.sass */
+.carousel .one {
+  background: transparent url("images/carousel_01.jpg") no-repeat left top;
+}
+/* line 51, ../sass/_global/_carousel.sass */
+.carousel .two {
+  background: transparent url("images/carousel_02.jpg") no-repeat left top;
+}
+/* line 53, ../sass/_global/_carousel.sass */
+.carousel .three {
+  background: transparent url("images/carousel_03.jpg") no-repeat left top;
+}
+/* line 55, ../sass/_global/_carousel.sass */
 .carousel .dots {
   background: green;
 }
