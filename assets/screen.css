@@ -264,6 +264,7 @@ h1 {
 /* line 81, ../sass/_global/_base-layout-structure.sass */
 .section {
   background: white url("images/background-footer-fade.png") repeat-x left bottom;
+  position: relative;
   min-height: 880px;
   margin-top: 5px;
 }
@@ -289,7 +290,7 @@ h1 {
 
 /* line 26, ../sass/_global/_carousel.sass */
 .carouselNav {
-  position: fixed;
+  position: absolute;
   left: 50%;
   top: 400px;
   margin-left: 340px;
@@ -363,6 +364,20 @@ h1 {
 }
 
 /* line 3, ../sass/_global/_homepage.sass */
+.articles {
+  *zoom: 1;
+  position: absolute;
+  left: 0;
+  top: 370px;
+}
+/* line 38, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.articles:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 8, ../sass/_global/_homepage.sass */
 .articles .article {
   width: 220px;
   margin-left: 7px;
@@ -371,35 +386,35 @@ h1 {
   min-height: 360px;
   border: 3px solid white;
 }
-/* line 10, ../sass/_global/_homepage.sass */
+/* line 15, ../sass/_global/_homepage.sass */
 .articles .article .image {
   margin-bottom: 1.23077em;
   width: 219px;
   height: 147px;
 }
-/* line 14, ../sass/_global/_homepage.sass */
+/* line 19, ../sass/_global/_homepage.sass */
 .articles .article h3 {
   margin-left: 10px;
 }
-/* line 16, ../sass/_global/_homepage.sass */
+/* line 21, ../sass/_global/_homepage.sass */
 .articles .article p {
   margin-left: 10px;
   color: #666666;
 }
 
-/* line 21, ../sass/_global/_homepage.sass */
+/* line 26, ../sass/_global/_homepage.sass */
 .articles .one .image {
   background: transparent url("images/article_01.jpg") repeat-x left top;
 }
-/* line 23, ../sass/_global/_homepage.sass */
+/* line 28, ../sass/_global/_homepage.sass */
 .articles .two .image {
   background: transparent url("images/article_02.jpg") repeat-x left top;
 }
-/* line 25, ../sass/_global/_homepage.sass */
+/* line 30, ../sass/_global/_homepage.sass */
 .articles .three .image {
   background: transparent url("images/article_03.jpg") repeat-x left top;
 }
-/* line 27, ../sass/_global/_homepage.sass */
+/* line 32, ../sass/_global/_homepage.sass */
 .articles .four .image {
   background: transparent url("images/article_04.jpg") repeat-x left top;
 }
