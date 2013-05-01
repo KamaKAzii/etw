@@ -86,7 +86,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 47, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-lucid-grid-0.5.1/stylesheets/lucid/_public.scss */
-.grid-element, .articles .article {
+.grid-element, .footer ul, .articles .article {
   display: inline;
   float: left;
   margin-left: 10px;
@@ -102,7 +102,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 6, ../sass/_global/_type.sass */
 body {
   font-size: 0.8125em;
-  line-height: 1.53846em;
+  line-height: 1.23077em;
   font-family: Tahoma, Arial, Helvetica, sans-serif;
   color: black;
 }
@@ -130,7 +130,8 @@ a:hover {
 /* line 19, ../sass/_global/_type.sass */
 h3 {
   margin-bottom: 0.88889em;
-  font-size: 18px;
+  font-size: 1.38462em;
+  line-height: 1.11111em;
   color: #003a6d;
 }
 
@@ -225,43 +226,42 @@ h1 {
 .member-navigation {
   display: inline;
   float: right;
-  margin-top: 7px;
   margin-right: 10px;
 }
 
-/* line 60, ../sass/_global/_base-layout-structure.sass */
+/* line 59, ../sass/_global/_base-layout-structure.sass */
 .main-navigation {
   position: absolute;
   right: 0;
   bottom: 0;
   width: 780px;
-  height: 60px;
+  height: 70px;
 }
-/* line 66, ../sass/_global/_base-layout-structure.sass */
+/* line 65, ../sass/_global/_base-layout-structure.sass */
 .main-navigation li {
   display: inline;
   float: left;
   width: 150px;
-  height: 60px;
+  height: 70px;
   border-right: 1px solid #b2cdda;
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 73, ../sass/_global/_base-layout-structure.sass */
+/* line 72, ../sass/_global/_base-layout-structure.sass */
 .main-navigation span {
   display: block;
 }
-/* line 75, ../sass/_global/_base-layout-structure.sass */
+/* line 74, ../sass/_global/_base-layout-structure.sass */
 .main-navigation .link {
   margin-bottom: 0.61538em;
 }
-/* line 77, ../sass/_global/_base-layout-structure.sass */
+/* line 76, ../sass/_global/_base-layout-structure.sass */
 .main-navigation .description {
   font-size: 12px;
   color: black;
 }
 
-/* line 81, ../sass/_global/_base-layout-structure.sass */
+/* line 80, ../sass/_global/_base-layout-structure.sass */
 .section {
   background: white url("images/background-footer-fade.png") repeat-x left bottom;
   position: relative;
@@ -363,12 +363,81 @@ h1 {
   background: transparent url("images/carousel_03.jpg") no-repeat left top;
 }
 
+/* line 3, ../sass/_global/_footer.sass */
+.footer {
+  margin-top: 2.46154em;
+}
+/* line 5, ../sass/_global/_footer.sass */
+.footer .footer-navigation {
+  display: inline;
+  float: left;
+  *zoom: 1;
+  margin-bottom: 2.46154em;
+}
+/* line 38, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.footer .footer-navigation:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 9, ../sass/_global/_footer.sass */
+.footer ul {
+  width: 100px;
+}
+
+/* line 12, ../sass/_global/_footer.sass */
+.copyright {
+  display: inline;
+  float: right;
+  background: transparent url("images/logo-small.jpg") no-repeat right top;
+  width: 260px;
+  padding-top: 10px;
+  padding-right: 82px;
+  height: 57px;
+}
+
+/* line 20, ../sass/_global/_footer.sass */
+.testimonial {
+  *zoom: 1;
+  margin: 0 auto;
+  margin-top: 2.46154em;
+  margin-bottom: 2.46154em;
+  width: 550px;
+  padding-left: 60px;
+  background: transparent url("images/quotes.jpg") no-repeat left top;
+  clear: left;
+}
+/* line 38, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.testimonial:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 29, ../sass/_global/_footer.sass */
+.testimonial span {
+  display: block;
+}
+/* line 31, ../sass/_global/_footer.sass */
+.testimonial .content {
+  margin-bottom: 1.23077em;
+  font-style: italic;
+  text-align: center;
+}
+/* line 35, ../sass/_global/_footer.sass */
+.testimonial .name {
+  display: inline;
+  float: right;
+  background: transparent url("images/avatar.jpg") no-repeat left top;
+  padding-left: 60px;
+  height: 50px;
+}
+
 /* line 3, ../sass/_global/_homepage.sass */
 .articles {
   *zoom: 1;
   position: absolute;
   left: 0;
-  top: 370px;
+  top: 320px;
 }
 /* line 38, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .articles:after {

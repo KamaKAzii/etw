@@ -1,0 +1,40 @@
+// _footer.sass
+
+.footer
+  +leader(2)
+  .footer-navigation
+    +float(left)
+    +pie-clearfix
+    +trailer(2)
+  ul
+    +columns(2)
+
+.copyright
+  +float(right)
+  background: transparent url('images/logo-small.jpg') no-repeat right top
+  width: 260px
+  padding-top: 10px
+  padding-right: 82px
+  height: 57px
+
+.testimonial
+  +pie-clearfix
+  margin: 0 auto
+  +leader(2)
+  +trailer(2)
+  width: 550px
+  padding-left: 60px
+  background: transparent url('images/quotes.jpg') no-repeat left top
+  clear: left
+  span
+    display: block
+  .content
+    +trailer(1)
+    font-style: italic
+    text-align: center
+  .name
+    +float(right)
+    background: transparent url('images/avatar.jpg') no-repeat left top
+    padding-left: 60px
+    height: 50px
+      

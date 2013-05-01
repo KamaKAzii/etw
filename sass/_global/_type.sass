@@ -5,7 +5,7 @@ $base-line-height: 16px
 
 body
   +establish-baseline
-  +adjust-font-size-to($font-size-normal, 1.25, 16px)
+  +adjust-font-size-to($font-size-normal, 1, 16px)
   font-family: $font
   color: $text-color
 
@@ -18,5 +18,5 @@ a
 
 h3
   +trailer(1, $font-size-medium)
-  font-size: $font-size-medium
+  +adjust-font-size-to($font-size-medium, 1.25, 13px)
   color: $theme-color-dark
