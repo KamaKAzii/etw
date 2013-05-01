@@ -100,8 +100,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 6, ../sass/_global/_type.sass */
+html {
+  font-size: 13px;
+}
+
+/* line 8, ../sass/_global/_type.sass */
 body {
-  font-size: 0.8125em;
+  font-size: 1em;
   line-height: 1.23077em;
   font-family: Tahoma, Arial, Helvetica, sans-serif;
   color: black;
@@ -116,18 +121,18 @@ body html > body {
   font-size: 13px;
 }
 
-/* line 12, ../sass/_global/_type.sass */
+/* line 14, ../sass/_global/_type.sass */
 a {
   text-decoration: none;
   color: #005983;
 }
-/* line 15, ../sass/_global/_type.sass */
+/* line 17, ../sass/_global/_type.sass */
 a:hover {
   text-decoration: none;
   color: #1db7ff;
 }
 
-/* line 19, ../sass/_global/_type.sass */
+/* line 21, ../sass/_global/_type.sass */
 h3 {
   margin-bottom: 0.88889em;
   font-size: 1.38462em;
@@ -349,16 +354,51 @@ h1 {
   float: left;
   width: 1120px;
   height: 486px;
+  position: relative;
 }
-/* line 71, ../sass/_global/_carousel.sass */
+/* line 68, ../sass/_global/_carousel.sass */
+.carousel .line-up li h2 {
+  position: absolute;
+  left: 160px;
+  top: 40px;
+  width: 650px;
+  font-size: 1.84615em;
+  line-height: 1.33333em;
+}
+/* line 77, ../sass/_global/_carousel.sass */
+.carousel .line-up li a {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #04496f), color-stop(100%, #063c5a));
+  background-image: -webkit-linear-gradient(#04496f, #063c5a);
+  background-image: -moz-linear-gradient(#04496f, #063c5a);
+  background-image: -o-linear-gradient(#04496f, #063c5a);
+  background-image: -ms-linear-gradient(#04496f, #063c5a);
+  background-image: linear-gradient(#04496f, #063c5a);
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
+  display: block;
+  position: absolute;
+  left: 330px;
+  top: 150px;
+  width: 250px;
+  height: 40px;
+  line-height: 37px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  border: 1px solid rgba(246, 246, 246, 0.2);
+}
+/* line 93, ../sass/_global/_carousel.sass */
 .carousel .one {
   background: transparent url("images/carousel_01.jpg") no-repeat left top;
 }
-/* line 73, ../sass/_global/_carousel.sass */
+/* line 95, ../sass/_global/_carousel.sass */
 .carousel .two {
   background: transparent url("images/carousel_02.jpg") no-repeat left top;
 }
-/* line 75, ../sass/_global/_carousel.sass */
+/* line 97, ../sass/_global/_carousel.sass */
 .carousel .three {
   background: transparent url("images/carousel_03.jpg") no-repeat left top;
 }
