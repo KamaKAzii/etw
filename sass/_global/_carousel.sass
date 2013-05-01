@@ -4,8 +4,7 @@ $carousel-height: 486px
 $item-width: 1120px
 $carousel-count: 3
 $carousel-offset: -70px
-
-// Mask is actually at the top of th epage
+// Mask is actually at the top of the page
 .mask
   background: blue
   width: $item-width
@@ -19,14 +18,33 @@ $carousel-offset: -70px
   background: transparent url('images/carousel-mask.png') no-repeat left top
   z-index: 3
 
+// Hide the previous and next
+.carouselPrev,
+.carouselNext
+  display: none
+
 .carouselNav
   position: fixed
-  left: 0
-  top: 0
-  z-index: 100
-.carouselPrev
+  left: 50%
+  top: 400px
+  margin-left: 340px
+  z-index: 4
 .carouselDot
-.carouselNext
+  +float(left)
+  +border-radius(10px)
+  text-indent: -999em
+  display: block
+  width: 13px
+  height: 13px
+  border: 2px solid $carousel-dot-border-color
+  margin-right: $grid-gutter / 2
+  background: $carousel-dot-inside-off
+  &:hover
+    cursor: pointer
+    background: $carousel-dot-inside-on
+  &.active
+    background: $carousel-dot-inside-on
+
 .carousel
   position: relative
   height: $carousel-height
@@ -46,11 +64,13 @@ $carousel-offset: -70px
     float: left
     width: $item-width
     height: $carousel-height
+
+
+
+
   .one
     background: transparent url('images/carousel_01.jpg') no-repeat left top
   .two
     background: transparent url('images/carousel_02.jpg') no-repeat left top
   .three
     background: transparent url('images/carousel_03.jpg') no-repeat left top
-  .dots
-    background: green

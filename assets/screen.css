@@ -137,7 +137,7 @@ a:hover {
   clear: both;
 }
 
-/* line 8, ../sass/_global/_base-layout-structure.sass */
+/* line 7, ../sass/_global/_base-layout-structure.sass */
 .layout-stripe {
   position: absolute;
   left: 0;
@@ -149,13 +149,13 @@ a:hover {
   border-bottom: 5px solid #005983;
 }
 
-/* line 18, ../sass/_global/_base-layout-structure.sass */
+/* line 17, ../sass/_global/_base-layout-structure.sass */
 .outer-background {
   position: relative;
   z-index: 2;
 }
 
-/* line 22, ../sass/_global/_base-layout-structure.sass */
+/* line 21, ../sass/_global/_base-layout-structure.sass */
 .header {
   padding-top: 1.23077em;
   position: relative;
@@ -164,7 +164,7 @@ a:hover {
   left: 0;
 }
 
-/* line 29, ../sass/_global/_base-layout-structure.sass */
+/* line 28, ../sass/_global/_base-layout-structure.sass */
 h1 {
   text-indent: -999em;
   width: 123px;
@@ -175,7 +175,7 @@ h1 {
   left: 0;
 }
 
-/* line 38, ../sass/_global/_base-layout-structure.sass */
+/* line 37, ../sass/_global/_base-layout-structure.sass */
 .social-navigation {
   display: inline;
   float: right;
@@ -187,11 +187,11 @@ h1 {
   display: table;
   clear: both;
 }
-/* line 41, ../sass/_global/_base-layout-structure.sass */
+/* line 40, ../sass/_global/_base-layout-structure.sass */
 .social-navigation ul {
   width: 96px;
 }
-/* line 43, ../sass/_global/_base-layout-structure.sass */
+/* line 42, ../sass/_global/_base-layout-structure.sass */
 .social-navigation li {
   display: inline;
   float: left;
@@ -200,20 +200,20 @@ h1 {
   height: 26px;
   margin-left: 5px;
 }
-/* line 49, ../sass/_global/_base-layout-structure.sass */
+/* line 48, ../sass/_global/_base-layout-structure.sass */
 .social-navigation .twitter {
   background: transparent url("images/social-twitter.jpg") no-repeat left top;
 }
-/* line 51, ../sass/_global/_base-layout-structure.sass */
+/* line 50, ../sass/_global/_base-layout-structure.sass */
 .social-navigation .facebook {
   background: transparent url("images/social-facebook.jpg") no-repeat left top;
 }
-/* line 53, ../sass/_global/_base-layout-structure.sass */
+/* line 52, ../sass/_global/_base-layout-structure.sass */
 .social-navigation .vimeo {
   background: transparent url("images/social-vimeo.jpg") no-repeat left top;
 }
 
-/* line 56, ../sass/_global/_base-layout-structure.sass */
+/* line 55, ../sass/_global/_base-layout-structure.sass */
 .member-navigation {
   display: inline;
   float: right;
@@ -221,7 +221,7 @@ h1 {
   margin-right: 10px;
 }
 
-/* line 61, ../sass/_global/_base-layout-structure.sass */
+/* line 60, ../sass/_global/_base-layout-structure.sass */
 .main-navigation {
   position: absolute;
   right: 0;
@@ -229,7 +229,7 @@ h1 {
   width: 780px;
   height: 60px;
 }
-/* line 67, ../sass/_global/_base-layout-structure.sass */
+/* line 66, ../sass/_global/_base-layout-structure.sass */
 .main-navigation li {
   display: inline;
   float: left;
@@ -239,28 +239,28 @@ h1 {
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 74, ../sass/_global/_base-layout-structure.sass */
+/* line 73, ../sass/_global/_base-layout-structure.sass */
 .main-navigation span {
   display: block;
 }
-/* line 76, ../sass/_global/_base-layout-structure.sass */
+/* line 75, ../sass/_global/_base-layout-structure.sass */
 .main-navigation .link {
   margin-bottom: 0.61538em;
 }
-/* line 78, ../sass/_global/_base-layout-structure.sass */
+/* line 77, ../sass/_global/_base-layout-structure.sass */
 .main-navigation .description {
   font-size: 12px;
   color: black;
 }
 
-/* line 82, ../sass/_global/_base-layout-structure.sass */
+/* line 81, ../sass/_global/_base-layout-structure.sass */
 .section {
   background: white url("images/background-footer-fade.png") repeat-x left bottom;
   min-height: 880px;
   margin-top: 5px;
 }
 
-/* line 9, ../sass/_global/_carousel.sass */
+/* line 8, ../sass/_global/_carousel.sass */
 .mask {
   background: blue;
   width: 1120px;
@@ -274,14 +274,48 @@ h1 {
 }
 
 /* line 22, ../sass/_global/_carousel.sass */
-.carouselNav {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 100;
+.carouselPrev,
+.carouselNext {
+  display: none;
 }
 
-/* line 30, ../sass/_global/_carousel.sass */
+/* line 26, ../sass/_global/_carousel.sass */
+.carouselNav {
+  position: fixed;
+  left: 50%;
+  top: 400px;
+  margin-left: 340px;
+  z-index: 4;
+}
+
+/* line 32, ../sass/_global/_carousel.sass */
+.carouselDot {
+  display: inline;
+  float: left;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  text-indent: -999em;
+  display: block;
+  width: 13px;
+  height: 13px;
+  border: 2px solid #80cbec;
+  margin-right: 5px;
+  background: #005983;
+}
+/* line 42, ../sass/_global/_carousel.sass */
+.carouselDot:hover {
+  cursor: pointer;
+  background: white;
+}
+/* line 45, ../sass/_global/_carousel.sass */
+.carouselDot.active {
+  background: white;
+}
+
+/* line 48, ../sass/_global/_carousel.sass */
 .carousel {
   position: relative;
   height: 486px;
@@ -289,7 +323,7 @@ h1 {
   overflow: hidden;
   margin-left: -70px;
 }
-/* line 36, ../sass/_global/_carousel.sass */
+/* line 54, ../sass/_global/_carousel.sass */
 .carousel .line-up {
   position: absolute;
   top: 0;
@@ -297,29 +331,25 @@ h1 {
   height: 486px;
   width: 3360px;
 }
-/* line 42, ../sass/_global/_carousel.sass */
+/* line 60, ../sass/_global/_carousel.sass */
 .carousel .hideMe {
   display: none;
 }
-/* line 44, ../sass/_global/_carousel.sass */
+/* line 62, ../sass/_global/_carousel.sass */
 .carousel .line-up li {
   float: left;
   width: 1120px;
   height: 486px;
 }
-/* line 49, ../sass/_global/_carousel.sass */
+/* line 71, ../sass/_global/_carousel.sass */
 .carousel .one {
   background: transparent url("images/carousel_01.jpg") no-repeat left top;
 }
-/* line 51, ../sass/_global/_carousel.sass */
+/* line 73, ../sass/_global/_carousel.sass */
 .carousel .two {
   background: transparent url("images/carousel_02.jpg") no-repeat left top;
 }
-/* line 53, ../sass/_global/_carousel.sass */
+/* line 75, ../sass/_global/_carousel.sass */
 .carousel .three {
   background: transparent url("images/carousel_03.jpg") no-repeat left top;
-}
-/* line 55, ../sass/_global/_carousel.sass */
-.carousel .dots {
-  background: green;
 }
