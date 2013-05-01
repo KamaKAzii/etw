@@ -5,8 +5,8 @@ $base-line-height: 16px
 
 body
   +establish-baseline
+  +adjust-font-size-to($font-size-normal, 1.25, 16px)
   font-family: $font
-  font-size: $font-size-normal
   color: $text-color
 
 a
@@ -15,3 +15,8 @@ a
   &:hover
     text-decoration: none
     color: lighten($link-color, 30%)
+
+h3
+  +trailer(1, $font-size-medium)
+  font-size: $font-size-medium
+  color: $theme-color-dark

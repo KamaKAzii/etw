@@ -1,0 +1,28 @@
+// _homepage.sass
+
+.articles .article
+  +columns(4)
+  margin-left: $grid-gutter - 3
+  margin-right: $grid-gutter - 3
+  background: $background-color
+  min-height: 360px
+  border: 3px solid $background-color
+  .image
+    +trailer
+    width: 219px
+    height: 147px
+  h3
+    margin-left: $grid-gutter
+  p
+    margin-left: $grid-gutter
+    color: $text-color-light
+
+.articles
+  .one .image
+    background: transparent url('images/article_01.jpg') repeat-x left top
+  .two .image
+    background: transparent url('images/article_02.jpg') repeat-x left top
+  .three .image
+    background: transparent url('images/article_03.jpg') repeat-x left top
+  .four .image
+    background: transparent url('images/article_04.jpg') repeat-x left top
