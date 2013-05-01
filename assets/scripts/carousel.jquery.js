@@ -61,6 +61,8 @@
           })
           .on('carousel.clickDot', function (event, li) {
             $base.data('currentLocation', $(li).data('position'));
+            $("." + settings.classDot).removeClass("active");
+            $(li).toggleClass("active");
             currentLocation = $base.data('currentLocation');
             utils.animateTo($base);
           })
@@ -93,6 +95,7 @@
 
           .on("click", function () {
             $base.trigger('carousel.clickDot', this);
+
           })
           // Traverse to the Prev button
           .siblings("li." + settings.classPrev)
