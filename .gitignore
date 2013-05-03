@@ -1,4 +1,6 @@
 *.swp
+*.swo
+*.zip
 .sass-cache/
 .DS_Store
 _documents/
