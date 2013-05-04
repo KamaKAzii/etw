@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, /Users/KamaKAzii/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,68 +24,68 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 20, /Users/KamaKAzii/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 20, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
 }
 
-/* line 22, /Users/KamaKAzii/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 24, /Users/KamaKAzii/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 26, /Users/KamaKAzii/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 28, /Users/KamaKAzii/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 101, /Users/KamaKAzii/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 101, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 30, /Users/KamaKAzii/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 114, /Users/KamaKAzii/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 114, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
-/* line 44, /Users/KamaKAzii/.rvm/gems/ruby-1.9.2-p290/gems/compass-lucid-grid-0.5.1/stylesheets/lucid/_public.scss */
+/* line 44, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-lucid-grid-0.5.1/stylesheets/lucid/_public.scss */
 .grid-clearfix, .grid-container, .layout-main {
   *zoom: 1;
 }
-/* line 38, /Users/KamaKAzii/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .grid-clearfix:after, .grid-container:after, .layout-main:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 46, /Users/KamaKAzii/.rvm/gems/ruby-1.9.2-p290/gems/compass-lucid-grid-0.5.1/stylesheets/lucid/_public.scss */
+/* line 46, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-lucid-grid-0.5.1/stylesheets/lucid/_public.scss */
 .grid-container, .layout-main {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
 }
 
-/* line 47, /Users/KamaKAzii/.rvm/gems/ruby-1.9.2-p290/gems/compass-lucid-grid-0.5.1/stylesheets/lucid/_public.scss */
+/* line 47, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-lucid-grid-0.5.1/stylesheets/lucid/_public.scss */
 .grid-element, .footer ul, .articles .article {
   display: inline;
   float: left;
@@ -93,46 +93,46 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-right: 10px;
 }
 
-/* line 48, /Users/KamaKAzii/.rvm/gems/ruby-1.9.2-p290/gems/compass-lucid-grid-0.5.1/stylesheets/lucid/_public.scss */
+/* line 48, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-lucid-grid-0.5.1/stylesheets/lucid/_public.scss */
 .grid-column-gutterless {
   display: inline;
   float: left;
 }
 
-/* line 6, /Users/KamaKAzii/Documents/etw/sass/_global/_type.sass */
+/* line 6, ../sass/_global/_type.sass */
 html {
   font-size: 13px;
 }
 
-/* line 8, /Users/KamaKAzii/Documents/etw/sass/_global/_type.sass */
+/* line 8, ../sass/_global/_type.sass */
 body {
   font-size: 1em;
   line-height: 1.23077em;
   font-family: Tahoma, Arial, Helvetica, sans-serif;
   color: black;
 }
-/* line 58, /Users/KamaKAzii/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+/* line 58, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 body body {
   font-size: 81.25%;
   line-height: 1.23077em;
 }
-/* line 62, /Users/KamaKAzii/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+/* line 62, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 body html > body {
   font-size: 13px;
 }
 
-/* line 14, /Users/KamaKAzii/Documents/etw/sass/_global/_type.sass */
+/* line 14, ../sass/_global/_type.sass */
 a {
   text-decoration: none;
   color: #005983;
 }
-/* line 17, /Users/KamaKAzii/Documents/etw/sass/_global/_type.sass */
+/* line 17, ../sass/_global/_type.sass */
 a:hover {
   text-decoration: none;
   color: #1db7ff;
 }
 
-/* line 21, /Users/KamaKAzii/Documents/etw/sass/_global/_type.sass */
+/* line 21, ../sass/_global/_type.sass */
 h3 {
   margin-bottom: 0.88889em;
   font-size: 1.38462em;
@@ -140,18 +140,18 @@ h3 {
   color: #003a6d;
 }
 
-/* line 3, /Users/KamaKAzii/Documents/etw/sass/_global/_base-layout-structure.sass */
+/* line 3, ../sass/_global/_base-layout-structure.sass */
 .layout-main {
   *zoom: 1;
 }
-/* line 38, /Users/KamaKAzii/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .layout-main:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 7, /Users/KamaKAzii/Documents/etw/sass/_global/_base-layout-structure.sass */
+/* line 7, ../sass/_global/_base-layout-structure.sass */
 .layout-stripe {
   position: absolute;
   left: 0;
@@ -163,13 +163,13 @@ h3 {
   border-bottom: 5px solid #005983;
 }
 
-/* line 17, /Users/KamaKAzii/Documents/etw/sass/_global/_base-layout-structure.sass */
+/* line 17, ../sass/_global/_base-layout-structure.sass */
 .outer-background {
   position: relative;
   z-index: 2;
 }
 
-/* line 21, /Users/KamaKAzii/Documents/etw/sass/_global/_base-layout-structure.sass */
+/* line 21, ../sass/_global/_base-layout-structure.sass */
 .header {
   padding-top: 1.23077em;
   position: relative;
@@ -178,7 +178,7 @@ h3 {
   left: 0;
 }
 
-/* line 28, /Users/KamaKAzii/Documents/etw/sass/_global/_base-layout-structure.sass */
+/* line 28, ../sass/_global/_base-layout-structure.sass */
 h1 {
   text-indent: -999em;
   width: 123px;
@@ -189,23 +189,23 @@ h1 {
   left: 0;
 }
 
-/* line 37, /Users/KamaKAzii/Documents/etw/sass/_global/_base-layout-structure.sass */
+/* line 37, ../sass/_global/_base-layout-structure.sass */
 .social-navigation {
   display: inline;
   float: right;
   *zoom: 1;
 }
-/* line 38, /Users/KamaKAzii/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .social-navigation:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 40, /Users/KamaKAzii/Documents/etw/sass/_global/_base-layout-structure.sass */
+/* line 40, ../sass/_global/_base-layout-structure.sass */
 .social-navigation ul {
   width: 96px;
 }
-/* line 42, /Users/KamaKAzii/Documents/etw/sass/_global/_base-layout-structure.sass */
+/* line 42, ../sass/_global/_base-layout-structure.sass */
 .social-navigation li {
   display: inline;
   float: left;
@@ -214,27 +214,27 @@ h1 {
   height: 26px;
   margin-left: 5px;
 }
-/* line 48, /Users/KamaKAzii/Documents/etw/sass/_global/_base-layout-structure.sass */
+/* line 48, ../sass/_global/_base-layout-structure.sass */
 .social-navigation .twitter {
   background: transparent url("images/social-twitter.jpg") no-repeat left top;
 }
-/* line 50, /Users/KamaKAzii/Documents/etw/sass/_global/_base-layout-structure.sass */
+/* line 50, ../sass/_global/_base-layout-structure.sass */
 .social-navigation .facebook {
   background: transparent url("images/social-facebook.jpg") no-repeat left top;
 }
-/* line 52, /Users/KamaKAzii/Documents/etw/sass/_global/_base-layout-structure.sass */
+/* line 52, ../sass/_global/_base-layout-structure.sass */
 .social-navigation .vimeo {
   background: transparent url("images/social-vimeo.jpg") no-repeat left top;
 }
 
-/* line 55, /Users/KamaKAzii/Documents/etw/sass/_global/_base-layout-structure.sass */
+/* line 55, ../sass/_global/_base-layout-structure.sass */
 .member-navigation {
   display: inline;
   float: right;
   margin-right: 10px;
 }
 
-/* line 59, /Users/KamaKAzii/Documents/etw/sass/_global/_base-layout-structure.sass */
+/* line 59, ../sass/_global/_base-layout-structure.sass */
 .main-navigation {
   position: absolute;
   right: 0;
@@ -242,7 +242,7 @@ h1 {
   width: 780px;
   height: 70px;
 }
-/* line 65, /Users/KamaKAzii/Documents/etw/sass/_global/_base-layout-structure.sass */
+/* line 65, ../sass/_global/_base-layout-structure.sass */
 .main-navigation li {
   display: inline;
   float: left;
@@ -252,21 +252,21 @@ h1 {
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 72, /Users/KamaKAzii/Documents/etw/sass/_global/_base-layout-structure.sass */
+/* line 72, ../sass/_global/_base-layout-structure.sass */
 .main-navigation span {
   display: block;
 }
-/* line 74, /Users/KamaKAzii/Documents/etw/sass/_global/_base-layout-structure.sass */
+/* line 74, ../sass/_global/_base-layout-structure.sass */
 .main-navigation .link {
   margin-bottom: 0.61538em;
 }
-/* line 76, /Users/KamaKAzii/Documents/etw/sass/_global/_base-layout-structure.sass */
+/* line 76, ../sass/_global/_base-layout-structure.sass */
 .main-navigation .description {
   font-size: 12px;
   color: black;
 }
 
-/* line 80, /Users/KamaKAzii/Documents/etw/sass/_global/_base-layout-structure.sass */
+/* line 80, ../sass/_global/_base-layout-structure.sass */
 .section {
   background: white url("images/background-footer-fade.png") repeat-x left bottom;
   position: relative;
@@ -274,7 +274,26 @@ h1 {
   margin-top: 5px;
 }
 
-/* line 8, /Users/KamaKAzii/Documents/etw/sass/_global/_carousel.sass */
+/* line 3, ../sass/_global/_uber.sass */
+.uber-wrapper {
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 135px;
+  width: 100%;
+}
+
+/* line 9, ../sass/_global/_uber.sass */
+.uber {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #014869), color-stop(100%, #005983));
+  background-image: -webkit-linear-gradient(#014869, #005983);
+  background-image: -moz-linear-gradient(#014869, #005983);
+  background-image: -o-linear-gradient(#014869, #005983);
+  background-image: -ms-linear-gradient(#014869, #005983);
+  background-image: linear-gradient(#014869, #005983);
+}
+
+/* line 8, ../sass/_global/_carousel.sass */
 .mask {
   background: blue;
   width: 1120px;
@@ -287,13 +306,13 @@ h1 {
   z-index: 3;
 }
 
-/* line 22, /Users/KamaKAzii/Documents/etw/sass/_global/_carousel.sass */
+/* line 22, ../sass/_global/_carousel.sass */
 .carouselPrev,
 .carouselNext {
   display: none;
 }
 
-/* line 26, /Users/KamaKAzii/Documents/etw/sass/_global/_carousel.sass */
+/* line 26, ../sass/_global/_carousel.sass */
 .carouselNav {
   position: absolute;
   left: 50%;
@@ -302,7 +321,7 @@ h1 {
   z-index: 4;
 }
 
-/* line 32, /Users/KamaKAzii/Documents/etw/sass/_global/_carousel.sass */
+/* line 32, ../sass/_global/_carousel.sass */
 .carouselDot {
   display: inline;
   float: left;
@@ -319,17 +338,17 @@ h1 {
   margin-right: 5px;
   background: #005983;
 }
-/* line 42, /Users/KamaKAzii/Documents/etw/sass/_global/_carousel.sass */
+/* line 42, ../sass/_global/_carousel.sass */
 .carouselDot:hover {
   cursor: pointer;
   background: white;
 }
-/* line 45, /Users/KamaKAzii/Documents/etw/sass/_global/_carousel.sass */
+/* line 45, ../sass/_global/_carousel.sass */
 .carouselDot.active {
   background: white;
 }
 
-/* line 48, /Users/KamaKAzii/Documents/etw/sass/_global/_carousel.sass */
+/* line 48, ../sass/_global/_carousel.sass */
 .carousel {
   position: relative;
   height: 486px;
@@ -337,7 +356,7 @@ h1 {
   overflow: hidden;
   margin-left: -70px;
 }
-/* line 54, /Users/KamaKAzii/Documents/etw/sass/_global/_carousel.sass */
+/* line 54, ../sass/_global/_carousel.sass */
 .carousel .line-up {
   position: absolute;
   top: 0;
@@ -345,18 +364,18 @@ h1 {
   height: 486px;
   width: 3360px;
 }
-/* line 60, /Users/KamaKAzii/Documents/etw/sass/_global/_carousel.sass */
+/* line 60, ../sass/_global/_carousel.sass */
 .carousel .hideMe {
   display: none;
 }
-/* line 62, /Users/KamaKAzii/Documents/etw/sass/_global/_carousel.sass */
+/* line 62, ../sass/_global/_carousel.sass */
 .carousel .line-up li {
   float: left;
   width: 1120px;
   height: 486px;
   position: relative;
 }
-/* line 68, /Users/KamaKAzii/Documents/etw/sass/_global/_carousel.sass */
+/* line 68, ../sass/_global/_carousel.sass */
 .carousel .line-up li h2 {
   position: absolute;
   left: 160px;
@@ -365,7 +384,7 @@ h1 {
   font-size: 1.84615em;
   line-height: 1.33333em;
 }
-/* line 77, /Users/KamaKAzii/Documents/etw/sass/_global/_carousel.sass */
+/* line 77, ../sass/_global/_carousel.sass */
 .carousel .line-up li a {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #04496f), color-stop(100%, #063c5a));
   background-image: -webkit-linear-gradient(#04496f, #063c5a);
@@ -390,42 +409,42 @@ h1 {
   text-align: center;
   border: 1px solid rgba(246, 246, 246, 0.2);
 }
-/* line 93, /Users/KamaKAzii/Documents/etw/sass/_global/_carousel.sass */
+/* line 93, ../sass/_global/_carousel.sass */
 .carousel .one {
   background: transparent url("images/carousel_01.jpg") no-repeat left top;
 }
-/* line 95, /Users/KamaKAzii/Documents/etw/sass/_global/_carousel.sass */
+/* line 95, ../sass/_global/_carousel.sass */
 .carousel .two {
   background: transparent url("images/carousel_02.jpg") no-repeat left top;
 }
-/* line 97, /Users/KamaKAzii/Documents/etw/sass/_global/_carousel.sass */
+/* line 97, ../sass/_global/_carousel.sass */
 .carousel .three {
   background: transparent url("images/carousel_03.jpg") no-repeat left top;
 }
 
-/* line 3, /Users/KamaKAzii/Documents/etw/sass/_global/_footer.sass */
+/* line 3, ../sass/_global/_footer.sass */
 .footer {
   margin-top: 2.46154em;
 }
-/* line 5, /Users/KamaKAzii/Documents/etw/sass/_global/_footer.sass */
+/* line 5, ../sass/_global/_footer.sass */
 .footer .footer-navigation {
   display: inline;
   float: left;
   *zoom: 1;
   margin-bottom: 2.46154em;
 }
-/* line 38, /Users/KamaKAzii/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .footer .footer-navigation:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 9, /Users/KamaKAzii/Documents/etw/sass/_global/_footer.sass */
+/* line 9, ../sass/_global/_footer.sass */
 .footer ul {
   width: 100px;
 }
 
-/* line 12, /Users/KamaKAzii/Documents/etw/sass/_global/_footer.sass */
+/* line 12, ../sass/_global/_footer.sass */
 .copyright {
   display: inline;
   float: right;
@@ -436,7 +455,7 @@ h1 {
   height: 57px;
 }
 
-/* line 20, /Users/KamaKAzii/Documents/etw/sass/_global/_footer.sass */
+/* line 20, ../sass/_global/_footer.sass */
 .testimonial {
   *zoom: 1;
   margin: 0 auto;
@@ -447,23 +466,23 @@ h1 {
   background: transparent url("images/quotes.jpg") no-repeat left top;
   clear: left;
 }
-/* line 38, /Users/KamaKAzii/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .testimonial:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 29, /Users/KamaKAzii/Documents/etw/sass/_global/_footer.sass */
+/* line 29, ../sass/_global/_footer.sass */
 .testimonial span {
   display: block;
 }
-/* line 31, /Users/KamaKAzii/Documents/etw/sass/_global/_footer.sass */
+/* line 31, ../sass/_global/_footer.sass */
 .testimonial .content {
   margin-bottom: 1.23077em;
   font-style: italic;
   text-align: center;
 }
-/* line 35, /Users/KamaKAzii/Documents/etw/sass/_global/_footer.sass */
+/* line 35, ../sass/_global/_footer.sass */
 .testimonial .name {
   display: inline;
   float: right;
@@ -472,21 +491,21 @@ h1 {
   height: 50px;
 }
 
-/* line 3, /Users/KamaKAzii/Documents/etw/sass/_global/_homepage.sass */
+/* line 3, ../sass/_global/_homepage.sass */
 .articles {
   *zoom: 1;
   position: absolute;
   left: 0;
   top: 320px;
 }
-/* line 38, /Users/KamaKAzii/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .articles:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 8, /Users/KamaKAzii/Documents/etw/sass/_global/_homepage.sass */
+/* line 8, ../sass/_global/_homepage.sass */
 .articles .article {
   width: 220px;
   margin-left: 7px;
@@ -495,35 +514,35 @@ h1 {
   min-height: 360px;
   border: 3px solid white;
 }
-/* line 15, /Users/KamaKAzii/Documents/etw/sass/_global/_homepage.sass */
+/* line 15, ../sass/_global/_homepage.sass */
 .articles .article .image {
   margin-bottom: 1.23077em;
   width: 219px;
   height: 147px;
 }
-/* line 19, /Users/KamaKAzii/Documents/etw/sass/_global/_homepage.sass */
+/* line 19, ../sass/_global/_homepage.sass */
 .articles .article h3 {
   margin-left: 10px;
 }
-/* line 21, /Users/KamaKAzii/Documents/etw/sass/_global/_homepage.sass */
+/* line 21, ../sass/_global/_homepage.sass */
 .articles .article p {
   margin-left: 10px;
   color: #666666;
 }
 
-/* line 26, /Users/KamaKAzii/Documents/etw/sass/_global/_homepage.sass */
+/* line 26, ../sass/_global/_homepage.sass */
 .articles .one .image {
   background: transparent url("images/article_01.jpg") repeat-x left top;
 }
-/* line 28, /Users/KamaKAzii/Documents/etw/sass/_global/_homepage.sass */
+/* line 28, ../sass/_global/_homepage.sass */
 .articles .two .image {
   background: transparent url("images/article_02.jpg") repeat-x left top;
 }
-/* line 30, /Users/KamaKAzii/Documents/etw/sass/_global/_homepage.sass */
+/* line 30, ../sass/_global/_homepage.sass */
 .articles .three .image {
   background: transparent url("images/article_03.jpg") repeat-x left top;
 }
-/* line 32, /Users/KamaKAzii/Documents/etw/sass/_global/_homepage.sass */
+/* line 32, ../sass/_global/_homepage.sass */
 .articles .four .image {
   background: transparent url("images/article_04.jpg") repeat-x left top;
 }
