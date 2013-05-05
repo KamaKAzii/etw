@@ -1,10 +1,32 @@
 // _uber.sass
 
 .uber-wrapper
+  +background-image(linear-gradient(#014869, #005983))
   position: absolute
   z-index: 10
   left: 0
   top: 135px
   width: 100%
 .uber
-  +background-image(linear-gradient(#014869, #005983))
+  // Simply start another grid.
+  +container
+  +leader
+  +trailer
+  color: $text-color-white
+  .info
+    +columns(4)
+  .state-navigation
+    +columns(1, 0, 0)
+    +offset(0.5)
+    li
+      text-align: center
+      line-height: 29px
+    .active
+      color: $theme-color-light
+      background: $background-color-dark
+  .current-state
+    +columns(10.5, -$grid-gutter, 0)
+    background: $background-color-dark
+  h3
+    color: $background-color
+    font-size: $font-size-large
