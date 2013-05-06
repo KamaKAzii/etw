@@ -1,6 +1,9 @@
 // _uber.sass
 
 .uber-wrapper
+  display: none
+
+.uber-wrapper
   +background-image(linear-gradient(#014869, #005983))
   position: absolute
   z-index: 10
@@ -15,6 +18,10 @@
   color: $text-color-white
   .info
     +columns(4)
+  h3
+    color: $background-color
+    font-size: $font-size-large
+.uber.location
   .state-navigation
     +columns(1, 0, 0)
     +offset(0.5)
@@ -25,8 +32,19 @@
       color: $theme-color-light
       background: $background-color-dark
   .current-state
-    +columns(10.5, -$grid-gutter, 0)
-    background: $background-color-dark
-  h3
-    color: $background-color
-    font-size: $font-size-large
+    +columns(10.5, -$grid-gutter * 5, 0)
+    background: $background-color-dark url('images/location-nsw.jpg') no-repeat 433px 15px
+    min-height: 195px
+    padding: $grid-gutter * 2
+    dt
+      +adjust-font-size-to(14px, 1, $font-size-normal)
+      +trailing-border(1px, 0.5, 14px, dotted)
+      +trailer(0.5, 14px)
+      color: $theme-color-light
+      border-bottom: $theme-color-light 1px dotted
+    dl
+      +columns(2)
+      margin-left: 0
+      margin-right: $grid-gutter * 2
+      a
+        color: $text-color-white
