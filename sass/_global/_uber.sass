@@ -1,26 +1,37 @@
 // _uber.sass
 
 .uber-wrapper
-  display: none
-
-.uber-wrapper
   +background-image(linear-gradient(#014869, #005983))
   position: absolute
   z-index: 10
   left: 0
   top: 135px
   width: 100%
+.main-navigation li.active
+  // Force the colours whith this class
+  // which is added on hover.
+  background: #014869
+  .title
+    color: $text-color-white !important
+  a
+    color: $text-color-white !important
+  .description
+    color: $text-color-white !important
 .uber
+  // Begin hidden...
+  display: none
   // Simply start another grid.
   +container
-  +leader
-  +trailer
+  +padding-leader
+  +padding-trailer
   color: $text-color-white
   .info
     +columns(4)
   h3
     color: $background-color
     font-size: $font-size-large
+
+// Specific styles per tab.
 .uber.location
   .state-navigation
     +columns(1, 0, 0)
@@ -42,8 +53,11 @@
       +trailer(0.5, 14px)
       color: $theme-color-light
       border-bottom: $theme-color-light 1px dotted
+    // Judging by the design these
+    // might require specific styles per state.
     dl
-      +columns(2)
+      +float(left)
+      width: 116px
       margin-left: 0
       margin-right: $grid-gutter * 2
       a

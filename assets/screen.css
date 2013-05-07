@@ -86,7 +86,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 47, ../../../.rvm/gems/ruby-1.9.3-p392@etw/gems/compass-lucid-grid-0.5.1/stylesheets/lucid/_public.scss */
-.grid-element, .uber .info, .uber.location .current-state dl, .footer ul, .articles .article {
+.grid-element, .uber .info, .footer ul, .articles .article {
   display: inline;
   float: left;
   margin-left: 10px;
@@ -245,7 +245,7 @@ h1 {
   right: 0;
   bottom: 0;
   width: 780px;
-  height: 70px;
+  height: 75px;
 }
 /* line 65, ../sass/_global/_base-layout-structure.sass */
 .main-navigation li {
@@ -254,24 +254,25 @@ h1 {
   width: 150px;
   height: 70px;
   border-right: 1px solid #b2cdda;
+  padding-top: 5px;
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 72, ../sass/_global/_base-layout-structure.sass */
+/* line 74, ../sass/_global/_base-layout-structure.sass */
 .main-navigation span {
   display: block;
 }
-/* line 74, ../sass/_global/_base-layout-structure.sass */
+/* line 76, ../sass/_global/_base-layout-structure.sass */
 .main-navigation .link {
   margin-bottom: 0.61538em;
 }
-/* line 76, ../sass/_global/_base-layout-structure.sass */
+/* line 78, ../sass/_global/_base-layout-structure.sass */
 .main-navigation .description {
   font-size: 12px;
   color: black;
 }
 
-/* line 80, ../sass/_global/_base-layout-structure.sass */
+/* line 82, ../sass/_global/_base-layout-structure.sass */
 .section {
   background: white url("images/background-footer-fade.png") repeat-x left bottom;
   position: relative;
@@ -280,11 +281,6 @@ h1 {
 }
 
 /* line 3, ../sass/_global/_uber.sass */
-.uber-wrapper {
-  display: none;
-}
-
-/* line 6, ../sass/_global/_uber.sass */
 .uber-wrapper {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #014869), color-stop(100%, #005983));
   background-image: -webkit-linear-gradient(#014869, #005983);
@@ -298,45 +294,63 @@ h1 {
   width: 100%;
 }
 
-/* line 13, ../sass/_global/_uber.sass */
+/* line 10, ../sass/_global/_uber.sass */
+.main-navigation li.active {
+  background: #014869;
+}
+/* line 14, ../sass/_global/_uber.sass */
+.main-navigation li.active .title {
+  color: white !important;
+}
+/* line 16, ../sass/_global/_uber.sass */
+.main-navigation li.active a {
+  color: white !important;
+}
+/* line 18, ../sass/_global/_uber.sass */
+.main-navigation li.active .description {
+  color: white !important;
+}
+
+/* line 20, ../sass/_global/_uber.sass */
 .uber {
-  margin-top: 1.23077em;
-  margin-bottom: 1.23077em;
+  display: none;
+  padding-top: 1.23077em;
+  padding-bottom: 1.23077em;
   color: white;
 }
-/* line 19, ../sass/_global/_uber.sass */
+/* line 28, ../sass/_global/_uber.sass */
 .uber .info {
   width: 220px;
 }
-/* line 21, ../sass/_global/_uber.sass */
+/* line 30, ../sass/_global/_uber.sass */
 .uber h3 {
   color: white;
   font-size: 24px;
 }
 
-/* line 25, ../sass/_global/_uber.sass */
+/* line 36, ../sass/_global/_uber.sass */
 .uber.location .state-navigation {
   width: 60px;
   margin-left: 40px;
 }
-/* line 28, ../sass/_global/_uber.sass */
+/* line 39, ../sass/_global/_uber.sass */
 .uber.location .state-navigation li {
   text-align: center;
   line-height: 29px;
 }
-/* line 31, ../sass/_global/_uber.sass */
+/* line 42, ../sass/_global/_uber.sass */
 .uber.location .state-navigation .active {
   color: #009ddc;
   background: #043c57;
 }
-/* line 34, ../sass/_global/_uber.sass */
+/* line 45, ../sass/_global/_uber.sass */
 .uber.location .current-state {
   width: 580px;
   background: #043c57 url("images/location-nsw.jpg") no-repeat 433px 15px;
   min-height: 195px;
   padding: 20px;
 }
-/* line 39, ../sass/_global/_uber.sass */
+/* line 50, ../sass/_global/_uber.sass */
 .uber.location .current-state dt {
   font-size: 1.07692em;
   line-height: 1.14286em;
@@ -347,13 +361,15 @@ h1 {
   color: #009ddc;
   border-bottom: #009ddc 1px dotted;
 }
-/* line 45, ../sass/_global/_uber.sass */
+/* line 58, ../sass/_global/_uber.sass */
 .uber.location .current-state dl {
-  width: 100px;
+  display: inline;
+  float: left;
+  width: 116px;
   margin-left: 0;
   margin-right: 20px;
 }
-/* line 49, ../sass/_global/_uber.sass */
+/* line 63, ../sass/_global/_uber.sass */
 .uber.location .current-state dl a {
   color: white;
 }
