@@ -9,6 +9,7 @@
 .outer-background
   position: relative
   z-index: 1
+  background: $background-color-medium
 
 .layout-stripe
   position: absolute
@@ -66,7 +67,7 @@ h1
   height: 75px
   li
     +float(left)
-    width: 150px
+    width: 135px
     height: 70px
     border-right: 1px solid $border-color-light
     padding-top: 5px
@@ -82,8 +83,7 @@ h1
     color: $text-color
 
 .section
-  background: $background-color url('images/background-footer-fade.png') repeat-x left bottom
   position: relative
-  min-height: 880px
+  min-height: 780px
   // Offset for the stripe
   margin-top: 5px

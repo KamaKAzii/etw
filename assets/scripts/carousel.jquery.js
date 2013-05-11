@@ -78,13 +78,14 @@
 
           })
           .on('carousel.clickNext', function (event, li) {
-
             if ($base.data('currentLocation') == $base.data('totalPanels')) {
               $base.data('currentLocation', 1);
             }
             else {
               $base.data('currentLocation', $base.data('currentLocation') + 1);
             }
+            var targetDotIndex = $base.data('currentLocation') - 1;
+            $("." + settings.classDot).removeClass("active").eq(targetDotIndex).addClass("active");
             utils.animateTo($base);
 
           })

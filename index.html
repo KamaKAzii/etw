@@ -8,6 +8,18 @@
   </head>
   <body>
     <div class="uber-wrapper">
+      <div class="uber about">
+        Links To Other | About Pages | Go Here
+      </div>
+      <div class="uber train">
+        Links To Other | Training Pages | Go Here
+      </div>
+      <div class="uber community">
+        Links To Other | Community Pages | Go Here
+      </div>
+      <div class="uber other-services">
+        Links To Other | Services Pages | Go Here
+      </div>
       <div class="uber location">
         <div class="info">
           <h3>Find a Location</h3>
@@ -106,6 +118,12 @@
                       <span class="description">We give back to those who are also in need</span>
                     </a>
                   </li>
+                  <li class="other-services">
+                    <a href="#">
+                      <span class="link">Other Services</span>
+                      <span class="description">Work with us in other ways</span>
+                    </a>
+                  </li>
                   <li class="location">
                     <a href="#">
                       <span class="link">Location</span>
@@ -149,12 +167,37 @@
                     </h2>
                     <a href="button-like">Tell me more about Evo</a>
                   </li>
+
+                  <li class="hideMe four">
+                    <h2>
+                      Evolution unites us as individuals to reach our own personal goals.
+                      Fun and fitness is our lifestyle.
+                    </h2>
+                    <a href="button-like">Tell me more about Evo</a>
+                  </li>
                 </ul>
               </div>
 
             </div>
 
-            <script type="text/javascript"> $(".carousel .line-up").carousel(); </script>
+            <script type="text/javascript"> 
+              $(".carousel .line-up").carousel(); 
+
+              // Manually set the first dot to be active.
+              $(".carouselDot").eq(0).addClass("active");
+
+              var carouselClicked = false;
+
+              $(".carouselDot").bind("click", function() {
+                  carouselClicked = true;
+              });
+
+              setInterval(function() { 
+                  if (!carouselClicked) {
+                    $(".carouselNext").click();
+                  };
+              }, 3000);
+            </script>
 
             <div class="articles">
               <div class="article one">
