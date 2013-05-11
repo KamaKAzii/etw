@@ -1,13 +1,16 @@
 // _footer.sass
 
 .footer
-  +leader(2)
+  +padding-leader(2)
+  background: $background-color
   .footer-navigation
     +float(left)
     +pie-clearfix
     +trailer(2)
   ul
     +columns(2)
+.footer-inner-wrapper
+  +container
 
 .copyright
   +float(right)

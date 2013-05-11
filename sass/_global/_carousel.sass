@@ -56,7 +56,6 @@ $carousel-offset: -70px
       position: absolute
       left: 160px
       top: 40px
-      width: 650px
       // color: $text-color-light
       +adjust-font-size-to($font-size-large)
     // Move this to _buttons.sass if more styles arise.
@@ -77,11 +76,15 @@ $carousel-offset: -70px
       border: 1px solid rgba(246, 246, 246, 0.2)
 
   // Styles
-  .one
-    background: transparent url('images/carousel_01.jpg') no-repeat left top
-  .two
-    background: transparent url('images/carousel_02.jpg') no-repeat left top
-  .three
-    background: transparent url('images/carousel_03.jpg') no-repeat left top
-  .four
-    background: transparent url('images/carousel_04.jpg') no-repeat left top
+  .line-up li
+    &.one
+      background: transparent url('images/carousel_01.jpg') no-repeat left top
+    &.two
+      background: transparent url('images/carousel_02.jpg') no-repeat left top
+    &.three
+      background: transparent url('images/carousel_03.jpg') no-repeat left top
+    &.four
+      background: transparent url('images/carousel_04.jpg') no-repeat left top
+      h2
+        +adjust-font-size-to($font-size-medium)
+        width: 300px

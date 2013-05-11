@@ -68,18 +68,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 44, ../../../.rvm/gems/ruby-1.9.3-p392@etw/gems/compass-lucid-grid-0.5.1/stylesheets/lucid/_public.scss */
-.grid-clearfix, .grid-container, .layout-main, .uber {
+.grid-clearfix, .grid-container, .layout-main, .uber, .footer-inner-wrapper {
   *zoom: 1;
 }
 /* line 38, ../../../.rvm/gems/ruby-1.9.3-p392@etw/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.grid-clearfix:after, .grid-container:after, .layout-main:after, .uber:after {
+.grid-clearfix:after, .grid-container:after, .layout-main:after, .uber:after, .footer-inner-wrapper:after {
   content: "";
   display: table;
   clear: both;
 }
 
 /* line 46, ../../../.rvm/gems/ruby-1.9.3-p392@etw/gems/compass-lucid-grid-0.5.1/stylesheets/lucid/_public.scss */
-.grid-container, .layout-main, .uber {
+.grid-container, .layout-main, .uber, .footer-inner-wrapper {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
@@ -150,6 +150,7 @@ h3 {
   position: relative;
   z-index: 3;
   *zoom: 1;
+  background: transparent url("images/background-footer.png") no-repeat bottom right;
 }
 /* line 38, ../../../.rvm/gems/ruby-1.9.3-p392@etw/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .layout-main:after {
@@ -158,14 +159,14 @@ h3 {
   clear: both;
 }
 
-/* line 9, ../sass/_global/_base-layout-structure.sass */
+/* line 10, ../sass/_global/_base-layout-structure.sass */
 .outer-background {
   position: relative;
   z-index: 1;
   background: #f6f6f6;
 }
 
-/* line 14, ../sass/_global/_base-layout-structure.sass */
+/* line 15, ../sass/_global/_base-layout-structure.sass */
 .layout-stripe {
   position: absolute;
   left: 0;
@@ -177,7 +178,7 @@ h3 {
   border-bottom: 5px solid #005983;
 }
 
-/* line 24, ../sass/_global/_base-layout-structure.sass */
+/* line 25, ../sass/_global/_base-layout-structure.sass */
 .header {
   padding-top: 1.23077em;
   position: relative;
@@ -186,7 +187,7 @@ h3 {
   left: 0;
 }
 
-/* line 31, ../sass/_global/_base-layout-structure.sass */
+/* line 32, ../sass/_global/_base-layout-structure.sass */
 h1 {
   text-indent: -999em;
   width: 123px;
@@ -197,7 +198,7 @@ h1 {
   left: 0;
 }
 
-/* line 40, ../sass/_global/_base-layout-structure.sass */
+/* line 41, ../sass/_global/_base-layout-structure.sass */
 .social-navigation {
   display: inline;
   float: right;
@@ -209,11 +210,11 @@ h1 {
   display: table;
   clear: both;
 }
-/* line 43, ../sass/_global/_base-layout-structure.sass */
+/* line 44, ../sass/_global/_base-layout-structure.sass */
 .social-navigation ul {
   width: 96px;
 }
-/* line 45, ../sass/_global/_base-layout-structure.sass */
+/* line 46, ../sass/_global/_base-layout-structure.sass */
 .social-navigation li {
   display: inline;
   float: left;
@@ -222,27 +223,27 @@ h1 {
   height: 26px;
   margin-left: 5px;
 }
-/* line 51, ../sass/_global/_base-layout-structure.sass */
+/* line 52, ../sass/_global/_base-layout-structure.sass */
 .social-navigation .twitter {
   background: transparent url("images/social-twitter.jpg") no-repeat left top;
 }
-/* line 53, ../sass/_global/_base-layout-structure.sass */
+/* line 54, ../sass/_global/_base-layout-structure.sass */
 .social-navigation .facebook {
   background: transparent url("images/social-facebook.jpg") no-repeat left top;
 }
-/* line 55, ../sass/_global/_base-layout-structure.sass */
+/* line 56, ../sass/_global/_base-layout-structure.sass */
 .social-navigation .vimeo {
   background: transparent url("images/social-vimeo.jpg") no-repeat left top;
 }
 
-/* line 58, ../sass/_global/_base-layout-structure.sass */
+/* line 59, ../sass/_global/_base-layout-structure.sass */
 .member-navigation {
   display: inline;
   float: right;
   margin-right: 10px;
 }
 
-/* line 62, ../sass/_global/_base-layout-structure.sass */
+/* line 63, ../sass/_global/_base-layout-structure.sass */
 .main-navigation {
   position: absolute;
   right: 0;
@@ -250,7 +251,7 @@ h1 {
   width: 780px;
   height: 75px;
 }
-/* line 68, ../sass/_global/_base-layout-structure.sass */
+/* line 69, ../sass/_global/_base-layout-structure.sass */
 .main-navigation li {
   display: inline;
   float: left;
@@ -261,24 +262,24 @@ h1 {
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 77, ../sass/_global/_base-layout-structure.sass */
+/* line 78, ../sass/_global/_base-layout-structure.sass */
 .main-navigation span {
   display: block;
 }
-/* line 79, ../sass/_global/_base-layout-structure.sass */
+/* line 80, ../sass/_global/_base-layout-structure.sass */
 .main-navigation .link {
   margin-bottom: 0.61538em;
 }
-/* line 81, ../sass/_global/_base-layout-structure.sass */
+/* line 82, ../sass/_global/_base-layout-structure.sass */
 .main-navigation .description {
   font-size: 12px;
   color: black;
 }
 
-/* line 85, ../sass/_global/_base-layout-structure.sass */
+/* line 86, ../sass/_global/_base-layout-structure.sass */
 .section {
   position: relative;
-  min-height: 780px;
+  min-height: 740px;
   margin-top: 5px;
 }
 
@@ -451,11 +452,10 @@ h1 {
   position: absolute;
   left: 160px;
   top: 40px;
-  width: 650px;
   font-size: 1.84615em;
   line-height: 1.33333em;
 }
-/* line 64, ../sass/_global/_carousel.sass */
+/* line 63, ../sass/_global/_carousel.sass */
 .carousel .line-up li a {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #04496f), color-stop(100%, #063c5a));
   background-image: -webkit-linear-gradient(#04496f, #063c5a);
@@ -480,27 +480,34 @@ h1 {
   border: 1px solid rgba(246, 246, 246, 0.2);
 }
 /* line 80, ../sass/_global/_carousel.sass */
-.carousel .one {
+.carousel .line-up li.one {
   background: transparent url("images/carousel_01.jpg") no-repeat left top;
 }
 /* line 82, ../sass/_global/_carousel.sass */
-.carousel .two {
+.carousel .line-up li.two {
   background: transparent url("images/carousel_02.jpg") no-repeat left top;
 }
 /* line 84, ../sass/_global/_carousel.sass */
-.carousel .three {
+.carousel .line-up li.three {
   background: transparent url("images/carousel_03.jpg") no-repeat left top;
 }
 /* line 86, ../sass/_global/_carousel.sass */
-.carousel .four {
+.carousel .line-up li.four {
   background: transparent url("images/carousel_04.jpg") no-repeat left top;
+}
+/* line 88, ../sass/_global/_carousel.sass */
+.carousel .line-up li.four h2 {
+  font-size: 1.38462em;
+  line-height: 1.77778em;
+  width: 300px;
 }
 
 /* line 3, ../sass/_global/_footer.sass */
 .footer {
-  margin-top: 2.46154em;
+  padding-top: 2.46154em;
+  background: white;
 }
-/* line 5, ../sass/_global/_footer.sass */
+/* line 6, ../sass/_global/_footer.sass */
 .footer .footer-navigation {
   display: inline;
   float: left;
@@ -513,12 +520,12 @@ h1 {
   display: table;
   clear: both;
 }
-/* line 9, ../sass/_global/_footer.sass */
+/* line 10, ../sass/_global/_footer.sass */
 .footer ul {
   width: 100px;
 }
 
-/* line 12, ../sass/_global/_footer.sass */
+/* line 15, ../sass/_global/_footer.sass */
 .copyright {
   display: inline;
   float: right;
@@ -529,7 +536,7 @@ h1 {
   height: 57px;
 }
 
-/* line 20, ../sass/_global/_footer.sass */
+/* line 23, ../sass/_global/_footer.sass */
 .testimonial {
   *zoom: 1;
   margin: 0 auto;
@@ -546,17 +553,17 @@ h1 {
   display: table;
   clear: both;
 }
-/* line 29, ../sass/_global/_footer.sass */
+/* line 32, ../sass/_global/_footer.sass */
 .testimonial span {
   display: block;
 }
-/* line 31, ../sass/_global/_footer.sass */
+/* line 34, ../sass/_global/_footer.sass */
 .testimonial .content {
   margin-bottom: 1.23077em;
   font-style: italic;
   text-align: center;
 }
-/* line 35, ../sass/_global/_footer.sass */
+/* line 38, ../sass/_global/_footer.sass */
 .testimonial .name {
   display: inline;
   float: right;
