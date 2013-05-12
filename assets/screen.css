@@ -450,12 +450,15 @@ h1 {
 /* line 55, ../sass/_global/_carousel.sass */
 .carousel .line-up li h2 {
   position: absolute;
-  left: 160px;
-  top: 40px;
   font-size: 1.84615em;
   line-height: 1.33333em;
 }
-/* line 63, ../sass/_global/_carousel.sass */
+/* line 59, ../sass/_global/_carousel.sass */
+.carousel .line-up li h2 span {
+  font-size: 0.54167em;
+  line-height: 2.46154em;
+}
+/* line 64, ../sass/_global/_carousel.sass */
 .carousel .line-up li a {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #04496f), color-stop(100%, #063c5a));
   background-image: -webkit-linear-gradient(#04496f, #063c5a);
@@ -469,8 +472,6 @@ h1 {
   border-radius: 30px;
   display: block;
   position: absolute;
-  left: 330px;
-  top: 150px;
   width: 250px;
   height: 40px;
   line-height: 37px;
@@ -479,27 +480,79 @@ h1 {
   text-align: center;
   border: 1px solid rgba(246, 246, 246, 0.2);
 }
-/* line 80, ../sass/_global/_carousel.sass */
+/* line 79, ../sass/_global/_carousel.sass */
 .carousel .line-up li.one {
   background: transparent url("images/carousel_01.jpg") no-repeat left top;
 }
-/* line 82, ../sass/_global/_carousel.sass */
+/* line 81, ../sass/_global/_carousel.sass */
+.carousel .line-up li.one h2 {
+  font-size: 1.38462em;
+  line-height: 1.33333em;
+  color: white;
+  left: 260px;
+  top: 135px;
+  width: 300px;
+}
+/* line 87, ../sass/_global/_carousel.sass */
+.carousel .line-up li.one a {
+  left: 260px;
+  top: 220px;
+  width: 240px;
+}
+/* line 91, ../sass/_global/_carousel.sass */
 .carousel .line-up li.two {
   background: transparent url("images/carousel_02.jpg") no-repeat left top;
 }
-/* line 84, ../sass/_global/_carousel.sass */
+/* line 93, ../sass/_global/_carousel.sass */
+.carousel .line-up li.two h2 {
+  font-size: 1.38462em;
+  line-height: 1.33333em;
+  color: white;
+  right: 260px;
+  top: 130px;
+  width: 300px;
+}
+/* line 99, ../sass/_global/_carousel.sass */
+.carousel .line-up li.two a {
+  right: 390px;
+  top: 240px;
+  width: 170px;
+}
+/* line 103, ../sass/_global/_carousel.sass */
 .carousel .line-up li.three {
   background: transparent url("images/carousel_03.jpg") no-repeat left top;
 }
-/* line 86, ../sass/_global/_carousel.sass */
+/* line 105, ../sass/_global/_carousel.sass */
+.carousel .line-up li.three h2 {
+  font-size: 1.38462em;
+  line-height: 1.77778em;
+  color: white;
+  right: 210px;
+  top: 40px;
+  width: 300px;
+}
+/* line 111, ../sass/_global/_carousel.sass */
+.carousel .line-up li.three a {
+  right: 340px;
+  top: 160px;
+  width: 170px;
+}
+/* line 115, ../sass/_global/_carousel.sass */
 .carousel .line-up li.four {
   background: transparent url("images/carousel_04.jpg") no-repeat left top;
 }
-/* line 88, ../sass/_global/_carousel.sass */
+/* line 117, ../sass/_global/_carousel.sass */
 .carousel .line-up li.four h2 {
   font-size: 1.38462em;
   line-height: 1.77778em;
-  width: 300px;
+  left: 160px;
+  top: 40px;
+  width: 445px;
+}
+/* line 122, ../sass/_global/_carousel.sass */
+.carousel .line-up li.four a {
+  left: 270px;
+  top: 120px;
 }
 
 /* line 3, ../sass/_global/_footer.sass */

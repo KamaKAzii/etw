@@ -54,19 +54,18 @@ $carousel-offset: -70px
     position: relative
     h2
       position: absolute
-      left: 160px
-      top: 40px
       // color: $text-color-light
       +adjust-font-size-to($font-size-large)
+      span
+        +adjust-font-size-to($font-size-normal, 2, $font-size-large)
     // Move this to _buttons.sass if more styles arise.
     // This is quite inconsistent so variables not used.
+        
     a
       +background-image(linear-gradient(#04496f, #063c5a))
       +border-radius(30px)
       display: block
       position: absolute
-      left: 330px
-      top: 150px
       width: 250px
       height: 40px
       line-height: 37px
@@ -79,12 +78,47 @@ $carousel-offset: -70px
   .line-up li
     &.one
       background: transparent url('images/carousel_01.jpg') no-repeat left top
+      h2
+        +adjust-font-size-to($font-size-medium, 1.5)
+        color: $text-color-white
+        left: 260px
+        top: 135px
+        width: 300px
+      a
+        left: 260px
+        top: 220px
+        width: 240px
     &.two
       background: transparent url('images/carousel_02.jpg') no-repeat left top
+      h2
+        +adjust-font-size-to($font-size-medium, 1.5)
+        color: $text-color-white
+        right: 260px
+        top: 130px
+        width: 300px
+      a
+        right: 390px
+        top: 240px
+        width: 170px
     &.three
       background: transparent url('images/carousel_03.jpg') no-repeat left top
+      h2
+        +adjust-font-size-to($font-size-medium)
+        color: $text-color-white
+        right: 210px
+        top: 40px
+        width: 300px
+      a
+        right: 340px
+        top: 160px
+        width: 170px
     &.four
       background: transparent url('images/carousel_04.jpg') no-repeat left top
       h2
         +adjust-font-size-to($font-size-medium)
-        width: 300px
+        left: 160px
+        top: 40px
+        width: 445px
+      a
+        left: 270px
+        top: 120px
