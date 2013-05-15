@@ -433,6 +433,27 @@ h1 {
 }
 
 /* line 35, ../sass/_global/_carousel.sass */
+.carousel-edge-lhs, .carousel-edge-rhs {
+  position: absolute;
+  top: 0;
+  width: 19px;
+  height: 509px;
+  z-index: 800;
+}
+
+/* line 41, ../sass/_global/_carousel.sass */
+.carousel-edge-lhs {
+  left: -90px;
+  background: transparent url("images/carousel_edge_left.png") no-repeat left top;
+}
+
+/* line 44, ../sass/_global/_carousel.sass */
+.carousel-edge-rhs {
+  right: -108px;
+  background: transparent url("images/carousel_edge_right.png") no-repeat left top;
+}
+
+/* line 47, ../sass/_global/_carousel.sass */
 .carousel {
   position: relative;
   height: 509px;
@@ -440,7 +461,7 @@ h1 {
   overflow: hidden;
   margin-left: -70px;
 }
-/* line 41, ../sass/_global/_carousel.sass */
+/* line 53, ../sass/_global/_carousel.sass */
 .carousel .line-up {
   position: absolute;
   top: 0;
@@ -448,29 +469,29 @@ h1 {
   height: 509px;
   width: 4480px;
 }
-/* line 47, ../sass/_global/_carousel.sass */
+/* line 59, ../sass/_global/_carousel.sass */
 .carousel .hideMe {
   display: none;
 }
-/* line 49, ../sass/_global/_carousel.sass */
+/* line 61, ../sass/_global/_carousel.sass */
 .carousel .line-up li {
   float: left;
   width: 1120px;
   height: 509px;
   position: relative;
 }
-/* line 55, ../sass/_global/_carousel.sass */
+/* line 67, ../sass/_global/_carousel.sass */
 .carousel .line-up li h2 {
   position: absolute;
   font-size: 1.84615em;
   line-height: 1.33333em;
 }
-/* line 59, ../sass/_global/_carousel.sass */
+/* line 71, ../sass/_global/_carousel.sass */
 .carousel .line-up li h2 span {
   font-size: 0.54167em;
   line-height: 2.46154em;
 }
-/* line 64, ../sass/_global/_carousel.sass */
+/* line 76, ../sass/_global/_carousel.sass */
 .carousel .line-up li a {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #04496f), color-stop(100%, #063c5a));
   background-image: -webkit-linear-gradient(#04496f, #063c5a);
@@ -492,11 +513,11 @@ h1 {
   text-align: center;
   border: 1px solid rgba(246, 246, 246, 0.2);
 }
-/* line 79, ../sass/_global/_carousel.sass */
+/* line 91, ../sass/_global/_carousel.sass */
 .carousel .line-up li.one {
   background: transparent url("images/carousel_01.jpg") no-repeat left top;
 }
-/* line 81, ../sass/_global/_carousel.sass */
+/* line 93, ../sass/_global/_carousel.sass */
 .carousel .line-up li.one h2 {
   font-size: 1.38462em;
   line-height: 1.33333em;
@@ -505,17 +526,17 @@ h1 {
   top: 135px;
   width: 300px;
 }
-/* line 87, ../sass/_global/_carousel.sass */
+/* line 99, ../sass/_global/_carousel.sass */
 .carousel .line-up li.one a {
   left: 260px;
   top: 220px;
   width: 240px;
 }
-/* line 91, ../sass/_global/_carousel.sass */
+/* line 103, ../sass/_global/_carousel.sass */
 .carousel .line-up li.two {
   background: transparent url("images/carousel_02.jpg") no-repeat left top;
 }
-/* line 93, ../sass/_global/_carousel.sass */
+/* line 105, ../sass/_global/_carousel.sass */
 .carousel .line-up li.two h2 {
   font-size: 1.38462em;
   line-height: 1.33333em;
@@ -524,17 +545,17 @@ h1 {
   top: 130px;
   width: 300px;
 }
-/* line 99, ../sass/_global/_carousel.sass */
+/* line 111, ../sass/_global/_carousel.sass */
 .carousel .line-up li.two a {
   right: 390px;
   top: 240px;
   width: 170px;
 }
-/* line 103, ../sass/_global/_carousel.sass */
+/* line 115, ../sass/_global/_carousel.sass */
 .carousel .line-up li.three {
   background: transparent url("images/carousel_03.jpg") no-repeat left top;
 }
-/* line 105, ../sass/_global/_carousel.sass */
+/* line 117, ../sass/_global/_carousel.sass */
 .carousel .line-up li.three h2 {
   font-size: 1.38462em;
   line-height: 1.77778em;
@@ -543,17 +564,17 @@ h1 {
   top: 40px;
   width: 300px;
 }
-/* line 111, ../sass/_global/_carousel.sass */
+/* line 123, ../sass/_global/_carousel.sass */
 .carousel .line-up li.three a {
   right: 340px;
   top: 160px;
   width: 170px;
 }
-/* line 115, ../sass/_global/_carousel.sass */
+/* line 127, ../sass/_global/_carousel.sass */
 .carousel .line-up li.four {
   background: transparent url("images/carousel_04.jpg") no-repeat left top;
 }
-/* line 117, ../sass/_global/_carousel.sass */
+/* line 129, ../sass/_global/_carousel.sass */
 .carousel .line-up li.four h2 {
   font-size: 1.38462em;
   line-height: 1.77778em;
@@ -561,7 +582,7 @@ h1 {
   top: 40px;
   width: 445px;
 }
-/* line 122, ../sass/_global/_carousel.sass */
+/* line 134, ../sass/_global/_carousel.sass */
 .carousel .line-up li.four a {
   left: 270px;
   top: 120px;

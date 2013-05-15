@@ -3,7 +3,7 @@
     carousel: function (opt) {
       var settings = $.extend({
         'panelWidth' : '1120',
-        'animationDuration' : '1000',
+        'animationDuration' : 2000,
         'classNav' : 'carouselNav', // Class name for the carousel UL
         'classPrev' : 'carouselPrev', // Class name for the 'previous' LI
         'classNext' : 'carouselNext', // Class name for the 'next' LI

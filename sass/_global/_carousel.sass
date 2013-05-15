@@ -32,6 +32,18 @@ $carousel-offset: -70px
   &.active
     background: $carousel-dot-inside-on
 
+.carousel-edge-lhs, .carousel-edge-rhs
+  position: absolute
+  top: 0
+  width: 19px
+  height: 509px
+  z-index: 800
+.carousel-edge-lhs
+  left: -90px
+  background: transparent url('images/carousel_edge_left.png') no-repeat left top
+.carousel-edge-rhs
+  right: -108px
+  background: transparent url('images/carousel_edge_right.png') no-repeat left top
 .carousel
   position: relative
   height: $carousel-height
