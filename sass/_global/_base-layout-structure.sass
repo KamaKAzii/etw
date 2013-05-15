@@ -74,14 +74,18 @@ h1
     padding-top: 5px
     padding-left: $grid-gutter
     padding-right: $grid-gutter
-    
   span
-    display: block
+    +float(left)
   .link
     +trailer(0.5)
+    background: transparent url('images/nav_arrow_o.png') no-repeat right 7px
+    padding-right: $grid-gutter * 2
   .description
+    clear: left
     font-size: $font-size-small
     color: $text-color
+.active .link
+  background: transparent url('images/nav_arrow_i.png') no-repeat right 7px
 
 .section
   position: relative
