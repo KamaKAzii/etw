@@ -29,16 +29,27 @@
   margin: 0 auto
   +leader(2)
   +trailer(2)
+  position: relative
   width: 550px
   padding-left: 60px
-  background: transparent url('images/quotes.jpg') no-repeat left top
+  background: transparent url('images/quotes_open.jpg') no-repeat left top
   clear: left
+  .close-quote
+    position: absolute
+    bottom: 36px
+    right: 300px
+    background: transparent url('images/quotes_close.jpg') no-repeat left top
+    width: 42px
+    height: 34px
+    z-index: 5
   span
     display: block
   .content
     +trailer(1)
+    position: relative
+    width: 470px
     font-style: italic
-    text-align: center
+    z-index: 10
   .name
     +float(right)
     background: transparent url('images/avatar.jpg') no-repeat left top

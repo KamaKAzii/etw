@@ -641,9 +641,10 @@ h1 {
   margin: 0 auto;
   margin-top: 2.46154em;
   margin-bottom: 2.46154em;
+  position: relative;
   width: 550px;
   padding-left: 60px;
-  background: transparent url("images/quotes.jpg") no-repeat left top;
+  background: transparent url("images/quotes_open.jpg") no-repeat left top;
   clear: left;
 }
 /* line 38, ../../../.rvm/gems/ruby-1.9.3-p392@etw/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
@@ -652,17 +653,29 @@ h1 {
   display: table;
   clear: both;
 }
-/* line 36, ../sass/_global/_footer.sass */
+/* line 37, ../sass/_global/_footer.sass */
+.testimonial .close-quote {
+  position: absolute;
+  bottom: 36px;
+  right: 300px;
+  background: transparent url("images/quotes_close.jpg") no-repeat left top;
+  width: 42px;
+  height: 34px;
+  z-index: 5;
+}
+/* line 45, ../sass/_global/_footer.sass */
 .testimonial span {
   display: block;
 }
-/* line 38, ../sass/_global/_footer.sass */
+/* line 47, ../sass/_global/_footer.sass */
 .testimonial .content {
   margin-bottom: 1.23077em;
+  position: relative;
+  width: 470px;
   font-style: italic;
-  text-align: center;
+  z-index: 10;
 }
-/* line 42, ../sass/_global/_footer.sass */
+/* line 53, ../sass/_global/_footer.sass */
 .testimonial .name {
   display: inline;
   float: right;
@@ -676,7 +689,7 @@ h1 {
   *zoom: 1;
   position: absolute;
   left: 0;
-  top: 320px;
+  top: 295px;
   z-index: 100;
 }
 /* line 38, ../../../.rvm/gems/ruby-1.9.3-p392@etw/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
