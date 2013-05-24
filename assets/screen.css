@@ -451,13 +451,13 @@ h1 {
 
 /* line 41, ../sass/_global/_carousel.sass */
 .carousel-edge-lhs {
-  left: -90px;
+  left: -70px;
   background: transparent url("images/carousel_edge_left.png") no-repeat left top;
 }
 
 /* line 44, ../sass/_global/_carousel.sass */
 .carousel-edge-rhs {
-  right: -108px;
+  right: -90px;
   background: transparent url("images/carousel_edge_right.png") no-repeat left top;
 }
 
@@ -523,9 +523,10 @@ h1 {
 }
 /* line 91, ../sass/_global/_carousel.sass */
 .carousel .line-up li.one {
-  background: transparent url("images/carousel_01.jpg") no-repeat left top;
+  background: transparent url("images/carousel_01.jpg") no-repeat center top;
+  background-size: 96% 96%;
 }
-/* line 93, ../sass/_global/_carousel.sass */
+/* line 94, ../sass/_global/_carousel.sass */
 .carousel .line-up li.one h2 {
   font-size: 1.38462em;
   line-height: 1.11111em;
@@ -534,17 +535,18 @@ h1 {
   top: 145px;
   width: 300px;
 }
-/* line 99, ../sass/_global/_carousel.sass */
+/* line 100, ../sass/_global/_carousel.sass */
 .carousel .line-up li.one a {
   left: 260px;
   top: 220px;
   width: 240px;
 }
-/* line 103, ../sass/_global/_carousel.sass */
+/* line 104, ../sass/_global/_carousel.sass */
 .carousel .line-up li.two {
-  background: transparent url("images/carousel_02.jpg") no-repeat left top;
+  background: transparent url("images/carousel_02.jpg") no-repeat center top;
+  background-size: 96% 96%;
 }
-/* line 105, ../sass/_global/_carousel.sass */
+/* line 107, ../sass/_global/_carousel.sass */
 .carousel .line-up li.two h2 {
   font-size: 1.38462em;
   line-height: 1.11111em;
@@ -553,17 +555,18 @@ h1 {
   top: 140px;
   width: 300px;
 }
-/* line 111, ../sass/_global/_carousel.sass */
+/* line 113, ../sass/_global/_carousel.sass */
 .carousel .line-up li.two a {
   right: 390px;
   top: 240px;
   width: 170px;
 }
-/* line 115, ../sass/_global/_carousel.sass */
-.carousel .line-up li.three {
-  background: transparent url("images/carousel_03.jpg") no-repeat left top;
-}
 /* line 117, ../sass/_global/_carousel.sass */
+.carousel .line-up li.three {
+  background: transparent url("images/carousel_03.jpg") no-repeat center top;
+  background-size: 96% 96%;
+}
+/* line 120, ../sass/_global/_carousel.sass */
 .carousel .line-up li.three h2 {
   font-size: 1.38462em;
   line-height: 1.11111em;
@@ -572,17 +575,18 @@ h1 {
   top: 75px;
   width: 300px;
 }
-/* line 123, ../sass/_global/_carousel.sass */
+/* line 126, ../sass/_global/_carousel.sass */
 .carousel .line-up li.three a {
   right: 340px;
   top: 160px;
   width: 170px;
 }
-/* line 127, ../sass/_global/_carousel.sass */
+/* line 130, ../sass/_global/_carousel.sass */
 .carousel .line-up li.four {
-  background: transparent url("images/carousel_04.jpg") no-repeat left top;
+  background: transparent url("images/carousel_04.jpg") no-repeat center top;
+  background-size: 96% 96%;
 }
-/* line 129, ../sass/_global/_carousel.sass */
+/* line 133, ../sass/_global/_carousel.sass */
 .carousel .line-up li.four h2 {
   font-size: 1.38462em;
   line-height: 1.11111em;
@@ -590,7 +594,7 @@ h1 {
   top: 60px;
   width: 445px;
 }
-/* line 134, ../sass/_global/_carousel.sass */
+/* line 138, ../sass/_global/_carousel.sass */
 .carousel .line-up li.four a {
   left: 270px;
   top: 120px;
@@ -726,17 +730,17 @@ h1 {
 
 /* line 27, ../sass/_global/_homepage.sass */
 .articles .one .image {
-  background: transparent url("images/article_01.jpg") repeat-x left top;
+  background: transparent url("images/article_04.jpg") repeat-x left top;
 }
 /* line 29, ../sass/_global/_homepage.sass */
 .articles .two .image {
-  background: transparent url("images/article_02.jpg") repeat-x left top;
+  background: transparent url("images/article_03.jpg") repeat-x left top;
 }
 /* line 31, ../sass/_global/_homepage.sass */
 .articles .three .image {
-  background: transparent url("images/article_03.jpg") repeat-x left top;
+  background: transparent url("images/article_01.jpg") repeat-x left top;
 }
 /* line 33, ../sass/_global/_homepage.sass */
 .articles .four .image {
-  background: transparent url("images/article_04.jpg") repeat-x left top;
+  background: transparent url("images/article_02.jpg") repeat-x left top;
 }
