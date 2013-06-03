@@ -747,15 +747,23 @@ h1 {
 
 /* line 4, ../sass/_global/_trainer.sass */
 .trainer .section {
+  *zoom: 1;
+  margin-bottom: 7.38462em;
   background: white;
 }
-/* line 6, ../sass/_global/_trainer.sass */
+/* line 38, ../../../.rvm/gems/ruby-1.9.3-p392@etw/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.trainer .section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 8, ../sass/_global/_trainer.sass */
 .trainer .spark {
   margin-bottom: 1.23077em;
   width: 100%;
   height: auto;
 }
-/* line 10, ../sass/_global/_trainer.sass */
+/* line 12, ../sass/_global/_trainer.sass */
 .trainer .blurb {
   *zoom: 1;
   margin: 20px;
@@ -767,37 +775,37 @@ h1 {
   display: table;
   clear: both;
 }
-/* line 14, ../sass/_global/_trainer.sass */
+/* line 16, ../sass/_global/_trainer.sass */
 .trainer .blurb h2 {
   font-size: 1.84615em;
   line-height: 1.33333em;
   margin-bottom: 0.33333em;
 }
-/* line 17, ../sass/_global/_trainer.sass */
+/* line 19, ../sass/_global/_trainer.sass */
 .trainer .blurb p {
   color: #666666;
 }
-/* line 19, ../sass/_global/_trainer.sass */
+/* line 21, ../sass/_global/_trainer.sass */
 .trainer .blurb .sub-lhs {
   display: inline;
   float: left;
   width: 595px;
   margin-right: 20px;
 }
-/* line 23, ../sass/_global/_trainer.sass */
+/* line 25, ../sass/_global/_trainer.sass */
 .trainer .blurb .sub-rhs {
   display: inline;
   float: left;
   width: 305px;
 }
-/* line 27, ../sass/_global/_trainer.sass */
+/* line 29, ../sass/_global/_trainer.sass */
 .trainer .subnavigation {
   display: inline;
   float: left;
   clear: both;
   width: 100%;
 }
-/* line 31, ../sass/_global/_trainer.sass */
+/* line 33, ../sass/_global/_trainer.sass */
 .trainer .subnavigation ul {
   *zoom: 1;
   margin: 0 20px;
@@ -809,7 +817,7 @@ h1 {
   display: table;
   clear: both;
 }
-/* line 35, ../sass/_global/_trainer.sass */
+/* line 37, ../sass/_global/_trainer.sass */
 .trainer .subnavigation li {
   display: inline;
   float: left;
@@ -827,32 +835,32 @@ h1 {
   color: #005983;
   border-bottom: none;
 }
-/* line 44, ../sass/_global/_trainer.sass */
+/* line 46, ../sass/_global/_trainer.sass */
 .trainer .subnavigation li span {
   display: block;
   line-height: 44px;
   padding: 0 20px;
   border-bottom: 1px solid #b2cdda;
 }
-/* line 49, ../sass/_global/_trainer.sass */
+/* line 51, ../sass/_global/_trainer.sass */
 .trainer .subnavigation li.active {
   background: white;
   color: black;
 }
-/* line 52, ../sass/_global/_trainer.sass */
+/* line 54, ../sass/_global/_trainer.sass */
 .trainer .subnavigation li.active span {
   border-bottom: none;
 }
-/* line 54, ../sass/_global/_trainer.sass */
+/* line 56, ../sass/_global/_trainer.sass */
 .trainer .subnavigation li:hover {
   cursor: pointer;
   background: white;
 }
-/* line 59, ../sass/_global/_trainer.sass */
+/* line 61, ../sass/_global/_trainer.sass */
 .trainer .subcontent-container {
   margin: 20px;
 }
-/* line 61, ../sass/_global/_trainer.sass */
+/* line 63, ../sass/_global/_trainer.sass */
 .trainer .subcontent {
   display: inline;
   float: left;
@@ -860,10 +868,65 @@ h1 {
   width: 916px;
   margin: 0 20px;
   border: 1px solid #b2cdda;
+  margin-bottom: 1.84615em;
   border-top: none;
   display: none;
 }
-/* line 70, ../sass/_global/_trainer.sass */
+/* line 73, ../sass/_global/_trainer.sass */
 .trainer .subcontent.active {
   display: block;
+}
+/* line 78, ../sass/_global/_trainer.sass */
+.trainer .subcontent.location h4 {
+  margin-bottom: 1.23077em;
+  font-weight: bold;
+}
+/* line 81, ../sass/_global/_trainer.sass */
+.trainer .subcontent.location .information {
+  display: inline;
+  float: left;
+  margin-bottom: 1.23077em;
+  color: #666666;
+  margin-right: 20px;
+  width: 429px;
+}
+/* line 87, ../sass/_global/_trainer.sass */
+.trainer .subcontent.location .trainer-profile-picture {
+  display: inline;
+  float: left;
+  width: 200px;
+  margin-right: 20px;
+}
+/* line 91, ../sass/_global/_trainer.sass */
+.trainer .subcontent.location .contact-details {
+  display: inline;
+  float: left;
+  width: 209px;
+}
+/* line 94, ../sass/_global/_trainer.sass */
+.trainer .subcontent.location .contact-details > li {
+  margin-bottom: 0.30769em;
+  line-height: 24px;
+}
+/* line 97, ../sass/_global/_trainer.sass */
+.trainer .subcontent.location .contact-details .phone {
+  padding-left: 26px;
+  background: transparent url("images/icon-phone.jpg") no-repeat left top;
+}
+/* line 100, ../sass/_global/_trainer.sass */
+.trainer .subcontent.location .contact-details .email {
+  padding-left: 26px;
+  background: transparent url("images/icon-email.jpg") no-repeat left top;
+}
+/* line 103, ../sass/_global/_trainer.sass */
+.trainer .subcontent.location .contact-details .time {
+  padding-left: 26px;
+  background: transparent url("images/icon-time.jpg") no-repeat left top;
+}
+/* line 106, ../sass/_global/_trainer.sass */
+.trainer .subcontent.location .map {
+  margin-bottom: 1.23077em;
+  display: inline;
+  float: left;
+  width: 427px;
 }

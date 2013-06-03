@@ -2,6 +2,8 @@
 
 .trainer
   .section  
+    +pie-clearfix
+    +trailer(6)
     background: $background-color
   .spark
     +trailer
@@ -65,7 +67,44 @@
     width: 920px - 4px
     margin: 0 $grid-gutter * 2
     border: 1px solid $border-color-light
+    +trailer(1.5)
     border-top: none
     display: none
     &.active
       display: block
+
+  // Individual subcontent articles
+  .subcontent.location
+    h4
+      +trailer(1)
+      font-weight: bold
+    .information
+      +float(left)
+      +trailer(1)
+      color: $text-color-light
+      margin-right: $grid-gutter * 2
+      width: 429px
+    .trainer-profile-picture
+      +float(left)
+      width: 200px
+      margin-right: $grid-gutter * 2
+    .contact-details
+      +float(left)
+      width: 209px
+      > li
+        +trailer(0.25)
+        line-height: $font-size-large
+      .phone
+        padding-left: 26px
+        background: transparent url('images/icon-phone.jpg') no-repeat left top
+      .email
+        padding-left: 26px
+        background: transparent url('images/icon-email.jpg') no-repeat left top
+      .time
+        padding-left: 26px
+        background: transparent url('images/icon-time.jpg') no-repeat left top
+    .map
+      +trailer(1)
+      +float(left)
+      width: 427px
+
