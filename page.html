@@ -196,7 +196,6 @@
 
             <script>
               var $subnavigationLis = $(".subnavigation li");
-
               $subnavigationLis.on("click", function() {
                 var $this = $(this);
                 if (!$this.hasClass("active"))
@@ -208,8 +207,6 @@
                   var targetClass = $this.attr("id");
                   $(".subcontent.active").toggleClass("active");
                   $(".subcontent." + targetClass).toggleClass("active");
-                } else {
-                  console.log("goodbye");
                 }
               });
             </script>
