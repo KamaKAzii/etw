@@ -744,3 +744,126 @@ h1 {
 .articles .four .image {
   background: transparent url("images/article_02.jpg") repeat-x left top;
 }
+
+/* line 4, ../sass/_global/_trainer.sass */
+.trainer .section {
+  background: white;
+}
+/* line 6, ../sass/_global/_trainer.sass */
+.trainer .spark {
+  margin-bottom: 1.23077em;
+  width: 100%;
+  height: auto;
+}
+/* line 10, ../sass/_global/_trainer.sass */
+.trainer .blurb {
+  *zoom: 1;
+  margin: 20px;
+  margin-bottom: 2.46154em;
+}
+/* line 38, ../../../.rvm/gems/ruby-1.9.3-p392@etw/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.trainer .blurb:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 14, ../sass/_global/_trainer.sass */
+.trainer .blurb h2 {
+  font-size: 1.84615em;
+  line-height: 1.33333em;
+  margin-bottom: 0.33333em;
+}
+/* line 17, ../sass/_global/_trainer.sass */
+.trainer .blurb p {
+  color: #666666;
+}
+/* line 19, ../sass/_global/_trainer.sass */
+.trainer .blurb .sub-lhs {
+  display: inline;
+  float: left;
+  width: 595px;
+  margin-right: 20px;
+}
+/* line 23, ../sass/_global/_trainer.sass */
+.trainer .blurb .sub-rhs {
+  display: inline;
+  float: left;
+  width: 305px;
+}
+/* line 27, ../sass/_global/_trainer.sass */
+.trainer .subnavigation {
+  display: inline;
+  float: left;
+  clear: both;
+  width: 100%;
+}
+/* line 31, ../sass/_global/_trainer.sass */
+.trainer .subnavigation ul {
+  *zoom: 1;
+  margin: 0 20px;
+  width: 920px;
+}
+/* line 38, ../../../.rvm/gems/ruby-1.9.3-p392@etw/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.trainer .subnavigation ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 35, ../sass/_global/_trainer.sass */
+.trainer .subnavigation li {
+  display: inline;
+  float: left;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 1.38462em;
+  line-height: 1.77778em;
+  width: 304px;
+  border: 1px solid #b2cdda;
+  background: #dcf2fa;
+  color: #005983;
+  border-bottom: none;
+}
+/* line 44, ../sass/_global/_trainer.sass */
+.trainer .subnavigation li span {
+  display: block;
+  line-height: 44px;
+  padding: 0 20px;
+  border-bottom: 1px solid #b2cdda;
+}
+/* line 49, ../sass/_global/_trainer.sass */
+.trainer .subnavigation li.active {
+  background: white;
+  color: black;
+}
+/* line 52, ../sass/_global/_trainer.sass */
+.trainer .subnavigation li.active span {
+  border-bottom: none;
+}
+/* line 54, ../sass/_global/_trainer.sass */
+.trainer .subnavigation li:hover {
+  cursor: pointer;
+  background: white;
+}
+/* line 59, ../sass/_global/_trainer.sass */
+.trainer .subcontent-container {
+  margin: 20px;
+}
+/* line 61, ../sass/_global/_trainer.sass */
+.trainer .subcontent {
+  display: inline;
+  float: left;
+  clear: both;
+  width: 916px;
+  margin: 0 20px;
+  border: 1px solid #b2cdda;
+  border-top: none;
+  display: none;
+}
+/* line 70, ../sass/_global/_trainer.sass */
+.trainer .subcontent.active {
+  display: block;
+}

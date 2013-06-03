@@ -1,0 +1,71 @@
+// _trainer.sass
+
+.trainer
+  .section  
+    background: $background-color
+  .spark
+    +trailer
+    width: 100%
+    height: auto
+  .blurb
+    +pie-clearfix
+    margin: $grid-gutter * 2
+    +trailer(2)
+    h2
+      +adjust-font-size-to($font-size-large)
+      +trailer(0.5, $font-size-large)
+    p
+      color: $text-color-light
+    .sub-lhs
+      +float(left)
+      width: 595px
+      margin-right: $grid-gutter * 2
+    .sub-rhs
+      +float(left)
+      width: 305px
+  // Subnavigation
+  .subnavigation
+    +float(left)
+    clear: both
+    width: 100%
+    ul
+      +pie-clearfix
+      margin: 0 $grid-gutter * 2
+      width: 920px
+    li  
+      +float(left)
+      +border-top-radius(5px)
+      +adjust-font-size-to($font-size-medium)
+      width: 304px
+      border: 1px solid $border-color-light
+      background: $background-color-nav-tab
+      color: $theme-color
+      border-bottom: none
+      span
+        display: block
+        line-height: 44px
+        padding: 0 $grid-gutter * 2
+        border-bottom: 1px solid $border-color-light
+      &.active
+        background: $background-color
+        color: $text-color
+        span
+          border-bottom: none
+      &:hover
+        cursor: pointer
+        background: $background-color
+
+  // Subcontent articles
+  .subcontent-container
+    margin: $grid-gutter * 2
+  .subcontent
+    +float(left)
+    clear: both
+    // -4px due to inaccuracies of subnav.
+    width: 920px - 4px
+    margin: 0 $grid-gutter * 2
+    border: 1px solid $border-color-light
+    border-top: none
+    display: none
+    &.active
+      display: block
