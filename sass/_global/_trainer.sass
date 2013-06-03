@@ -74,6 +74,19 @@
       display: block
 
   // Individual subcontent articles
+  .subcontent .contact-details
+    > li
+      +trailer(0.25)
+      line-height: $font-size-large
+    .phone
+      padding-left: 26px
+      background: transparent url('images/icon-phone.jpg') no-repeat left top
+    .email
+      padding-left: 26px
+      background: transparent url('images/icon-email.jpg') no-repeat left top
+    .time
+      padding-left: 26px
+      background: transparent url('images/icon-time.jpg') no-repeat left top
   .subcontent.location
     h4
       +trailer(1)
@@ -91,20 +104,33 @@
     .contact-details
       +float(left)
       width: 209px
-      > li
-        +trailer(0.25)
-        line-height: $font-size-large
-      .phone
-        padding-left: 26px
-        background: transparent url('images/icon-phone.jpg') no-repeat left top
-      .email
-        padding-left: 26px
-        background: transparent url('images/icon-email.jpg') no-repeat left top
-      .time
-        padding-left: 26px
-        background: transparent url('images/icon-time.jpg') no-repeat left top
     .map
       +trailer(1)
       +float(left)
       width: 427px
-
+  .subcontent.trainers
+    .contact-details
+      +pie-clearfix
+      +trailer(1)
+      width: 580px
+      > li
+        +float(left)
+        line-height: $font-size-large
+        width: 170px
+      .phone
+        width: 120px
+      .email
+        width: 150px
+    .trainer > li
+      +trailer(1)
+    h4
+      +trailer(1)
+      font-weight: bold
+    img
+      +float(left)
+    li
+      +pie-clearfix
+    .rhs
+      +float(left)
+      width: 500px
+      margin-left: $grid-gutter * 2
