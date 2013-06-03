@@ -194,6 +194,25 @@
               </div>
             </div>
 
+            <script>
+              var $subnavigationLis = $(".subnavigation li");
+
+              $subnavigationLis.on("click", function() {
+                var $this = $(this);
+                if (!$this.hasClass("active"))
+                {
+                  // Remove active class from old tab.
+                  $(".subnavigation li.active").toggleClass("active");
+                  // Add active class to clicked tab.
+                  $this.toggleClass("active");
+                  var targetClass = $this.attr("id");
+                  $(".subcontent.active").toggleClass("active");
+                  $(".subcontent." + targetClass).toggleClass("active");
+                } else {
+                  console.log("goodbye");
+                }
+              });
+            </script>
           </section>
         </div>
       </div>
