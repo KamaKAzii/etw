@@ -9,11 +9,84 @@
   <body>
 
     <div class="modal-whitewash">
-      <div class="modal-container">
-        <button class="button-primary">
-          Button text
-        </button>
-      </div>
+    </div>
+    <div class="modal-content">
+      <a href="#" class="close">&times; Close</a>
+      <form>
+        <h2>Free Week Pass</h2>
+        <p>
+          Complete this form to sign up for your FREE week pass. Please complete one form per participant, using unique email addresses for each participant. The lead trainer for the area you select will be in touch to guide you from here on in...
+        </p>
+        <h5>Contact Details</h5>
+        <ul>
+          <li>
+            <div class="input-group">
+              <label>First Name</label>
+              <input type="text" />
+            </div>
+          </li>
+          <li>
+            <div class="input-group">
+              <label>Last Name</label>
+              <input type="text" />
+            </div>
+          </li>
+          <li>
+            <div class="input-group">
+              <label>Contact No.</label>
+              <input type="text" />
+            </div>
+          </li>
+          <li>
+            <div class="input-group">
+              <label>Email Address</label>
+              <input type="text" />
+            </div>
+          </li>
+        </ul>
+
+        <div class="explanation-input-group">
+          <h5>Which group would you like to train with?</h5>
+          <p>
+            Some groups may have reached maximum capacity. If there are no spaces available we will be in contact with you to confirm an alternative group to start with.
+          </p>
+          <select>
+            <option>Group 1</option>
+            <option>Group 2</option>
+            <option>Group 3</option>
+          </select>
+        </div>
+
+        <div class="explanation-input-group">
+          <h5>When would you like to start?</h5>
+          <p>
+            This is subject to availabiliy. Should a group be full we will contact you to arrange for an alternative starting date.
+          </p>
+          <input type="text" />
+        </div>
+
+        <div class="explanation-input-group">
+          <h5>How did you hear about Evolution</h5>
+          <ul>
+            <li>
+              <div class="input-group">
+                <label>Which marketing channel?</label>
+                <input type="text" />
+              </div>
+            </li>
+            <li>
+              <div class="input-group">
+                <label>If referred, who referred you?</label>
+                <input type="text" />
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="actions">
+          <button class="button-primary">Submit</button>
+        </div>
+      </form>
     </div>
 
     <div class="uber-wrapper">
@@ -341,5 +414,13 @@
         </footer>
       </div>
     </div>
+
+    <script>
+      $(".modal-content .close").on("click", function(e) {
+        $(".modal-content").remove();
+        $(".modal-whitewash").remove();
+        e.preventDefault();
+      });
+    </script>
   </body>
 </html>

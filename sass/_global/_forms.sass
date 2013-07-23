@@ -1,0 +1,48 @@
+// _forms.sass
+
+input[type='text'],
+input[type='password']
+  +box-sizing(border-box)
+  +float(left)
+  clear: left
+  height: 35px
+  width: 100%
+  font-size: $font-size-medium
+  color: $text-color-light
+
+select
+
+form
+  ul
+    +trailer(1)
+    +pie-clearfix
+    li
+      +pie-clearfix
+      +float(left)
+      +trailer(1)
+      width: 48%
+      margin-left: 4%
+    li:nth-child(2n - 1)
+      margin-left: 0
+  .input-group
+    +pie-clearfix
+    label
+      +float(left)
+      +pie-clearfix
+      +trailer(0.5)
+  .actions
+    +float(left)
+    clear: both
+
+  .explanation-input-group
+    +trailer(1)
+    +pie-clearfix
+    ul
+      +trailer(0)
+    p
+      +float(left)
+      width: 60%
+      margin-right: 10%
+    select
+      +float(left)
+      width: 30%

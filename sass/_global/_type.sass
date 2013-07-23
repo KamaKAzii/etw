@@ -21,7 +21,15 @@ a
     text-decoration: none
     color: lighten($link-color, 30%)
 
+h2
+  font-size: $font-size-large
+  +trailer(1, $font-size-large)
+
 h3
   +trailer(1, $font-size-medium)
   +adjust-font-size-to($font-size-medium, 1.25)
   color: $theme-color-dark
+
+h5
+  +trailer(1, $font-size-medium)
+  +adjust-font-size-to($font-size-medium, 1.25)

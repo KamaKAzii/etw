@@ -1,0 +1,26 @@
+// _modals.sass
+
+.modal-whitewash
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background: rgba(255, 255, 255, 0.7)
+  z-index: 10
+.modal-content
+  position: absolute
+  top: 20px
+  left: 50%
+  z-index: 12
+  margin-left: -350px
+  width: 700px
+  border: 1px solid #919191
+  padding: $grid-gutter * 2
+  background: $background-color url('images/background-modal.jpg') no-repeat right bottom
+  +box-shadow(rgba(0, 0, 0, 0.2) 0 0 10px 2px)
+  .close
+    position: absolute
+    top: $grid-gutter
+    right: $grid-gutter * 2
+
