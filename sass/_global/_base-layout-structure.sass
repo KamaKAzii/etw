@@ -64,8 +64,10 @@ h1
   position: absolute
   right: 0
   bottom: 0
-  width: 780px
+  width: 810px
   height: 75px
+  ul
+    +pie-clearfix
   li
     +float(left)
     width: 135px
@@ -86,6 +88,21 @@ h1
     color: $text-color
 .active .link
   background: transparent url('images/nav_arrow_i.png') no-repeat right 7px
+
+// Main Navigation tab custom widths
+.main-navigation
+  li.about
+    width: 115px
+  li.train
+    width: 140px
+  li.community
+    width: 115px
+  li.other-services
+    width: 115px
+  li.shop
+    width: 85px
+  li.location
+    width: 110px
 
 .section
   position: relative
