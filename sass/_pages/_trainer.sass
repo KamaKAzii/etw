@@ -36,26 +36,55 @@
       width: 920px
     li  
       +float(left)
-      +border-top-radius(5px)
       +adjust-font-size-to($font-size-medium)
-      width: 304px
-      border: 1px solid $border-color-light
-      background: $background-color-nav-tab
-      color: $theme-color
-      border-bottom: none
+      width: 24%
+      margin-left: 1%
+      color: $text-color-white
+      &:first-child
+        width: 25%
+        margin-left: 0
+      div
+        +border-top-radius(10px)
+        border: 1px solid $border-color-very-light
+        border-bottom: none
+        background: $background-color-nav-tab
+        +background-image(linear-gradient(#009ddc, #0089c2))
       span
         display: block
         line-height: 44px
-        padding: 0 $grid-gutter * 2
-        border-bottom: 1px solid $border-color-light
+        padding-left: 55px
       &.active
-        background: $background-color
         color: $text-color
-        span
-          border-bottom: none
+        div
+          background: $background-color
       &:hover
         cursor: pointer
-        background: $background-color
+      &#community
+        div
+          +background-image(linear-gradient(#028ac0, #02618b))
+        span
+          background: transparent url('images/icon-subnav-community-off.png') no-repeat 12px 6px
+        &.active
+          div
+            background: $background-color
+          span
+            background: transparent url('images/icon-subnav-community-on.png') no-repeat 12px 6px
+      &#timetable
+        span
+          background: transparent url('images/icon-subnav-timetable-off.png') no-repeat 12px 6px
+        &.active span
+          background: transparent url('images/icon-subnav-timetable-on.png') no-repeat 12px 6px
+      &#trainers
+        span
+          background: transparent url('images/icon-subnav-trainers-off.png') no-repeat 12px 6px
+        &.active span
+          background: transparent url('images/icon-subnav-trainers-on.png') no-repeat 12px 6px
+      &#location
+        span
+          background: transparent url('images/icon-subnav-location-off.png') no-repeat 12px 6px
+        &.active span
+          background: transparent url('images/icon-subnav-location-on.png') no-repeat 12px 6px
+
 
   // Subcontent articles
   .subcontent-container
@@ -63,12 +92,10 @@
   .subcontent
     +float(left)
     clear: both
-    // -4px due to inaccuracies of subnav.
-    width: 920px - 4px
+    width: 918px
     margin: 0 $grid-gutter * 2
-    border: 1px solid $border-color-light
+    border: 1px solid $border-color-very-light
     +trailer(1.5)
-    border-top: none
     display: none
     &.active
       display: block

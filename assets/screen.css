@@ -757,13 +757,7 @@ h1 {
   height: 50px;
 }
 
-/* line 4, ../sass/_global/_modals.sass */
-.modal-whitewash,
-.modal-content {
-  display: none;
-}
-
-/* line 8, ../sass/_global/_modals.sass */
+/* line 3, ../sass/_global/_modals.sass */
 .modal-whitewash {
   position: fixed;
   left: 0;
@@ -774,7 +768,7 @@ h1 {
   z-index: 10;
 }
 
-/* line 16, ../sass/_global/_modals.sass */
+/* line 11, ../sass/_global/_modals.sass */
 .modal-content {
   position: absolute;
   top: 20px;
@@ -789,7 +783,7 @@ h1 {
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 0 10px 2px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 10px 2px;
 }
-/* line 27, ../sass/_global/_modals.sass */
+/* line 22, ../sass/_global/_modals.sass */
 .modal-content .close {
   position: absolute;
   top: 10px;
@@ -899,7 +893,7 @@ form .explanation-input-group select {
   width: 30%;
 }
 
-/* line 3, ../sass/_global/_homepage.sass */
+/* line 3, ../sass/_pages/_homepage.sass */
 .articles {
   *zoom: 1;
   position: absolute;
@@ -914,7 +908,7 @@ form .explanation-input-group select {
   clear: both;
 }
 
-/* line 9, ../sass/_global/_homepage.sass */
+/* line 9, ../sass/_pages/_homepage.sass */
 .articles .article {
   width: 220px;
   margin-left: 7px;
@@ -923,40 +917,40 @@ form .explanation-input-group select {
   min-height: 330px;
   border: 1px solid white;
 }
-/* line 16, ../sass/_global/_homepage.sass */
+/* line 16, ../sass/_pages/_homepage.sass */
 .articles .article .image {
   margin-bottom: 1.23077em;
   width: 219px;
   height: 147px;
 }
-/* line 20, ../sass/_global/_homepage.sass */
+/* line 20, ../sass/_pages/_homepage.sass */
 .articles .article h3 {
   margin-left: 10px;
 }
-/* line 22, ../sass/_global/_homepage.sass */
+/* line 22, ../sass/_pages/_homepage.sass */
 .articles .article p {
   margin-left: 10px;
   color: #666666;
 }
 
-/* line 27, ../sass/_global/_homepage.sass */
+/* line 27, ../sass/_pages/_homepage.sass */
 .articles .one .image {
   background: transparent url("images/article_04.jpg") repeat-x left top;
 }
-/* line 29, ../sass/_global/_homepage.sass */
+/* line 29, ../sass/_pages/_homepage.sass */
 .articles .two .image {
   background: transparent url("images/article_03.jpg") repeat-x left top;
 }
-/* line 31, ../sass/_global/_homepage.sass */
+/* line 31, ../sass/_pages/_homepage.sass */
 .articles .three .image {
   background: transparent url("images/article_01.jpg") repeat-x left top;
 }
-/* line 33, ../sass/_global/_homepage.sass */
+/* line 33, ../sass/_pages/_homepage.sass */
 .articles .four .image {
   background: transparent url("images/article_02.jpg") repeat-x left top;
 }
 
-/* line 4, ../sass/_global/_trainer.sass */
+/* line 4, ../sass/_pages/_trainer.sass */
 .trainer .section {
   *zoom: 1;
   margin-bottom: 7.38462em;
@@ -968,13 +962,13 @@ form .explanation-input-group select {
   display: table;
   clear: both;
 }
-/* line 8, ../sass/_global/_trainer.sass */
+/* line 8, ../sass/_pages/_trainer.sass */
 .trainer .spark {
   margin-bottom: 1.23077em;
   width: 100%;
   height: auto;
 }
-/* line 12, ../sass/_global/_trainer.sass */
+/* line 12, ../sass/_pages/_trainer.sass */
 .trainer .blurb {
   *zoom: 1;
   margin: 20px;
@@ -986,37 +980,37 @@ form .explanation-input-group select {
   display: table;
   clear: both;
 }
-/* line 16, ../sass/_global/_trainer.sass */
+/* line 16, ../sass/_pages/_trainer.sass */
 .trainer .blurb h2 {
   font-size: 1.84615em;
   line-height: 1.33333em;
   margin-bottom: 0.33333em;
 }
-/* line 19, ../sass/_global/_trainer.sass */
+/* line 19, ../sass/_pages/_trainer.sass */
 .trainer .blurb p {
   color: #666666;
 }
-/* line 21, ../sass/_global/_trainer.sass */
+/* line 21, ../sass/_pages/_trainer.sass */
 .trainer .blurb .sub-lhs {
   display: inline;
   float: left;
   width: 595px;
   margin-right: 20px;
 }
-/* line 25, ../sass/_global/_trainer.sass */
+/* line 25, ../sass/_pages/_trainer.sass */
 .trainer .blurb .sub-rhs {
   display: inline;
   float: left;
   width: 305px;
 }
-/* line 29, ../sass/_global/_trainer.sass */
+/* line 29, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation {
   display: inline;
   float: left;
   clear: both;
   width: 100%;
 }
-/* line 33, ../sass/_global/_trainer.sass */
+/* line 33, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation ul {
   *zoom: 1;
   margin: 0 20px;
@@ -1028,91 +1022,145 @@ form .explanation-input-group select {
   display: table;
   clear: both;
 }
-/* line 37, ../sass/_global/_trainer.sass */
+/* line 37, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li {
   display: inline;
   float: left;
-  -moz-border-radius-topleft: 5px;
-  -webkit-border-top-left-radius: 5px;
-  border-top-left-radius: 5px;
-  -moz-border-radius-topright: 5px;
-  -webkit-border-top-right-radius: 5px;
-  border-top-right-radius: 5px;
   font-size: 1.38462em;
   line-height: 1.77778em;
-  width: 304px;
-  border: 1px solid #b2cdda;
-  background: #dcf2fa;
-  color: #005983;
-  border-bottom: none;
+  width: 24%;
+  margin-left: 1%;
+  color: white;
 }
-/* line 46, ../sass/_global/_trainer.sass */
+/* line 43, ../sass/_pages/_trainer.sass */
+.trainer .subnavigation li:first-child {
+  width: 25%;
+  margin-left: 0;
+}
+/* line 46, ../sass/_pages/_trainer.sass */
+.trainer .subnavigation li div {
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 1px solid #e1e1e1;
+  border-bottom: none;
+  background: #dcf2fa;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #009ddc), color-stop(100%, #0089c2));
+  background-image: -webkit-linear-gradient(#009ddc, #0089c2);
+  background-image: -moz-linear-gradient(#009ddc, #0089c2);
+  background-image: -o-linear-gradient(#009ddc, #0089c2);
+  background-image: linear-gradient(#009ddc, #0089c2);
+}
+/* line 52, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li span {
   display: block;
   line-height: 44px;
-  padding: 0 20px;
-  border-bottom: 1px solid #b2cdda;
+  padding-left: 55px;
 }
-/* line 51, ../sass/_global/_trainer.sass */
+/* line 56, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li.active {
-  background: white;
   color: black;
 }
-/* line 54, ../sass/_global/_trainer.sass */
-.trainer .subnavigation li.active span {
-  border-bottom: none;
-}
-/* line 56, ../sass/_global/_trainer.sass */
-.trainer .subnavigation li:hover {
-  cursor: pointer;
+/* line 58, ../sass/_pages/_trainer.sass */
+.trainer .subnavigation li.active div {
   background: white;
 }
-/* line 61, ../sass/_global/_trainer.sass */
+/* line 60, ../sass/_pages/_trainer.sass */
+.trainer .subnavigation li:hover {
+  cursor: pointer;
+}
+/* line 63, ../sass/_pages/_trainer.sass */
+.trainer .subnavigation li#community div {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #028ac0), color-stop(100%, #02618b));
+  background-image: -webkit-linear-gradient(#028ac0, #02618b);
+  background-image: -moz-linear-gradient(#028ac0, #02618b);
+  background-image: -o-linear-gradient(#028ac0, #02618b);
+  background-image: linear-gradient(#028ac0, #02618b);
+}
+/* line 65, ../sass/_pages/_trainer.sass */
+.trainer .subnavigation li#community span {
+  background: transparent url("images/icon-subnav-community-off.png") no-repeat 12px 6px;
+}
+/* line 68, ../sass/_pages/_trainer.sass */
+.trainer .subnavigation li#community.active div {
+  background: white;
+}
+/* line 70, ../sass/_pages/_trainer.sass */
+.trainer .subnavigation li#community.active span {
+  background: transparent url("images/icon-subnav-community-on.png") no-repeat 12px 6px;
+}
+/* line 73, ../sass/_pages/_trainer.sass */
+.trainer .subnavigation li#timetable span {
+  background: transparent url("images/icon-subnav-timetable-off.png") no-repeat 12px 6px;
+}
+/* line 75, ../sass/_pages/_trainer.sass */
+.trainer .subnavigation li#timetable.active span {
+  background: transparent url("images/icon-subnav-timetable-on.png") no-repeat 12px 6px;
+}
+/* line 78, ../sass/_pages/_trainer.sass */
+.trainer .subnavigation li#trainers span {
+  background: transparent url("images/icon-subnav-trainers-off.png") no-repeat 12px 6px;
+}
+/* line 80, ../sass/_pages/_trainer.sass */
+.trainer .subnavigation li#trainers.active span {
+  background: transparent url("images/icon-subnav-trainers-on.png") no-repeat 12px 6px;
+}
+/* line 83, ../sass/_pages/_trainer.sass */
+.trainer .subnavigation li#location span {
+  background: transparent url("images/icon-subnav-location-off.png") no-repeat 12px 6px;
+}
+/* line 85, ../sass/_pages/_trainer.sass */
+.trainer .subnavigation li#location.active span {
+  background: transparent url("images/icon-subnav-location-on.png") no-repeat 12px 6px;
+}
+/* line 90, ../sass/_pages/_trainer.sass */
 .trainer .subcontent-container {
   margin: 20px;
 }
-/* line 63, ../sass/_global/_trainer.sass */
+/* line 92, ../sass/_pages/_trainer.sass */
 .trainer .subcontent {
   display: inline;
   float: left;
   clear: both;
-  width: 916px;
+  width: 918px;
   margin: 0 20px;
-  border: 1px solid #b2cdda;
+  border: 1px solid #e1e1e1;
   margin-bottom: 1.84615em;
-  border-top: none;
   display: none;
 }
-/* line 73, ../sass/_global/_trainer.sass */
+/* line 100, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.active {
   display: block;
 }
-/* line 78, ../sass/_global/_trainer.sass */
+/* line 105, ../sass/_pages/_trainer.sass */
 .trainer .subcontent .contact-details > li {
   margin-bottom: 0.30769em;
   line-height: 24px;
 }
-/* line 81, ../sass/_global/_trainer.sass */
+/* line 108, ../sass/_pages/_trainer.sass */
 .trainer .subcontent .contact-details .phone {
   padding-left: 26px;
   background: transparent url("images/icon-phone.jpg") no-repeat left top;
 }
-/* line 84, ../sass/_global/_trainer.sass */
+/* line 111, ../sass/_pages/_trainer.sass */
 .trainer .subcontent .contact-details .email {
   padding-left: 26px;
   background: transparent url("images/icon-email.jpg") no-repeat left top;
 }
-/* line 87, ../sass/_global/_trainer.sass */
+/* line 114, ../sass/_pages/_trainer.sass */
 .trainer .subcontent .contact-details .time {
   padding-left: 26px;
   background: transparent url("images/icon-time.jpg") no-repeat left top;
 }
-/* line 91, ../sass/_global/_trainer.sass */
+/* line 118, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.location h4 {
   margin-bottom: 1.23077em;
   font-weight: bold;
 }
-/* line 94, ../sass/_global/_trainer.sass */
+/* line 121, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.location .information {
   display: inline;
   float: left;
@@ -1121,27 +1169,27 @@ form .explanation-input-group select {
   margin-right: 20px;
   width: 429px;
 }
-/* line 100, ../sass/_global/_trainer.sass */
+/* line 127, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.location .trainer-profile-picture {
   display: inline;
   float: left;
   width: 200px;
   margin-right: 20px;
 }
-/* line 104, ../sass/_global/_trainer.sass */
+/* line 131, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.location .contact-details {
   display: inline;
   float: left;
   width: 209px;
 }
-/* line 107, ../sass/_global/_trainer.sass */
+/* line 134, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.location .map {
   margin-bottom: 1.23077em;
   display: inline;
   float: left;
   width: 427px;
 }
-/* line 112, ../sass/_global/_trainer.sass */
+/* line 139, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.trainers .contact-details {
   *zoom: 1;
   margin-bottom: 1.23077em;
@@ -1153,36 +1201,36 @@ form .explanation-input-group select {
   display: table;
   clear: both;
 }
-/* line 116, ../sass/_global/_trainer.sass */
+/* line 143, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.trainers .contact-details > li {
   display: inline;
   float: left;
   line-height: 24px;
   width: 170px;
 }
-/* line 120, ../sass/_global/_trainer.sass */
+/* line 147, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.trainers .contact-details .phone {
   width: 120px;
 }
-/* line 122, ../sass/_global/_trainer.sass */
+/* line 149, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.trainers .contact-details .email {
   width: 150px;
 }
-/* line 124, ../sass/_global/_trainer.sass */
+/* line 151, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.trainers .trainer > li {
   margin-bottom: 1.23077em;
 }
-/* line 126, ../sass/_global/_trainer.sass */
+/* line 153, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.trainers h4 {
   margin-bottom: 1.23077em;
   font-weight: bold;
 }
-/* line 129, ../sass/_global/_trainer.sass */
+/* line 156, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.trainers img {
   display: inline;
   float: left;
 }
-/* line 131, ../sass/_global/_trainer.sass */
+/* line 158, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.trainers li {
   *zoom: 1;
 }
@@ -1192,7 +1240,7 @@ form .explanation-input-group select {
   display: table;
   clear: both;
 }
-/* line 133, ../sass/_global/_trainer.sass */
+/* line 160, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.trainers .rhs {
   display: inline;
   float: left;
