@@ -1058,12 +1058,12 @@ form .explanation-input-group select {
   background: transparent url("images/article_02.jpg") no-repeat left top;
 }
 
-/* line 5, ../sass/_pages/_trainer.sass */
+/* line 6, ../sass/_pages/_trainer.sass */
 .trainer .articles {
   position: static;
   margin-left: 10px;
 }
-/* line 8, ../sass/_pages/_trainer.sass */
+/* line 10, ../sass/_pages/_trainer.sass */
 .trainer .section {
   *zoom: 1;
   margin-bottom: 7.38462em;
@@ -1075,13 +1075,13 @@ form .explanation-input-group select {
   display: table;
   clear: both;
 }
-/* line 12, ../sass/_pages/_trainer.sass */
+/* line 14, ../sass/_pages/_trainer.sass */
 .trainer .spark {
   margin-bottom: 1.23077em;
   width: 100%;
   height: auto;
 }
-/* line 16, ../sass/_pages/_trainer.sass */
+/* line 18, ../sass/_pages/_trainer.sass */
 .trainer .blurb {
   *zoom: 1;
   margin: 20px;
@@ -1093,37 +1093,37 @@ form .explanation-input-group select {
   display: table;
   clear: both;
 }
-/* line 20, ../sass/_pages/_trainer.sass */
+/* line 22, ../sass/_pages/_trainer.sass */
 .trainer .blurb h2 {
   font-size: 1.84615em;
   line-height: 1.33333em;
   margin-bottom: 0.33333em;
 }
-/* line 23, ../sass/_pages/_trainer.sass */
+/* line 25, ../sass/_pages/_trainer.sass */
 .trainer .blurb p {
   color: #666666;
 }
-/* line 25, ../sass/_pages/_trainer.sass */
+/* line 27, ../sass/_pages/_trainer.sass */
 .trainer .blurb .sub-lhs {
   display: inline;
   float: left;
   width: 595px;
   margin-right: 20px;
 }
-/* line 29, ../sass/_pages/_trainer.sass */
+/* line 31, ../sass/_pages/_trainer.sass */
 .trainer .blurb .sub-rhs {
   display: inline;
   float: left;
   width: 305px;
 }
-/* line 33, ../sass/_pages/_trainer.sass */
+/* line 35, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation {
   display: inline;
   float: left;
   clear: both;
   width: 100%;
 }
-/* line 37, ../sass/_pages/_trainer.sass */
+/* line 39, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation ul {
   *zoom: 1;
   margin: 0 20px;
@@ -1135,7 +1135,7 @@ form .explanation-input-group select {
   display: table;
   clear: both;
 }
-/* line 41, ../sass/_pages/_trainer.sass */
+/* line 43, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li {
   display: inline;
   float: left;
@@ -1145,12 +1145,12 @@ form .explanation-input-group select {
   margin-left: 1%;
   color: white;
 }
-/* line 47, ../sass/_pages/_trainer.sass */
+/* line 49, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li:first-child {
   width: 25%;
   margin-left: 0;
 }
-/* line 50, ../sass/_pages/_trainer.sass */
+/* line 52, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li div {
   -moz-border-radius-topleft: 10px;
   -webkit-border-top-left-radius: 10px;
@@ -1167,25 +1167,25 @@ form .explanation-input-group select {
   background-image: -o-linear-gradient(#009ddc, #0089c2);
   background-image: linear-gradient(#009ddc, #0089c2);
 }
-/* line 56, ../sass/_pages/_trainer.sass */
+/* line 58, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li span {
   display: block;
   line-height: 44px;
   padding-left: 55px;
 }
-/* line 60, ../sass/_pages/_trainer.sass */
+/* line 62, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li.active {
   color: black;
 }
-/* line 62, ../sass/_pages/_trainer.sass */
+/* line 64, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li.active div {
   background: white;
 }
-/* line 64, ../sass/_pages/_trainer.sass */
+/* line 66, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li:hover {
   cursor: pointer;
 }
-/* line 67, ../sass/_pages/_trainer.sass */
+/* line 69, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li#community div {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #028ac0), color-stop(100%, #02618b));
   background-image: -webkit-linear-gradient(#028ac0, #02618b);
@@ -1193,47 +1193,47 @@ form .explanation-input-group select {
   background-image: -o-linear-gradient(#028ac0, #02618b);
   background-image: linear-gradient(#028ac0, #02618b);
 }
-/* line 69, ../sass/_pages/_trainer.sass */
+/* line 71, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li#community span {
   background: transparent url("images/icon-subnav-community-off.png") no-repeat 12px 6px;
 }
-/* line 72, ../sass/_pages/_trainer.sass */
+/* line 74, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li#community.active div {
   background: white;
 }
-/* line 74, ../sass/_pages/_trainer.sass */
+/* line 76, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li#community.active span {
   background: transparent url("images/icon-subnav-community-on.png") no-repeat 12px 6px;
 }
-/* line 77, ../sass/_pages/_trainer.sass */
+/* line 79, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li#timetable span {
   background: transparent url("images/icon-subnav-timetable-off.png") no-repeat 12px 6px;
 }
-/* line 79, ../sass/_pages/_trainer.sass */
+/* line 81, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li#timetable.active span {
   background: transparent url("images/icon-subnav-timetable-on.png") no-repeat 12px 6px;
 }
-/* line 82, ../sass/_pages/_trainer.sass */
+/* line 84, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li#trainers span {
   background: transparent url("images/icon-subnav-trainers-off.png") no-repeat 12px 6px;
 }
-/* line 84, ../sass/_pages/_trainer.sass */
+/* line 86, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li#trainers.active span {
   background: transparent url("images/icon-subnav-trainers-on.png") no-repeat 12px 6px;
 }
-/* line 87, ../sass/_pages/_trainer.sass */
+/* line 89, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li#location span {
   background: transparent url("images/icon-subnav-location-off.png") no-repeat 12px 6px;
 }
-/* line 89, ../sass/_pages/_trainer.sass */
+/* line 91, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li#location.active span {
   background: transparent url("images/icon-subnav-location-on.png") no-repeat 12px 6px;
 }
-/* line 94, ../sass/_pages/_trainer.sass */
+/* line 96, ../sass/_pages/_trainer.sass */
 .trainer .subcontent-container {
   margin: 20px;
 }
-/* line 96, ../sass/_pages/_trainer.sass */
+/* line 98, ../sass/_pages/_trainer.sass */
 .trainer .subcontent {
   display: inline;
   float: left;
@@ -1244,36 +1244,36 @@ form .explanation-input-group select {
   margin-bottom: 1.84615em;
   display: none;
 }
-/* line 104, ../sass/_pages/_trainer.sass */
+/* line 106, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.active {
   display: block;
 }
-/* line 109, ../sass/_pages/_trainer.sass */
+/* line 111, ../sass/_pages/_trainer.sass */
 .trainer .subcontent .contact-details > li {
   margin-bottom: 0.30769em;
   line-height: 24px;
 }
-/* line 112, ../sass/_pages/_trainer.sass */
+/* line 114, ../sass/_pages/_trainer.sass */
 .trainer .subcontent .contact-details .phone {
   padding-left: 26px;
   background: transparent url("images/icon-phone.jpg") no-repeat left top;
 }
-/* line 115, ../sass/_pages/_trainer.sass */
+/* line 117, ../sass/_pages/_trainer.sass */
 .trainer .subcontent .contact-details .email {
   padding-left: 26px;
   background: transparent url("images/icon-email.jpg") no-repeat left top;
 }
-/* line 118, ../sass/_pages/_trainer.sass */
+/* line 120, ../sass/_pages/_trainer.sass */
 .trainer .subcontent .contact-details .time {
   padding-left: 26px;
   background: transparent url("images/icon-time.jpg") no-repeat left top;
 }
-/* line 122, ../sass/_pages/_trainer.sass */
+/* line 124, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.location h4 {
   margin-bottom: 1.23077em;
   font-weight: bold;
 }
-/* line 125, ../sass/_pages/_trainer.sass */
+/* line 127, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.location .information {
   display: inline;
   float: left;
@@ -1282,27 +1282,27 @@ form .explanation-input-group select {
   margin-right: 20px;
   width: 429px;
 }
-/* line 131, ../sass/_pages/_trainer.sass */
+/* line 133, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.location .trainer-profile-picture {
   display: inline;
   float: left;
   width: 200px;
   margin-right: 20px;
 }
-/* line 135, ../sass/_pages/_trainer.sass */
+/* line 137, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.location .contact-details {
   display: inline;
   float: left;
   width: 209px;
 }
-/* line 138, ../sass/_pages/_trainer.sass */
+/* line 140, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.location .map {
   margin-bottom: 1.23077em;
   display: inline;
   float: left;
   width: 427px;
 }
-/* line 143, ../sass/_pages/_trainer.sass */
+/* line 145, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.trainers .contact-details {
   *zoom: 1;
   margin-bottom: 1.23077em;
@@ -1314,36 +1314,36 @@ form .explanation-input-group select {
   display: table;
   clear: both;
 }
-/* line 147, ../sass/_pages/_trainer.sass */
+/* line 149, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.trainers .contact-details > li {
   display: inline;
   float: left;
   line-height: 24px;
   width: 170px;
 }
-/* line 151, ../sass/_pages/_trainer.sass */
+/* line 153, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.trainers .contact-details .phone {
   width: 120px;
 }
-/* line 153, ../sass/_pages/_trainer.sass */
+/* line 155, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.trainers .contact-details .email {
   width: 150px;
 }
-/* line 155, ../sass/_pages/_trainer.sass */
+/* line 157, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.trainers .trainer > li {
   margin-bottom: 1.23077em;
 }
-/* line 157, ../sass/_pages/_trainer.sass */
+/* line 159, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.trainers h4 {
   margin-bottom: 1.23077em;
   font-weight: bold;
 }
-/* line 160, ../sass/_pages/_trainer.sass */
+/* line 162, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.trainers img {
   display: inline;
   float: left;
 }
-/* line 162, ../sass/_pages/_trainer.sass */
+/* line 164, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.trainers li {
   *zoom: 1;
 }
@@ -1353,10 +1353,105 @@ form .explanation-input-group select {
   display: table;
   clear: both;
 }
-/* line 164, ../sass/_pages/_trainer.sass */
+/* line 166, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.trainers .rhs {
   display: inline;
   float: left;
   width: 500px;
   margin-left: 20px;
+}
+
+/* line 4, ../sass/_pages/_blog-home.sass */
+.blog-home .section {
+  *zoom: 1;
+  margin-bottom: 7.38462em;
+  background: white;
+}
+/* line 38, ../../../.rvm/gems/ruby-1.9.3-p448@etw/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.blog-home .section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 8, ../sass/_pages/_blog-home.sass */
+.blog-home .edge {
+  position: absolute;
+  top: 0;
+}
+/* line 11, ../sass/_pages/_blog-home.sass */
+.blog-home .edge.lhs {
+  left: -111px;
+  background: transparent url("images/edges_lhs.jpg") no-repeat left top;
+  width: 111px;
+  height: 276px;
+}
+/* line 16, ../sass/_pages/_blog-home.sass */
+.blog-home .edge.rhs {
+  background: transparent url("images/edges_rhs.jpg") no-repeat left top;
+  right: -106px;
+  width: 106px;
+  height: 304px;
+}
+/* line 21, ../sass/_pages/_blog-home.sass */
+.blog-home .spark {
+  width: 100%;
+  height: auto;
+}
+/* line 24, ../sass/_pages/_blog-home.sass */
+.blog-home .content {
+  margin: 20px;
+}
+/* line 26, ../sass/_pages/_blog-home.sass */
+.blog-home .breadcrumb {
+  margin-bottom: 1.23077em;
+}
+/* line 28, ../sass/_pages/_blog-home.sass */
+.blog-home h2 {
+  margin-bottom: 1.33333em;
+}
+/* line 30, ../sass/_pages/_blog-home.sass */
+.blog-home .blog-article-summaries {
+  *zoom: 1;
+}
+/* line 38, ../../../.rvm/gems/ruby-1.9.3-p448@etw/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.blog-home .blog-article-summaries:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 32, ../sass/_pages/_blog-home.sass */
+.blog-home .blog-article-summary {
+  display: inline;
+  float: left;
+  width: 210px;
+  margin-left: 26px;
+  font-weight: bold;
+}
+/* line 37, ../sass/_pages/_blog-home.sass */
+.blog-home .blog-article-summary h3 {
+  font-weight: normal;
+}
+/* line 39, ../sass/_pages/_blog-home.sass */
+.blog-home .blog-article-summary img {
+  margin-bottom: 1.23077em;
+}
+/* line 41, ../sass/_pages/_blog-home.sass */
+.blog-home .blog-article-summary .tags {
+  margin-bottom: 2.46154em;
+  padding-left: 30px;
+  background: transparent url("images/icon-tag.jpg") no-repeat left top;
+}
+/* line 45, ../sass/_pages/_blog-home.sass */
+.blog-home .blog-article-summary .tags span {
+  font-weight: normal;
+}
+/* line 47, ../sass/_pages/_blog-home.sass */
+.blog-home .blog-article-summary .comments {
+  margin-bottom: 0em;
+  padding-left: 30px;
+  background: transparent url("images/icon-speech.jpg") no-repeat 3px top;
+}
+/* line 51, ../sass/_pages/_blog-home.sass */
+.blog-home .blog-article-summary:nth-child(4n - 3) {
+  margin-left: 0;
 }
