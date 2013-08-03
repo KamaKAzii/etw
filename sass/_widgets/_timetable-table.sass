@@ -1,0 +1,68 @@
+// _timetable-table.sass
+
+.date-navigation
+  +float(left)
+  +leader(2)
+  +trailer(1.5)
+  +pie-clearfix
+  width: 330px
+  position: relative
+  left: -165px
+  margin-left: 50%
+  a
+    +float(left)
+    display: block
+    text-indent: -999em
+    width: 30px
+    height: 30px
+    &.earlier
+      background: transparent url('images/arrow-left-off.png') no-repeat left top
+      &:hover
+        background: transparent url('images/arrow-left-on.png') no-repeat left top
+    &.later
+      background: transparent url('images/arrow-right-off.png') no-repeat left top
+      &:hover
+        background: transparent url('images/arrow-right-on.png') no-repeat left top
+  span
+    +float(left)
+    display: block
+    font-size: $font-size-medium
+    line-height: 30px
+    padding: 0 $grid-gutter * 2
+
+.session-picker
+  +float(left)
+  +pie-clearfix
+  border-top: 1px solid $border-color-very-light
+  +leading-border(1px, 1, $font-size-normal, solid)
+  width: 100%
+  clear: both
+  p, select
+    +float(left)
+    margin-left: $grid-gutter
+
+$timetable-blue: #7fceed
+$timetable-blue-light: #ccebf8
+$timetable-green: #c0dd92
+$timetable-green-light: #e6f1d3
+
+.timetable-table
+  +float(left)
+  +trailer(1)
+  width: 100%
+  td
+    width: 121px
+    border: 3px solid white
+    background: $timetable-green-light
+    text-align: center
+    padding: 14px 11px
+    font-size: 12px
+  tr
+    td:first-child
+      background: $timetable-blue-light
+  tr:first-child
+    td
+      background: $timetable-green
+      &:first-child
+        background: $timetable-blue
+        font-weight: bold

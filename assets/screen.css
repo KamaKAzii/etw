@@ -893,6 +893,114 @@ form .explanation-input-group select {
   width: 30%;
 }
 
+/* line 3, ../sass/_widgets/_timetable-table.sass */
+.date-navigation {
+  display: inline;
+  float: left;
+  margin-top: 2.46154em;
+  margin-bottom: 1.84615em;
+  *zoom: 1;
+  width: 330px;
+  position: relative;
+  left: -165px;
+  margin-left: 50%;
+}
+/* line 38, ../../../.rvm/gems/ruby-1.9.3-p448@etw/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.date-navigation:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 12, ../sass/_widgets/_timetable-table.sass */
+.date-navigation a {
+  display: inline;
+  float: left;
+  display: block;
+  text-indent: -999em;
+  width: 30px;
+  height: 30px;
+}
+/* line 18, ../sass/_widgets/_timetable-table.sass */
+.date-navigation a.earlier {
+  background: transparent url("images/arrow-left-off.png") no-repeat left top;
+}
+/* line 20, ../sass/_widgets/_timetable-table.sass */
+.date-navigation a.earlier:hover {
+  background: transparent url("images/arrow-left-on.png") no-repeat left top;
+}
+/* line 22, ../sass/_widgets/_timetable-table.sass */
+.date-navigation a.later {
+  background: transparent url("images/arrow-right-off.png") no-repeat left top;
+}
+/* line 24, ../sass/_widgets/_timetable-table.sass */
+.date-navigation a.later:hover {
+  background: transparent url("images/arrow-right-on.png") no-repeat left top;
+}
+/* line 26, ../sass/_widgets/_timetable-table.sass */
+.date-navigation span {
+  display: inline;
+  float: left;
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 0 20px;
+}
+
+/* line 33, ../sass/_widgets/_timetable-table.sass */
+.session-picker {
+  display: inline;
+  float: left;
+  *zoom: 1;
+  border-top: 1px solid #e1e1e1;
+  border-top-style: solid;
+  border-top-width: 0.07692em;
+  padding-top: 1.15385em;
+  width: 100%;
+  clear: both;
+}
+/* line 38, ../../../.rvm/gems/ruby-1.9.3-p448@etw/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.session-picker:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 40, ../sass/_widgets/_timetable-table.sass */
+.session-picker p, .session-picker select {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+}
+
+/* line 49, ../sass/_widgets/_timetable-table.sass */
+.timetable-table {
+  display: inline;
+  float: left;
+  margin-bottom: 1.23077em;
+  width: 100%;
+}
+/* line 53, ../sass/_widgets/_timetable-table.sass */
+.timetable-table td {
+  width: 121px;
+  border: 3px solid white;
+  background: #e6f1d3;
+  text-align: center;
+  padding: 14px 11px;
+  font-size: 12px;
+}
+/* line 61, ../sass/_widgets/_timetable-table.sass */
+.timetable-table tr td:first-child {
+  background: #ccebf8;
+}
+/* line 64, ../sass/_widgets/_timetable-table.sass */
+.timetable-table tr:first-child td {
+  background: #c0dd92;
+}
+/* line 66, ../sass/_widgets/_timetable-table.sass */
+.timetable-table tr:first-child td:first-child {
+  background: #7fceed;
+  font-weight: bold;
+}
+
 /* line 3, ../sass/_pages/_homepage.sass */
 .articles {
   *zoom: 1;
@@ -935,22 +1043,27 @@ form .explanation-input-group select {
 
 /* line 27, ../sass/_pages/_homepage.sass */
 .articles .one .image {
-  background: transparent url("images/article_04.jpg") repeat-x left top;
+  background: transparent url("images/article_04.jpg") no-repeat left top;
 }
 /* line 29, ../sass/_pages/_homepage.sass */
 .articles .two .image {
-  background: transparent url("images/article_03.jpg") repeat-x left top;
+  background: transparent url("images/article_03.jpg") no-repeat left top;
 }
 /* line 31, ../sass/_pages/_homepage.sass */
 .articles .three .image {
-  background: transparent url("images/article_01.jpg") repeat-x left top;
+  background: transparent url("images/article_01.jpg") no-repeat left top;
 }
 /* line 33, ../sass/_pages/_homepage.sass */
 .articles .four .image {
-  background: transparent url("images/article_02.jpg") repeat-x left top;
+  background: transparent url("images/article_02.jpg") no-repeat left top;
 }
 
-/* line 4, ../sass/_pages/_trainer.sass */
+/* line 5, ../sass/_pages/_trainer.sass */
+.trainer .articles {
+  position: static;
+  margin-left: 10px;
+}
+/* line 8, ../sass/_pages/_trainer.sass */
 .trainer .section {
   *zoom: 1;
   margin-bottom: 7.38462em;
@@ -962,13 +1075,13 @@ form .explanation-input-group select {
   display: table;
   clear: both;
 }
-/* line 8, ../sass/_pages/_trainer.sass */
+/* line 12, ../sass/_pages/_trainer.sass */
 .trainer .spark {
   margin-bottom: 1.23077em;
   width: 100%;
   height: auto;
 }
-/* line 12, ../sass/_pages/_trainer.sass */
+/* line 16, ../sass/_pages/_trainer.sass */
 .trainer .blurb {
   *zoom: 1;
   margin: 20px;
@@ -980,37 +1093,37 @@ form .explanation-input-group select {
   display: table;
   clear: both;
 }
-/* line 16, ../sass/_pages/_trainer.sass */
+/* line 20, ../sass/_pages/_trainer.sass */
 .trainer .blurb h2 {
   font-size: 1.84615em;
   line-height: 1.33333em;
   margin-bottom: 0.33333em;
 }
-/* line 19, ../sass/_pages/_trainer.sass */
+/* line 23, ../sass/_pages/_trainer.sass */
 .trainer .blurb p {
   color: #666666;
 }
-/* line 21, ../sass/_pages/_trainer.sass */
+/* line 25, ../sass/_pages/_trainer.sass */
 .trainer .blurb .sub-lhs {
   display: inline;
   float: left;
   width: 595px;
   margin-right: 20px;
 }
-/* line 25, ../sass/_pages/_trainer.sass */
+/* line 29, ../sass/_pages/_trainer.sass */
 .trainer .blurb .sub-rhs {
   display: inline;
   float: left;
   width: 305px;
 }
-/* line 29, ../sass/_pages/_trainer.sass */
+/* line 33, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation {
   display: inline;
   float: left;
   clear: both;
   width: 100%;
 }
-/* line 33, ../sass/_pages/_trainer.sass */
+/* line 37, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation ul {
   *zoom: 1;
   margin: 0 20px;
@@ -1022,7 +1135,7 @@ form .explanation-input-group select {
   display: table;
   clear: both;
 }
-/* line 37, ../sass/_pages/_trainer.sass */
+/* line 41, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li {
   display: inline;
   float: left;
@@ -1032,12 +1145,12 @@ form .explanation-input-group select {
   margin-left: 1%;
   color: white;
 }
-/* line 43, ../sass/_pages/_trainer.sass */
+/* line 47, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li:first-child {
   width: 25%;
   margin-left: 0;
 }
-/* line 46, ../sass/_pages/_trainer.sass */
+/* line 50, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li div {
   -moz-border-radius-topleft: 10px;
   -webkit-border-top-left-radius: 10px;
@@ -1054,25 +1167,25 @@ form .explanation-input-group select {
   background-image: -o-linear-gradient(#009ddc, #0089c2);
   background-image: linear-gradient(#009ddc, #0089c2);
 }
-/* line 52, ../sass/_pages/_trainer.sass */
+/* line 56, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li span {
   display: block;
   line-height: 44px;
   padding-left: 55px;
 }
-/* line 56, ../sass/_pages/_trainer.sass */
+/* line 60, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li.active {
   color: black;
 }
-/* line 58, ../sass/_pages/_trainer.sass */
+/* line 62, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li.active div {
   background: white;
 }
-/* line 60, ../sass/_pages/_trainer.sass */
+/* line 64, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li:hover {
   cursor: pointer;
 }
-/* line 63, ../sass/_pages/_trainer.sass */
+/* line 67, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li#community div {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #028ac0), color-stop(100%, #02618b));
   background-image: -webkit-linear-gradient(#028ac0, #02618b);
@@ -1080,47 +1193,47 @@ form .explanation-input-group select {
   background-image: -o-linear-gradient(#028ac0, #02618b);
   background-image: linear-gradient(#028ac0, #02618b);
 }
-/* line 65, ../sass/_pages/_trainer.sass */
+/* line 69, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li#community span {
   background: transparent url("images/icon-subnav-community-off.png") no-repeat 12px 6px;
 }
-/* line 68, ../sass/_pages/_trainer.sass */
+/* line 72, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li#community.active div {
   background: white;
 }
-/* line 70, ../sass/_pages/_trainer.sass */
+/* line 74, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li#community.active span {
   background: transparent url("images/icon-subnav-community-on.png") no-repeat 12px 6px;
 }
-/* line 73, ../sass/_pages/_trainer.sass */
+/* line 77, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li#timetable span {
   background: transparent url("images/icon-subnav-timetable-off.png") no-repeat 12px 6px;
 }
-/* line 75, ../sass/_pages/_trainer.sass */
+/* line 79, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li#timetable.active span {
   background: transparent url("images/icon-subnav-timetable-on.png") no-repeat 12px 6px;
 }
-/* line 78, ../sass/_pages/_trainer.sass */
+/* line 82, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li#trainers span {
   background: transparent url("images/icon-subnav-trainers-off.png") no-repeat 12px 6px;
 }
-/* line 80, ../sass/_pages/_trainer.sass */
+/* line 84, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li#trainers.active span {
   background: transparent url("images/icon-subnav-trainers-on.png") no-repeat 12px 6px;
 }
-/* line 83, ../sass/_pages/_trainer.sass */
+/* line 87, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li#location span {
   background: transparent url("images/icon-subnav-location-off.png") no-repeat 12px 6px;
 }
-/* line 85, ../sass/_pages/_trainer.sass */
+/* line 89, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li#location.active span {
   background: transparent url("images/icon-subnav-location-on.png") no-repeat 12px 6px;
 }
-/* line 90, ../sass/_pages/_trainer.sass */
+/* line 94, ../sass/_pages/_trainer.sass */
 .trainer .subcontent-container {
   margin: 20px;
 }
-/* line 92, ../sass/_pages/_trainer.sass */
+/* line 96, ../sass/_pages/_trainer.sass */
 .trainer .subcontent {
   display: inline;
   float: left;
@@ -1131,36 +1244,36 @@ form .explanation-input-group select {
   margin-bottom: 1.84615em;
   display: none;
 }
-/* line 100, ../sass/_pages/_trainer.sass */
+/* line 104, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.active {
   display: block;
 }
-/* line 105, ../sass/_pages/_trainer.sass */
+/* line 109, ../sass/_pages/_trainer.sass */
 .trainer .subcontent .contact-details > li {
   margin-bottom: 0.30769em;
   line-height: 24px;
 }
-/* line 108, ../sass/_pages/_trainer.sass */
+/* line 112, ../sass/_pages/_trainer.sass */
 .trainer .subcontent .contact-details .phone {
   padding-left: 26px;
   background: transparent url("images/icon-phone.jpg") no-repeat left top;
 }
-/* line 111, ../sass/_pages/_trainer.sass */
+/* line 115, ../sass/_pages/_trainer.sass */
 .trainer .subcontent .contact-details .email {
   padding-left: 26px;
   background: transparent url("images/icon-email.jpg") no-repeat left top;
 }
-/* line 114, ../sass/_pages/_trainer.sass */
+/* line 118, ../sass/_pages/_trainer.sass */
 .trainer .subcontent .contact-details .time {
   padding-left: 26px;
   background: transparent url("images/icon-time.jpg") no-repeat left top;
 }
-/* line 118, ../sass/_pages/_trainer.sass */
+/* line 122, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.location h4 {
   margin-bottom: 1.23077em;
   font-weight: bold;
 }
-/* line 121, ../sass/_pages/_trainer.sass */
+/* line 125, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.location .information {
   display: inline;
   float: left;
@@ -1169,27 +1282,27 @@ form .explanation-input-group select {
   margin-right: 20px;
   width: 429px;
 }
-/* line 127, ../sass/_pages/_trainer.sass */
+/* line 131, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.location .trainer-profile-picture {
   display: inline;
   float: left;
   width: 200px;
   margin-right: 20px;
 }
-/* line 131, ../sass/_pages/_trainer.sass */
+/* line 135, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.location .contact-details {
   display: inline;
   float: left;
   width: 209px;
 }
-/* line 134, ../sass/_pages/_trainer.sass */
+/* line 138, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.location .map {
   margin-bottom: 1.23077em;
   display: inline;
   float: left;
   width: 427px;
 }
-/* line 139, ../sass/_pages/_trainer.sass */
+/* line 143, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.trainers .contact-details {
   *zoom: 1;
   margin-bottom: 1.23077em;
@@ -1201,36 +1314,36 @@ form .explanation-input-group select {
   display: table;
   clear: both;
 }
-/* line 143, ../sass/_pages/_trainer.sass */
+/* line 147, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.trainers .contact-details > li {
   display: inline;
   float: left;
   line-height: 24px;
   width: 170px;
 }
-/* line 147, ../sass/_pages/_trainer.sass */
+/* line 151, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.trainers .contact-details .phone {
   width: 120px;
 }
-/* line 149, ../sass/_pages/_trainer.sass */
+/* line 153, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.trainers .contact-details .email {
   width: 150px;
 }
-/* line 151, ../sass/_pages/_trainer.sass */
+/* line 155, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.trainers .trainer > li {
   margin-bottom: 1.23077em;
 }
-/* line 153, ../sass/_pages/_trainer.sass */
+/* line 157, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.trainers h4 {
   margin-bottom: 1.23077em;
   font-weight: bold;
 }
-/* line 156, ../sass/_pages/_trainer.sass */
+/* line 160, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.trainers img {
   display: inline;
   float: left;
 }
-/* line 158, ../sass/_pages/_trainer.sass */
+/* line 162, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.trainers li {
   *zoom: 1;
 }
@@ -1240,7 +1353,7 @@ form .explanation-input-group select {
   display: table;
   clear: both;
 }
-/* line 160, ../sass/_pages/_trainer.sass */
+/* line 164, ../sass/_pages/_trainer.sass */
 .trainer .subcontent.trainers .rhs {
   display: inline;
   float: left;
