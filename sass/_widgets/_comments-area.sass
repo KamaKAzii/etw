@@ -1,0 +1,23 @@
+// _comments-area.sass
+
+.comments-area
+  +pie-clearfix
+  +leader(2)
+  +leading-border(1px, 1, 13px, solid)
+  border-color: $border-color-very-light
+  .comment
+    +pie-clearfix
+  .user, .date
+    +trailer(0)
+  .user
+    font-weight: bold
+  .avatar
+    +float(left)
+    & + .comment-container
+      margin-left: $grid-gutter * 2
+  .comment-container
+    +float(left)
+  .reply
+    padding-left: 80px
+    background: transparent url("images/comment-link.jpg") no-repeat 35px top
+

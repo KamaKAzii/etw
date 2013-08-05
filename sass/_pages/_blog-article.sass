@@ -1,0 +1,99 @@
+// _blog-article.sass
+
+.blog-article
+  .section
+    +pie-clearfix
+    +trailer(6)
+    background: $background-color
+  .edge
+    position: absolute
+    top: 0
+    &.lhs
+      left: -111px
+      background: transparent url("images/edges_lhs.jpg") no-repeat left top
+      width: 111px
+      height: 276px
+    &.rhs
+      background: transparent url("images/edges_rhs.jpg") no-repeat left top
+      right: -106px
+      width: 106px
+      height: 304px
+  .spark
+    width: 100%
+    height: auto
+  .content
+    +pie-clearfix
+    margin: $grid-gutter * 2
+  .breadcrumb
+    +trailer(1)
+
+  // Main content styles.
+  .content
+    .lhs
+      +pie-clearfix
+      +float(left)
+      width: 590px
+    .rhs
+      +float(left)
+      +pie-clearfix
+      margin-left: $grid-gutter * 2
+      width: 301px
+    .author, .comments, .tags
+      font-weight: bold
+      padding-left: 30px
+    .author
+      background: transparent url("images/icon-quill.jpg") no-repeat left top
+    .comments
+      background: transparent url("images/icon-speech.jpg") no-repeat left top
+    .tags
+      background: transparent url("images/icon-tag.jpg") no-repeat left top
+      span
+        font-weight: normal
+    img
+      +trailer(1)
+      display: block
+    h4
+      font-weight: bold
+    ul
+      +trailer(1)
+    ul.method
+      padding-left: 20px
+      list-style-type: disc
+      li
+        +trailer(0.25)
+
+  .lhs
+    h3
+      +leader(1, 18px)
+      +leading-border(1px, 1, 18px, solid)
+      border-color: $border-color-very-light
+  .rhs
+    h3
+      +leader(2, 18px)
+    h3.events
+      +leading-border(1px, 1, 18px, solid)
+      border-color: $border-color-very-light
+    .article-link-with-thumb
+      +pie-clearfix
+      img
+        +float(left)
+      a
+        +float(left)
+        margin-left: $grid-gutter
+    dt
+      font-weight: bold
+    ul, li
+      +trailer(1)
+  h2
+    +trailer(2, 24px)
+  form
+    position: relative
+    .actions
+      position: absolute
+      right: 100px
+      bottom: 0
+    textarea
+      width: 500px
+      height: 130px
+    input[type='text']
+      width: 300px

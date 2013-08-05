@@ -87,6 +87,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-align: center;
   border: 1px solid rgba(246, 246, 246, 0.2);
 }
+/* line 13, ../sass/_global/_buttons.sass */
+.button-primary:hover {
+  cursor: pointer;
+}
 
 /* line 44, ../../../.rvm/gems/ruby-1.9.3-p448@etw/gems/compass-lucid-grid-0.5.1/stylesheets/lucid/_public.scss */
 .grid-clearfix, .grid-container, .layout-main, .uber, .footer-inner-wrapper {
@@ -805,7 +809,36 @@ input[type='password'] {
   color: #666666;
 }
 
-/* line 16, ../sass/_global/_forms.sass */
+/* line 15, ../sass/_global/_forms.sass */
+.input-group {
+  *zoom: 1;
+  margin-bottom: 1.23077em;
+}
+/* line 38, ../../../.rvm/gems/ruby-1.9.3-p448@etw/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.input-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 18, ../sass/_global/_forms.sass */
+.input-group label {
+  display: inline;
+  float: left;
+  *zoom: 1;
+  margin-bottom: 0.61538em;
+}
+/* line 38, ../../../.rvm/gems/ruby-1.9.3-p448@etw/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.input-group label:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 23, ../sass/_global/_forms.sass */
+form {
+  margin-bottom: 1.23077em;
+}
+/* line 25, ../sass/_global/_forms.sass */
 form ul {
   margin-bottom: 1.23077em;
   *zoom: 1;
@@ -816,7 +849,7 @@ form ul:after {
   display: table;
   clear: both;
 }
-/* line 19, ../sass/_global/_forms.sass */
+/* line 28, ../sass/_global/_forms.sass */
 form ul li {
   *zoom: 1;
   display: inline;
@@ -831,40 +864,41 @@ form ul li:after {
   display: table;
   clear: both;
 }
-/* line 25, ../sass/_global/_forms.sass */
+/* line 34, ../sass/_global/_forms.sass */
 form ul li:nth-child(2n - 1) {
   margin-left: 0;
 }
-/* line 27, ../sass/_global/_forms.sass */
-form .input-group {
+/* line 36, ../sass/_global/_forms.sass */
+form ul .input-group {
+  margin-bottom: 0em;
   *zoom: 1;
 }
 /* line 38, ../../../.rvm/gems/ruby-1.9.3-p448@etw/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-form .input-group:after {
+form ul .input-group:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 29, ../sass/_global/_forms.sass */
-form .input-group label {
+/* line 39, ../sass/_global/_forms.sass */
+form ul .input-group label {
   display: inline;
   float: left;
   *zoom: 1;
   margin-bottom: 0.61538em;
 }
 /* line 38, ../../../.rvm/gems/ruby-1.9.3-p448@etw/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-form .input-group label:after {
+form ul .input-group label:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 33, ../sass/_global/_forms.sass */
+/* line 43, ../sass/_global/_forms.sass */
 form .actions {
   display: inline;
   float: left;
   clear: both;
 }
-/* line 37, ../sass/_global/_forms.sass */
+/* line 47, ../sass/_global/_forms.sass */
 form .explanation-input-group {
   margin-bottom: 1.23077em;
   *zoom: 1;
@@ -875,18 +909,18 @@ form .explanation-input-group:after {
   display: table;
   clear: both;
 }
-/* line 40, ../sass/_global/_forms.sass */
+/* line 50, ../sass/_global/_forms.sass */
 form .explanation-input-group ul {
   margin-bottom: 0em;
 }
-/* line 42, ../sass/_global/_forms.sass */
+/* line 52, ../sass/_global/_forms.sass */
 form .explanation-input-group p {
   display: inline;
   float: left;
   width: 60%;
   margin-right: 10%;
 }
-/* line 46, ../sass/_global/_forms.sass */
+/* line 56, ../sass/_global/_forms.sass */
 form .explanation-input-group select {
   display: inline;
   float: left;
@@ -999,6 +1033,59 @@ form .explanation-input-group select {
 .timetable-table tr:first-child td:first-child {
   background: #7fceed;
   font-weight: bold;
+}
+
+/* line 3, ../sass/_widgets/_comments-area.sass */
+.comments-area {
+  *zoom: 1;
+  margin-top: 2.46154em;
+  border-top-style: solid;
+  border-top-width: 0.07692em;
+  padding-top: 1.15385em;
+  border-color: #e1e1e1;
+}
+/* line 38, ../../../.rvm/gems/ruby-1.9.3-p448@etw/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.comments-area:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 8, ../sass/_widgets/_comments-area.sass */
+.comments-area .comment {
+  *zoom: 1;
+}
+/* line 38, ../../../.rvm/gems/ruby-1.9.3-p448@etw/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.comments-area .comment:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 10, ../sass/_widgets/_comments-area.sass */
+.comments-area .user, .comments-area .date {
+  margin-bottom: 0em;
+}
+/* line 12, ../sass/_widgets/_comments-area.sass */
+.comments-area .user {
+  font-weight: bold;
+}
+/* line 14, ../sass/_widgets/_comments-area.sass */
+.comments-area .avatar {
+  display: inline;
+  float: left;
+}
+/* line 16, ../sass/_widgets/_comments-area.sass */
+.comments-area .avatar + .comment-container {
+  margin-left: 20px;
+}
+/* line 18, ../sass/_widgets/_comments-area.sass */
+.comments-area .comment-container {
+  display: inline;
+  float: left;
+}
+/* line 20, ../sass/_widgets/_comments-area.sass */
+.comments-area .reply {
+  padding-left: 80px;
+  background: transparent url("images/comment-link.jpg") no-repeat 35px top;
 }
 
 /* line 3, ../sass/_pages/_homepage.sass */
@@ -1454,4 +1541,197 @@ form .explanation-input-group select {
 /* line 51, ../sass/_pages/_blog-home.sass */
 .blog-home .blog-article-summary:nth-child(4n - 3) {
   margin-left: 0;
+}
+
+/* line 4, ../sass/_pages/_blog-article.sass */
+.blog-article .section {
+  *zoom: 1;
+  margin-bottom: 7.38462em;
+  background: white;
+}
+/* line 38, ../../../.rvm/gems/ruby-1.9.3-p448@etw/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.blog-article .section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 8, ../sass/_pages/_blog-article.sass */
+.blog-article .edge {
+  position: absolute;
+  top: 0;
+}
+/* line 11, ../sass/_pages/_blog-article.sass */
+.blog-article .edge.lhs {
+  left: -111px;
+  background: transparent url("images/edges_lhs.jpg") no-repeat left top;
+  width: 111px;
+  height: 276px;
+}
+/* line 16, ../sass/_pages/_blog-article.sass */
+.blog-article .edge.rhs {
+  background: transparent url("images/edges_rhs.jpg") no-repeat left top;
+  right: -106px;
+  width: 106px;
+  height: 304px;
+}
+/* line 21, ../sass/_pages/_blog-article.sass */
+.blog-article .spark {
+  width: 100%;
+  height: auto;
+}
+/* line 24, ../sass/_pages/_blog-article.sass */
+.blog-article .content {
+  *zoom: 1;
+  margin: 20px;
+}
+/* line 38, ../../../.rvm/gems/ruby-1.9.3-p448@etw/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.blog-article .content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 27, ../sass/_pages/_blog-article.sass */
+.blog-article .breadcrumb {
+  margin-bottom: 1.23077em;
+}
+/* line 32, ../sass/_pages/_blog-article.sass */
+.blog-article .content .lhs {
+  *zoom: 1;
+  display: inline;
+  float: left;
+  width: 590px;
+}
+/* line 38, ../../../.rvm/gems/ruby-1.9.3-p448@etw/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.blog-article .content .lhs:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 36, ../sass/_pages/_blog-article.sass */
+.blog-article .content .rhs {
+  display: inline;
+  float: left;
+  *zoom: 1;
+  margin-left: 20px;
+  width: 301px;
+}
+/* line 38, ../../../.rvm/gems/ruby-1.9.3-p448@etw/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.blog-article .content .rhs:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 41, ../sass/_pages/_blog-article.sass */
+.blog-article .content .author, .blog-article .content .comments, .blog-article .content .tags {
+  font-weight: bold;
+  padding-left: 30px;
+}
+/* line 44, ../sass/_pages/_blog-article.sass */
+.blog-article .content .author {
+  background: transparent url("images/icon-quill.jpg") no-repeat left top;
+}
+/* line 46, ../sass/_pages/_blog-article.sass */
+.blog-article .content .comments {
+  background: transparent url("images/icon-speech.jpg") no-repeat left top;
+}
+/* line 48, ../sass/_pages/_blog-article.sass */
+.blog-article .content .tags {
+  background: transparent url("images/icon-tag.jpg") no-repeat left top;
+}
+/* line 50, ../sass/_pages/_blog-article.sass */
+.blog-article .content .tags span {
+  font-weight: normal;
+}
+/* line 52, ../sass/_pages/_blog-article.sass */
+.blog-article .content img {
+  margin-bottom: 1.23077em;
+  display: block;
+}
+/* line 55, ../sass/_pages/_blog-article.sass */
+.blog-article .content h4 {
+  font-weight: bold;
+}
+/* line 57, ../sass/_pages/_blog-article.sass */
+.blog-article .content ul {
+  margin-bottom: 1.23077em;
+}
+/* line 59, ../sass/_pages/_blog-article.sass */
+.blog-article .content ul.method {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+/* line 62, ../sass/_pages/_blog-article.sass */
+.blog-article .content ul.method li {
+  margin-bottom: 0.30769em;
+}
+/* line 66, ../sass/_pages/_blog-article.sass */
+.blog-article .lhs h3 {
+  margin-top: 0.88889em;
+  border-top-style: solid;
+  border-top-width: 0.05556em;
+  padding-top: 0.83333em;
+  border-color: #e1e1e1;
+}
+/* line 71, ../sass/_pages/_blog-article.sass */
+.blog-article .rhs h3 {
+  margin-top: 1.77778em;
+}
+/* line 73, ../sass/_pages/_blog-article.sass */
+.blog-article .rhs h3.events {
+  border-top-style: solid;
+  border-top-width: 0.05556em;
+  padding-top: 0.83333em;
+  border-color: #e1e1e1;
+}
+/* line 76, ../sass/_pages/_blog-article.sass */
+.blog-article .rhs .article-link-with-thumb {
+  *zoom: 1;
+}
+/* line 38, ../../../.rvm/gems/ruby-1.9.3-p448@etw/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.blog-article .rhs .article-link-with-thumb:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 78, ../sass/_pages/_blog-article.sass */
+.blog-article .rhs .article-link-with-thumb img {
+  display: inline;
+  float: left;
+}
+/* line 80, ../sass/_pages/_blog-article.sass */
+.blog-article .rhs .article-link-with-thumb a {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+}
+/* line 83, ../sass/_pages/_blog-article.sass */
+.blog-article .rhs dt {
+  font-weight: bold;
+}
+/* line 85, ../sass/_pages/_blog-article.sass */
+.blog-article .rhs ul, .blog-article .rhs li {
+  margin-bottom: 1.23077em;
+}
+/* line 87, ../sass/_pages/_blog-article.sass */
+.blog-article h2 {
+  margin-bottom: 1.33333em;
+}
+/* line 89, ../sass/_pages/_blog-article.sass */
+.blog-article form {
+  position: relative;
+}
+/* line 91, ../sass/_pages/_blog-article.sass */
+.blog-article form .actions {
+  position: absolute;
+  right: 100px;
+  bottom: 0;
+}
+/* line 95, ../sass/_pages/_blog-article.sass */
+.blog-article form textarea {
+  width: 500px;
+  height: 130px;
+}
+/* line 98, ../sass/_pages/_blog-article.sass */
+.blog-article form input[type='text'] {
+  width: 300px;
 }
