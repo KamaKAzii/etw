@@ -38,6 +38,9 @@
       +pie-clearfix
       margin-left: $grid-gutter * 2
       width: 301px
+      img
+        +trailer(1)
+        display: block
     .author, .comments, .tags
       font-weight: bold
       padding-left: 30px
@@ -49,9 +52,6 @@
       background: transparent url("images/icon-tag.jpg") no-repeat left top
       span
         font-weight: normal
-    img
-      +trailer(1)
-      display: block
     h4
       font-weight: bold
     ul
@@ -82,8 +82,10 @@
         margin-left: $grid-gutter
     dt
       font-weight: bold
-    ul, li
+    .events-list  
       +trailer(1)
+      li
+        +trailer(1)
   h2
     +trailer(2, 24px)
   form

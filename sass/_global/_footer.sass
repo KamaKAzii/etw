@@ -31,27 +31,29 @@
   +trailer(2)
   position: relative
   width: 550px
-  padding-left: 60px
+  padding-left: 35px
   background: transparent url('images/quotes_open.jpg') no-repeat left top
   clear: left
-  .close-quote
-    position: absolute
-    bottom: 36px
-    right: 300px
-    background: transparent url('images/quotes_close.jpg') no-repeat left top
-    width: 42px
-    height: 34px
-    z-index: 5
+  img.close-quote
+    display: inline
+    vertical-align: top
+    margin-left: 20px
   span
     display: block
   .content
-    +trailer(1)
+    margin-bottom: $base-line-height * 3 !important
     position: relative
     width: 470px
     font-style: italic
     z-index: 10
   .name
-    +float(right)
-    background: transparent url('images/avatar.jpg') no-repeat left top
-    padding-left: 60px
+    position: absolute
+    bottom: 0
+    right: 0
     height: 50px
+    img
+      +float(left)
+    p
+      +float(left)
+      margin-top: 10px
+      margin-left: $grid-gutter * 2
