@@ -1102,6 +1102,40 @@ form .explanation-input-group select {
   background: transparent url("images/comment-link.jpg") no-repeat 35px top;
 }
 
+/* line 4, ../sass/_widgets/_event-meta.sass */
+.blog-article-summary p.location {
+  font-weight: normal;
+  margin-bottom: 0.61538em;
+  padding-left: 30px;
+  background: transparent url("images/icon-event-location.jpg") no-repeat 3px top;
+}
+/* line 9, ../sass/_widgets/_event-meta.sass */
+.blog-article-summary p.date {
+  font-weight: normal;
+  margin-bottom: 0.61538em;
+  padding-left: 30px;
+  background: transparent url("images/icon-event-date.jpg") no-repeat 3px top;
+}
+/* line 14, ../sass/_widgets/_event-meta.sass */
+.blog-article-summary p.time {
+  font-weight: normal;
+  margin-bottom: 0.61538em;
+  padding-left: 30px;
+  background: transparent url("images/icon-event-time.jpg") no-repeat 3px top;
+}
+/* line 19, ../sass/_widgets/_event-meta.sass */
+.blog-article-summary p.rsvp {
+  font-weight: normal;
+  height: 23px;
+  margin-bottom: 2.46154em;
+  padding-left: 30px;
+  background: transparent url("images/icon-event-rsvp.jpg") no-repeat 3px top;
+}
+/* line 25, ../sass/_widgets/_event-meta.sass */
+.blog-article-summary p.rsvp span {
+  font-weight: bold;
+}
+
 /* line 3, ../sass/_pages/_homepage.sass */
 .articles {
   *zoom: 1;
@@ -1462,98 +1496,116 @@ form .explanation-input-group select {
   margin-left: 20px;
 }
 
-/* line 4, ../sass/_pages/_blog-home.sass */
-.blog-home .section {
+/* line 6, ../sass/_pages/_blog-home.sass */
+.blog-home .section,
+.event-home .section {
   *zoom: 1;
   margin-bottom: 7.38462em;
   background: white;
 }
 /* line 38, ../../../.rvm/gems/ruby-1.9.3-p448@etw/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.blog-home .section:after {
+.blog-home .section:after,
+.event-home .section:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 8, ../sass/_pages/_blog-home.sass */
-.blog-home .edge {
+/* line 10, ../sass/_pages/_blog-home.sass */
+.blog-home .edge,
+.event-home .edge {
   position: absolute;
   top: 0;
 }
-/* line 11, ../sass/_pages/_blog-home.sass */
-.blog-home .edge.lhs {
+/* line 13, ../sass/_pages/_blog-home.sass */
+.blog-home .edge.lhs,
+.event-home .edge.lhs {
   left: -111px;
   background: transparent url("images/edges_lhs.jpg") no-repeat left top;
   width: 111px;
   height: 276px;
 }
-/* line 16, ../sass/_pages/_blog-home.sass */
-.blog-home .edge.rhs {
+/* line 18, ../sass/_pages/_blog-home.sass */
+.blog-home .edge.rhs,
+.event-home .edge.rhs {
   background: transparent url("images/edges_rhs.jpg") no-repeat left top;
   right: -106px;
   width: 106px;
   height: 304px;
 }
-/* line 21, ../sass/_pages/_blog-home.sass */
-.blog-home .spark {
+/* line 23, ../sass/_pages/_blog-home.sass */
+.blog-home .spark,
+.event-home .spark {
   width: 100%;
   height: auto;
 }
-/* line 24, ../sass/_pages/_blog-home.sass */
-.blog-home .content {
+/* line 26, ../sass/_pages/_blog-home.sass */
+.blog-home .content,
+.event-home .content {
   margin: 20px;
 }
-/* line 26, ../sass/_pages/_blog-home.sass */
-.blog-home .breadcrumb {
+/* line 28, ../sass/_pages/_blog-home.sass */
+.blog-home .breadcrumb,
+.event-home .breadcrumb {
   margin-bottom: 1.23077em;
 }
-/* line 28, ../sass/_pages/_blog-home.sass */
-.blog-home h2 {
+/* line 30, ../sass/_pages/_blog-home.sass */
+.blog-home h2,
+.event-home h2 {
   margin-bottom: 1.33333em;
 }
-/* line 30, ../sass/_pages/_blog-home.sass */
-.blog-home .blog-article-summaries {
+/* line 32, ../sass/_pages/_blog-home.sass */
+.blog-home .blog-article-summaries,
+.event-home .blog-article-summaries {
   *zoom: 1;
 }
 /* line 38, ../../../.rvm/gems/ruby-1.9.3-p448@etw/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.blog-home .blog-article-summaries:after {
+.blog-home .blog-article-summaries:after,
+.event-home .blog-article-summaries:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 32, ../sass/_pages/_blog-home.sass */
-.blog-home .blog-article-summary {
+/* line 34, ../sass/_pages/_blog-home.sass */
+.blog-home .blog-article-summary,
+.event-home .blog-article-summary {
   display: inline;
   float: left;
   width: 210px;
   margin-left: 26px;
   font-weight: bold;
 }
-/* line 37, ../sass/_pages/_blog-home.sass */
-.blog-home .blog-article-summary h3 {
+/* line 39, ../sass/_pages/_blog-home.sass */
+.blog-home .blog-article-summary h3,
+.event-home .blog-article-summary h3 {
   font-weight: normal;
 }
-/* line 39, ../sass/_pages/_blog-home.sass */
-.blog-home .blog-article-summary img {
+/* line 41, ../sass/_pages/_blog-home.sass */
+.blog-home .blog-article-summary img,
+.event-home .blog-article-summary img {
   margin-bottom: 1.23077em;
 }
-/* line 41, ../sass/_pages/_blog-home.sass */
-.blog-home .blog-article-summary .tags {
+/* line 43, ../sass/_pages/_blog-home.sass */
+.blog-home .blog-article-summary .tags,
+.event-home .blog-article-summary .tags {
   margin-bottom: 2.46154em;
   padding-left: 30px;
   background: transparent url("images/icon-tag.jpg") no-repeat left top;
 }
-/* line 45, ../sass/_pages/_blog-home.sass */
-.blog-home .blog-article-summary .tags span {
+/* line 47, ../sass/_pages/_blog-home.sass */
+.blog-home .blog-article-summary .tags span,
+.event-home .blog-article-summary .tags span {
   font-weight: normal;
 }
-/* line 47, ../sass/_pages/_blog-home.sass */
-.blog-home .blog-article-summary .comments {
+/* line 49, ../sass/_pages/_blog-home.sass */
+.blog-home .blog-article-summary .comments,
+.event-home .blog-article-summary .comments {
   margin-bottom: 0em;
   padding-left: 30px;
   background: transparent url("images/icon-speech.jpg") no-repeat 3px top;
 }
-/* line 51, ../sass/_pages/_blog-home.sass */
-.blog-home .blog-article-summary:nth-child(4n - 3) {
+/* line 53, ../sass/_pages/_blog-home.sass */
+.blog-home .blog-article-summary:nth-child(4n - 3),
+.event-home .blog-article-summary:nth-child(4n - 3) {
   margin-left: 0;
 }
 
