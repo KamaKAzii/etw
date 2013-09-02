@@ -825,9 +825,17 @@ input[type='password'] {
   width: 100%;
   font-size: 18px;
   color: #666666;
+  background: white;
+  border: 1px solid #b2cdda;
+}
+/* line 14, ../sass/_global/_forms.sass */
+input[type='text'].date-picker,
+input[type='password'].date-picker {
+  width: 250px;
+  background: transparent url("images/icon-event-date.jpg") no-repeat 98% 5px;
 }
 
-/* line 15, ../sass/_global/_forms.sass */
+/* line 20, ../sass/_global/_forms.sass */
 .input-group {
   *zoom: 1;
   margin-bottom: 1.23077em;
@@ -838,7 +846,7 @@ input[type='password'] {
   display: table;
   clear: both;
 }
-/* line 18, ../sass/_global/_forms.sass */
+/* line 23, ../sass/_global/_forms.sass */
 .input-group label {
   display: inline;
   float: left;
@@ -852,11 +860,11 @@ input[type='password'] {
   clear: both;
 }
 
-/* line 23, ../sass/_global/_forms.sass */
+/* line 28, ../sass/_global/_forms.sass */
 form {
   margin-bottom: 1.23077em;
 }
-/* line 25, ../sass/_global/_forms.sass */
+/* line 30, ../sass/_global/_forms.sass */
 form ul {
   margin-bottom: 1.23077em;
   *zoom: 1;
@@ -867,7 +875,7 @@ form ul:after {
   display: table;
   clear: both;
 }
-/* line 28, ../sass/_global/_forms.sass */
+/* line 33, ../sass/_global/_forms.sass */
 form ul li {
   *zoom: 1;
   display: inline;
@@ -882,11 +890,11 @@ form ul li:after {
   display: table;
   clear: both;
 }
-/* line 34, ../sass/_global/_forms.sass */
+/* line 39, ../sass/_global/_forms.sass */
 form ul li:nth-child(2n - 1) {
   margin-left: 0;
 }
-/* line 36, ../sass/_global/_forms.sass */
+/* line 41, ../sass/_global/_forms.sass */
 form ul .input-group {
   margin-bottom: 0em;
   *zoom: 1;
@@ -897,7 +905,7 @@ form ul .input-group:after {
   display: table;
   clear: both;
 }
-/* line 39, ../sass/_global/_forms.sass */
+/* line 44, ../sass/_global/_forms.sass */
 form ul .input-group label {
   display: inline;
   float: left;
@@ -910,13 +918,13 @@ form ul .input-group label:after {
   display: table;
   clear: both;
 }
-/* line 43, ../sass/_global/_forms.sass */
+/* line 48, ../sass/_global/_forms.sass */
 form .actions {
   display: inline;
   float: left;
   clear: both;
 }
-/* line 47, ../sass/_global/_forms.sass */
+/* line 52, ../sass/_global/_forms.sass */
 form .explanation-input-group {
   margin-bottom: 1.23077em;
   *zoom: 1;
@@ -927,18 +935,18 @@ form .explanation-input-group:after {
   display: table;
   clear: both;
 }
-/* line 50, ../sass/_global/_forms.sass */
+/* line 55, ../sass/_global/_forms.sass */
 form .explanation-input-group ul {
   margin-bottom: 0em;
 }
-/* line 52, ../sass/_global/_forms.sass */
+/* line 57, ../sass/_global/_forms.sass */
 form .explanation-input-group p {
   display: inline;
   float: left;
   width: 60%;
   margin-right: 10%;
 }
-/* line 56, ../sass/_global/_forms.sass */
+/* line 61, ../sass/_global/_forms.sass */
 form .explanation-input-group select {
   display: inline;
   float: left;
