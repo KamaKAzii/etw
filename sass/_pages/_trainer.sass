@@ -43,8 +43,7 @@
     li  
       +float(left)
       +adjust-font-size-to($font-size-medium)
-      width: 24%
-      margin-left: 1%
+      width: 25%
       color: $text-color-white
       &:first-child
         width: 25%
@@ -63,16 +62,16 @@
         color: $text-color
         div
           background: $background-color
+          &:hover
+            background: $background-color
       &:hover
         cursor: pointer
-      &#community
         div
           +background-image(linear-gradient(#028ac0, #02618b))
+      &#community
         span
           background: transparent url('images/icon-subnav-community-off.png') no-repeat 12px 6px
         &.active
-          div
-            background: $background-color
           span
             background: transparent url('images/icon-subnav-community-on.png') no-repeat 12px 6px
       &#timetable
@@ -101,6 +100,7 @@
     width: 918px
     margin: 0 $grid-gutter * 2
     border: 1px solid $border-color-very-light
+    border-top: none
     +trailer(1.5)
     display: none
     &.active

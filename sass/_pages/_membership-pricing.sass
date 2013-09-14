@@ -1,0 +1,92 @@
+// _membership-pricing.sass
+
+.membership-pricing
+  // Custom lhs width
+  .content .lhs
+    width: 592px
+  .pricing-matrix
+    +pie-clearfix
+    margin-bottom: $base-line-height * 2
+    .wrapper
+      color: $text-color-white
+      padding-bottom: $base-line-height
+    li  
+      +float(left)
+      width: 196px
+      margin-right: 1px
+      text-align: center
+      padding-bottom: $base-line-height
+      input
+        margin-left: auto
+        margin-right: auto
+        font-size: 14px
+        padding: 7px 30px
+    .unlimited-flexibility
+      background: #e5e599
+      input
+        border-color: #d0d088
+        +background-image(linear-gradient(#c8c832, #a7a720))
+        &:hover
+          +background-image(linear-gradient(#d8d82f, #aaaa23))
+      .wrapper
+        +background-image(linear-gradient(#cccc33, #abab24))
+        position: relative
+        margin-bottom: $base-line-height * 2
+        &:after
+          content: ""
+          display: block
+          width: 196px
+          height: 28px
+          position: absolute
+          bottom: -28px
+          left: 1px
+          background: transparent url('images/price-arrow-01.png') no-repeat left top
+    .keen-and-committed
+      background: #a1cdec
+      input
+        border-color: #86c0e8
+        +background-image(linear-gradient(#73bcee, #3b92ce))
+        &:hover
+          +background-image(linear-gradient(#6eb4e5, #2b86c5))
+      .wrapper
+        +background-image(linear-gradient(#70b5e6, #5aabe3))
+        position: relative
+        margin-bottom: $base-line-height * 2
+        &:after
+          content: ""
+          display: block
+          width: 196px
+          height: 28px
+          position: absolute
+          bottom: -28px
+          left: 1px
+          background: transparent url('images/price-arrow-02.png') no-repeat left top
+    .evo-essentials
+      background: #ccdde6
+      input
+        +background-image(linear-gradient(#04527c, #063c5b))
+        &:hover
+          +background-image(linear-gradient(#126e9f, #063d5b))
+      .wrapper
+        +background-image(linear-gradient(#005983, #003a6d))
+        position: relative
+        margin-bottom: $base-line-height * 2
+        &:after
+          content: ""
+          display: block
+          width: 196px
+          height: 28px
+          position: absolute
+          bottom: -28px
+          left: 1px
+          background: transparent url('images/price-arrow-03.png') no-repeat left top
+    // Pricing styles
+    h4
+      font-size: 18px
+      padding: $base-line-height 36px 0
+    .price
+      font-size: 35px
+      margin-bottom: $base-line-height
+      font-weight: bold
+    .payment-interval
+      padding: 0 30px

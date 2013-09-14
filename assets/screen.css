@@ -157,34 +157,39 @@ body html > body {
 /* line 18, ../sass/_global/_type.sass */
 p {
   margin-bottom: 1.23077em;
+  line-height: 18px;
+}
+/* line 21, ../sass/_global/_type.sass */
+p a, p a:hover {
+  text-decoration: underline;
 }
 
-/* line 21, ../sass/_global/_type.sass */
+/* line 24, ../sass/_global/_type.sass */
 a {
   text-decoration: none;
   color: #005983;
 }
-/* line 24, ../sass/_global/_type.sass */
+/* line 27, ../sass/_global/_type.sass */
 a:hover {
   text-decoration: none;
-  color: #1db7ff;
+  color: #bbd840;
 }
 
-/* line 28, ../sass/_global/_type.sass */
+/* line 31, ../sass/_global/_type.sass */
 h2 {
   font-size: 24px;
   margin-bottom: 0.66667em;
 }
 
-/* line 32, ../sass/_global/_type.sass */
+/* line 35, ../sass/_global/_type.sass */
 h3 {
-  margin-bottom: 0.88889em;
+  margin-bottom: 0.44444em;
   font-size: 1.38462em;
   line-height: 1.11111em;
   color: #003a6d;
 }
 
-/* line 37, ../sass/_global/_type.sass */
+/* line 40, ../sass/_global/_type.sass */
 h5 {
   margin-bottom: 0.88889em;
   font-size: 1.38462em;
@@ -423,44 +428,46 @@ h1 {
 /* line 32, ../sass/_global/_uber.sass */
 .uber .simple a {
   color: white;
+  margin-left: 8px;
+  margin-right: 8px;
 }
-/* line 34, ../sass/_global/_uber.sass */
+/* line 36, ../sass/_global/_uber.sass */
 .uber .simple a:hover {
   color: #1db7ff;
 }
-/* line 37, ../sass/_global/_uber.sass */
+/* line 39, ../sass/_global/_uber.sass */
 .uber .info {
   width: 220px;
 }
-/* line 39, ../sass/_global/_uber.sass */
+/* line 41, ../sass/_global/_uber.sass */
 .uber h3 {
   color: white;
   font-size: 24px;
 }
 
-/* line 45, ../sass/_global/_uber.sass */
+/* line 47, ../sass/_global/_uber.sass */
 .uber.location .state-navigation {
   width: 60px;
   margin-left: 40px;
 }
-/* line 48, ../sass/_global/_uber.sass */
+/* line 50, ../sass/_global/_uber.sass */
 .uber.location .state-navigation li {
   text-align: center;
   line-height: 29px;
 }
-/* line 51, ../sass/_global/_uber.sass */
+/* line 53, ../sass/_global/_uber.sass */
 .uber.location .state-navigation .active {
   color: #009ddc;
   background: #043c57;
 }
-/* line 54, ../sass/_global/_uber.sass */
+/* line 56, ../sass/_global/_uber.sass */
 .uber.location .current-state {
   width: 580px;
   background: #043c57 url("images/location-nsw.jpg") no-repeat 433px 15px;
   min-height: 195px;
   padding: 20px;
 }
-/* line 59, ../sass/_global/_uber.sass */
+/* line 61, ../sass/_global/_uber.sass */
 .uber.location .current-state dt {
   font-size: 1.07692em;
   line-height: 1.14286em;
@@ -471,7 +478,7 @@ h1 {
   color: #009ddc;
   border-bottom: #009ddc 1px dotted;
 }
-/* line 67, ../sass/_global/_uber.sass */
+/* line 69, ../sass/_global/_uber.sass */
 .uber.location .current-state dl {
   display: inline;
   float: left;
@@ -479,7 +486,7 @@ h1 {
   margin-left: 0;
   margin-right: 20px;
 }
-/* line 72, ../sass/_global/_uber.sass */
+/* line 74, ../sass/_global/_uber.sass */
 .uber.location .current-state dl a {
   color: white;
 }
@@ -698,6 +705,7 @@ h1 {
   float: left;
   *zoom: 1;
   margin-bottom: 2.46154em;
+  margin-left: 10px;
 }
 /* line 38, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .footer .footer-navigation:after {
@@ -705,28 +713,28 @@ h1 {
   display: table;
   clear: both;
 }
-/* line 10, ../sass/_global/_footer.sass */
+/* line 11, ../sass/_global/_footer.sass */
 .footer ul {
   width: 100px;
 }
-/* line 12, ../sass/_global/_footer.sass */
+/* line 13, ../sass/_global/_footer.sass */
 .footer ul .title {
   font-size: 14px;
   margin-bottom: 5px;
 }
 
-/* line 19, ../sass/_global/_footer.sass */
+/* line 20, ../sass/_global/_footer.sass */
 .copyright {
   display: inline;
   float: right;
   background: transparent url("images/logo-small.jpg") no-repeat right top;
   width: 260px;
-  padding-top: 10px;
+  margin-top: -2px;
   padding-right: 82px;
   height: 57px;
 }
 
-/* line 27, ../sass/_global/_footer.sass */
+/* line 28, ../sass/_global/_footer.sass */
 .testimonial {
   *zoom: 1;
   margin: 0 auto;
@@ -744,37 +752,38 @@ h1 {
   display: table;
   clear: both;
 }
-/* line 37, ../sass/_global/_footer.sass */
+/* line 38, ../sass/_global/_footer.sass */
 .testimonial img.close-quote {
   display: inline;
   vertical-align: top;
   margin-left: 20px;
 }
-/* line 41, ../sass/_global/_footer.sass */
+/* line 42, ../sass/_global/_footer.sass */
 .testimonial span {
   display: block;
 }
-/* line 43, ../sass/_global/_footer.sass */
+/* line 44, ../sass/_global/_footer.sass */
 .testimonial .content {
+  padding-top: 16px;
   margin-bottom: 48px !important;
   position: relative;
   width: 470px;
   font-style: italic;
   z-index: 10;
 }
-/* line 49, ../sass/_global/_footer.sass */
+/* line 51, ../sass/_global/_footer.sass */
 .testimonial .name {
   position: absolute;
   bottom: 0;
   right: 0;
   height: 50px;
 }
-/* line 54, ../sass/_global/_footer.sass */
+/* line 56, ../sass/_global/_footer.sass */
 .testimonial .name img {
   display: inline;
   float: left;
 }
-/* line 56, ../sass/_global/_footer.sass */
+/* line 58, ../sass/_global/_footer.sass */
 .testimonial .name p {
   display: inline;
   float: left;
@@ -1296,16 +1305,15 @@ form .explanation-input-group select {
   float: left;
   font-size: 1.38462em;
   line-height: 1.77778em;
-  width: 24%;
-  margin-left: 1%;
+  width: 25%;
   color: white;
 }
-/* line 49, ../sass/_pages/_trainer.sass */
+/* line 48, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li:first-child {
   width: 25%;
   margin-left: 0;
 }
-/* line 52, ../sass/_pages/_trainer.sass */
+/* line 51, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li div {
   -moz-border-radius-topleft: 10px;
   -webkit-border-top-left-radius: 10px;
@@ -1327,26 +1335,30 @@ form .explanation-input-group select {
   background-image: -ms-linear-gradient(#009ddc, #0089c2);
   background-image: linear-gradient(#009ddc, #0089c2);
 }
-/* line 58, ../sass/_pages/_trainer.sass */
+/* line 57, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li span {
   display: block;
   line-height: 44px;
   padding-left: 55px;
 }
-/* line 62, ../sass/_pages/_trainer.sass */
+/* line 61, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li.active {
   color: black;
 }
-/* line 64, ../sass/_pages/_trainer.sass */
+/* line 63, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li.active div {
   background: white;
 }
-/* line 66, ../sass/_pages/_trainer.sass */
+/* line 65, ../sass/_pages/_trainer.sass */
+.trainer .subnavigation li.active div:hover {
+  background: white;
+}
+/* line 67, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li:hover {
   cursor: pointer;
 }
 /* line 69, ../sass/_pages/_trainer.sass */
-.trainer .subnavigation li#community div {
+.trainer .subnavigation li:hover div {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #028ac0), color-stop(100%, #02618b));
   background-image: -webkit-linear-gradient(#028ac0, #02618b);
   background-image: -moz-linear-gradient(#028ac0, #02618b);
@@ -1354,47 +1366,43 @@ form .explanation-input-group select {
   background-image: -ms-linear-gradient(#028ac0, #02618b);
   background-image: linear-gradient(#028ac0, #02618b);
 }
-/* line 71, ../sass/_pages/_trainer.sass */
+/* line 72, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li#community span {
   background: transparent url("images/icon-subnav-community-off.png") no-repeat 12px 6px;
 }
-/* line 74, ../sass/_pages/_trainer.sass */
-.trainer .subnavigation li#community.active div {
-  background: white;
-}
-/* line 76, ../sass/_pages/_trainer.sass */
+/* line 75, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li#community.active span {
   background: transparent url("images/icon-subnav-community-on.png") no-repeat 12px 6px;
 }
-/* line 79, ../sass/_pages/_trainer.sass */
+/* line 78, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li#timetable span {
   background: transparent url("images/icon-subnav-timetable-off.png") no-repeat 12px 6px;
 }
-/* line 81, ../sass/_pages/_trainer.sass */
+/* line 80, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li#timetable.active span {
   background: transparent url("images/icon-subnav-timetable-on.png") no-repeat 12px 6px;
 }
-/* line 84, ../sass/_pages/_trainer.sass */
+/* line 83, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li#trainers span {
   background: transparent url("images/icon-subnav-trainers-off.png") no-repeat 12px 6px;
 }
-/* line 86, ../sass/_pages/_trainer.sass */
+/* line 85, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li#trainers.active span {
   background: transparent url("images/icon-subnav-trainers-on.png") no-repeat 12px 6px;
 }
-/* line 89, ../sass/_pages/_trainer.sass */
+/* line 88, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li#location span {
   background: transparent url("images/icon-subnav-location-off.png") no-repeat 12px 6px;
 }
-/* line 91, ../sass/_pages/_trainer.sass */
+/* line 90, ../sass/_pages/_trainer.sass */
 .trainer .subnavigation li#location.active span {
   background: transparent url("images/icon-subnav-location-on.png") no-repeat 12px 6px;
 }
-/* line 96, ../sass/_pages/_trainer.sass */
+/* line 95, ../sass/_pages/_trainer.sass */
 .trainer .subcontent-container {
   margin: 20px;
 }
-/* line 98, ../sass/_pages/_trainer.sass */
+/* line 97, ../sass/_pages/_trainer.sass */
 .trainer .subcontent {
   display: inline;
   float: left;
@@ -1402,6 +1410,7 @@ form .explanation-input-group select {
   width: 918px;
   margin: 0 20px;
   border: 1px solid #e1e1e1;
+  border-top: none;
   margin-bottom: 1.84615em;
   display: none;
 }
@@ -1594,26 +1603,26 @@ form .explanation-input-group select {
 /* line 34, ../sass/_pages/_blog-home.sass */
 .blog-home .blog-article-summary,
 .event-home .blog-article-summary {
+  margin-bottom: 1.23077em;
   display: inline;
   float: left;
   width: 210px;
   margin-left: 26px;
   font-weight: bold;
 }
-/* line 39, ../sass/_pages/_blog-home.sass */
+/* line 40, ../sass/_pages/_blog-home.sass */
 .blog-home .blog-article-summary h3,
 .event-home .blog-article-summary h3 {
   font-weight: normal;
 }
-/* line 41, ../sass/_pages/_blog-home.sass */
+/* line 42, ../sass/_pages/_blog-home.sass */
 .blog-home .blog-article-summary img,
 .event-home .blog-article-summary img {
   margin-bottom: 1.23077em;
 }
-/* line 43, ../sass/_pages/_blog-home.sass */
+/* line 44, ../sass/_pages/_blog-home.sass */
 .blog-home .blog-article-summary .tags,
 .event-home .blog-article-summary .tags {
-  margin-bottom: 2.46154em;
   padding-left: 30px;
   background: transparent url("images/icon-tag.jpg") no-repeat left top;
 }
@@ -1830,4 +1839,190 @@ form .explanation-input-group select {
 /* line 100, ../sass/_pages/_blog-article.sass */
 .blog-article form.comments-area input[type='text'] {
   width: 300px;
+}
+
+/* line 5, ../sass/_pages/_membership-pricing.sass */
+.membership-pricing .content .lhs {
+  width: 592px;
+}
+/* line 7, ../sass/_pages/_membership-pricing.sass */
+.membership-pricing .pricing-matrix {
+  *zoom: 1;
+  margin-bottom: 32px;
+}
+/* line 38, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.membership-pricing .pricing-matrix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 10, ../sass/_pages/_membership-pricing.sass */
+.membership-pricing .pricing-matrix .wrapper {
+  color: white;
+  padding-bottom: 16px;
+}
+/* line 13, ../sass/_pages/_membership-pricing.sass */
+.membership-pricing .pricing-matrix li {
+  display: inline;
+  float: left;
+  width: 196px;
+  margin-right: 1px;
+  text-align: center;
+  padding-bottom: 16px;
+}
+/* line 19, ../sass/_pages/_membership-pricing.sass */
+.membership-pricing .pricing-matrix li input {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+  padding: 7px 30px;
+}
+/* line 24, ../sass/_pages/_membership-pricing.sass */
+.membership-pricing .pricing-matrix .unlimited-flexibility {
+  background: #e5e599;
+}
+/* line 26, ../sass/_pages/_membership-pricing.sass */
+.membership-pricing .pricing-matrix .unlimited-flexibility input {
+  border-color: #d0d088;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c8c832), color-stop(100%, #a7a720));
+  background-image: -webkit-linear-gradient(#c8c832, #a7a720);
+  background-image: -moz-linear-gradient(#c8c832, #a7a720);
+  background-image: -o-linear-gradient(#c8c832, #a7a720);
+  background-image: -ms-linear-gradient(#c8c832, #a7a720);
+  background-image: linear-gradient(#c8c832, #a7a720);
+}
+/* line 29, ../sass/_pages/_membership-pricing.sass */
+.membership-pricing .pricing-matrix .unlimited-flexibility input:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d8d82f), color-stop(100%, #aaaa23));
+  background-image: -webkit-linear-gradient(#d8d82f, #aaaa23);
+  background-image: -moz-linear-gradient(#d8d82f, #aaaa23);
+  background-image: -o-linear-gradient(#d8d82f, #aaaa23);
+  background-image: -ms-linear-gradient(#d8d82f, #aaaa23);
+  background-image: linear-gradient(#d8d82f, #aaaa23);
+}
+/* line 31, ../sass/_pages/_membership-pricing.sass */
+.membership-pricing .pricing-matrix .unlimited-flexibility .wrapper {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cccc33), color-stop(100%, #abab24));
+  background-image: -webkit-linear-gradient(#cccc33, #abab24);
+  background-image: -moz-linear-gradient(#cccc33, #abab24);
+  background-image: -o-linear-gradient(#cccc33, #abab24);
+  background-image: -ms-linear-gradient(#cccc33, #abab24);
+  background-image: linear-gradient(#cccc33, #abab24);
+  position: relative;
+  margin-bottom: 32px;
+}
+/* line 35, ../sass/_pages/_membership-pricing.sass */
+.membership-pricing .pricing-matrix .unlimited-flexibility .wrapper:after {
+  content: "";
+  display: block;
+  width: 196px;
+  height: 28px;
+  position: absolute;
+  bottom: -28px;
+  left: 1px;
+  background: transparent url("images/price-arrow-01.png") no-repeat left top;
+}
+/* line 44, ../sass/_pages/_membership-pricing.sass */
+.membership-pricing .pricing-matrix .keen-and-committed {
+  background: #a1cdec;
+}
+/* line 46, ../sass/_pages/_membership-pricing.sass */
+.membership-pricing .pricing-matrix .keen-and-committed input {
+  border-color: #86c0e8;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #73bcee), color-stop(100%, #3b92ce));
+  background-image: -webkit-linear-gradient(#73bcee, #3b92ce);
+  background-image: -moz-linear-gradient(#73bcee, #3b92ce);
+  background-image: -o-linear-gradient(#73bcee, #3b92ce);
+  background-image: -ms-linear-gradient(#73bcee, #3b92ce);
+  background-image: linear-gradient(#73bcee, #3b92ce);
+}
+/* line 49, ../sass/_pages/_membership-pricing.sass */
+.membership-pricing .pricing-matrix .keen-and-committed input:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6eb4e5), color-stop(100%, #2b86c5));
+  background-image: -webkit-linear-gradient(#6eb4e5, #2b86c5);
+  background-image: -moz-linear-gradient(#6eb4e5, #2b86c5);
+  background-image: -o-linear-gradient(#6eb4e5, #2b86c5);
+  background-image: -ms-linear-gradient(#6eb4e5, #2b86c5);
+  background-image: linear-gradient(#6eb4e5, #2b86c5);
+}
+/* line 51, ../sass/_pages/_membership-pricing.sass */
+.membership-pricing .pricing-matrix .keen-and-committed .wrapper {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #70b5e6), color-stop(100%, #5aabe3));
+  background-image: -webkit-linear-gradient(#70b5e6, #5aabe3);
+  background-image: -moz-linear-gradient(#70b5e6, #5aabe3);
+  background-image: -o-linear-gradient(#70b5e6, #5aabe3);
+  background-image: -ms-linear-gradient(#70b5e6, #5aabe3);
+  background-image: linear-gradient(#70b5e6, #5aabe3);
+  position: relative;
+  margin-bottom: 32px;
+}
+/* line 55, ../sass/_pages/_membership-pricing.sass */
+.membership-pricing .pricing-matrix .keen-and-committed .wrapper:after {
+  content: "";
+  display: block;
+  width: 196px;
+  height: 28px;
+  position: absolute;
+  bottom: -28px;
+  left: 1px;
+  background: transparent url("images/price-arrow-02.png") no-repeat left top;
+}
+/* line 64, ../sass/_pages/_membership-pricing.sass */
+.membership-pricing .pricing-matrix .evo-essentials {
+  background: #ccdde6;
+}
+/* line 66, ../sass/_pages/_membership-pricing.sass */
+.membership-pricing .pricing-matrix .evo-essentials input {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #04527c), color-stop(100%, #063c5b));
+  background-image: -webkit-linear-gradient(#04527c, #063c5b);
+  background-image: -moz-linear-gradient(#04527c, #063c5b);
+  background-image: -o-linear-gradient(#04527c, #063c5b);
+  background-image: -ms-linear-gradient(#04527c, #063c5b);
+  background-image: linear-gradient(#04527c, #063c5b);
+}
+/* line 68, ../sass/_pages/_membership-pricing.sass */
+.membership-pricing .pricing-matrix .evo-essentials input:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #126e9f), color-stop(100%, #063d5b));
+  background-image: -webkit-linear-gradient(#126e9f, #063d5b);
+  background-image: -moz-linear-gradient(#126e9f, #063d5b);
+  background-image: -o-linear-gradient(#126e9f, #063d5b);
+  background-image: -ms-linear-gradient(#126e9f, #063d5b);
+  background-image: linear-gradient(#126e9f, #063d5b);
+}
+/* line 70, ../sass/_pages/_membership-pricing.sass */
+.membership-pricing .pricing-matrix .evo-essentials .wrapper {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #005983), color-stop(100%, #003a6d));
+  background-image: -webkit-linear-gradient(#005983, #003a6d);
+  background-image: -moz-linear-gradient(#005983, #003a6d);
+  background-image: -o-linear-gradient(#005983, #003a6d);
+  background-image: -ms-linear-gradient(#005983, #003a6d);
+  background-image: linear-gradient(#005983, #003a6d);
+  position: relative;
+  margin-bottom: 32px;
+}
+/* line 74, ../sass/_pages/_membership-pricing.sass */
+.membership-pricing .pricing-matrix .evo-essentials .wrapper:after {
+  content: "";
+  display: block;
+  width: 196px;
+  height: 28px;
+  position: absolute;
+  bottom: -28px;
+  left: 1px;
+  background: transparent url("images/price-arrow-03.png") no-repeat left top;
+}
+/* line 84, ../sass/_pages/_membership-pricing.sass */
+.membership-pricing .pricing-matrix h4 {
+  font-size: 18px;
+  padding: 16px 36px 0;
+}
+/* line 87, ../sass/_pages/_membership-pricing.sass */
+.membership-pricing .pricing-matrix .price {
+  font-size: 35px;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+/* line 91, ../sass/_pages/_membership-pricing.sass */
+.membership-pricing .pricing-matrix .payment-interval {
+  padding: 0 30px;
 }

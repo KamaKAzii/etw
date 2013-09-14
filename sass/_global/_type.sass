@@ -17,20 +17,23 @@ body
 
 p
   +trailer
+  line-height: 18px
+  a, a:hover
+    text-decoration: underline
 
 a
   text-decoration: none
   color: $link-color
   &:hover
     text-decoration: none
-    color: lighten($link-color, 30%)
+    color: $theme-color-alternative
 
 h2
   font-size: $font-size-large
   +trailer(1, $font-size-large)
 
 h3
-  +trailer(1, $font-size-medium)
+  +trailer(0.5, $font-size-medium)
   +adjust-font-size-to($font-size-medium, 1.25)
   color: $theme-color-dark
 
