@@ -1,119 +1,202 @@
-; (function ($) {
+// Carousel
+//
+// This plugin assumes we're working with a UL with LIs which are all the same dimension.
+// It also assumes the LIs are displayed normally and are sitting in normal flow within
+// the parent UL (i.e. nothing is absolutely positioned yet).
+
+;(function ($) {
   $.fn.extend({
     carousel: function (opt) {
       var settings = $.extend({
-        'panelWidth' : '1120',
+        'navClass' : 'carouselNav',
         'animationDuration' : 1500,
-        'classNav' : 'carouselNav', // Class name for the carousel UL
-        'classPrev' : 'carouselPrev', // Class name for the 'previous' LI
-        'classNext' : 'carouselNext', // Class name for the 'next' LI
-        'classDot' : 'carouselDot' // Class name for the other LIs (the dots)
+        'autoScrollOnLoad' : true,
+        'autoScrollInterval' : 4000,
       }, opt);
 
-      var utils = {
-        genMenuMarkup: function (n) {
-          var markup = "<ul class='" + settings.classNav + "'><li class='" + settings.classPrev + "'>&lt;</li>";
-          for (i = 1; i <= n; i++) {
-            markup += "<li class='" + settings.classDot + "'>" + i + "</li>"
-          }
-          markup += "<li class='" + settings.classNext + "'>&gt;</li></ul>";
-          return markup;
-        },
-        animateTo: function($base) {
-          var targetPosition = settings.panelWidth * ($base.data('currentLocation') - 1);
-          $base.animate(
-            {
-              left: -targetPosition
-            },
-            {
-              duration: settings.animationDuration,
-              queue: false
-            }
-          );
-        }
+      var utils = { 
       };
 
       return this.each(function () {
         
-        var $base = $(this);
+        var $this = $(this);
+        
+        $this
+          .data('$panels', $this.children('li'))
+          .data('panelWidth', $this.data('$panels').eq(0).width())
+          .data('panelHeight', $this.data('$panels').eq(0).height())
+          .data('currentIndex', 0)
+          .data('totalPanels', $this.data('$panels').length)
+          .data('animationInProgress', false)
+          .data('navHasBeenClicked', false)
+          .on('init', function (e) {
+            $this
+              .css('position', 'relative')
+              .css('overflow', 'hidden')
+              .css('width', $this.data('panelWidth') + 'px')
+              .css('height', $this.data('panelHeight') + 'px');
+            $this.data('$panels')
+              .css('display', 'none')
+              .css('position', 'absolute')
+              .css('top', '0');
 
-        $base
-          // Store some data about the panels in the base object
-          .data('$panels', $base.children("li"))
-          .data('totalPanels', $base.data('$panels').length)
-          .data('currentLocation', 1)
+            var $initialPanel = $this.data('$panels').eq($this.data('currentIndex'));
+            $initialPanel
+              .css('display', 'block')
+              .css('left', $this.data('currentIndex') * $this.data('panelWidth'));
 
-          .on('carousel.init', function () {
-            $('body').after(utils.genMenuMarkup($base.data('totalPanels')));
+            var $nav = $('<ul>')
+              .addClass(settings.navClass)
+              .css('z-index', 30);
 
-            $menuElements = $base.closest("body").siblings("." + settings.classNav).children("li." + settings.classDot);
-            $menuElements.each(function (index) {
-              $(this).data('position', index + 1);
-            });
+            $this.data('$nav', $nav);
 
-            // Remove the class from each of the image li's
-            $base.children("li").each(function () {
-              $image = $(this);
-              if($image.hasClass("hideMe")) {
-                $(this).removeClass("hideMe");
-              }
-            });
+            for (i = 0; i < $this.data('totalPanels'); i++) {
+              var $currentNavLi = $('<li>')
+                .html('.')
+                .data('navElementIndex', i)
+                .on('click', function() {
+                  $this.trigger('navElementClicked', [$(this)]);
+                });
+              $this.data('$nav').append($currentNavLi);
+            }
+
+            $this.after($nav);
+
+            $this.data('$nav')
+              .find('li')
+              .removeClass('active')
+              .eq($this.data('currentIndex'))
+              .addClass('active');
+
+            if (settings.autoScrollOnLoad) {
+              setInterval(function() {
+                if (!$this.data('navHasBeenClicked')) {
+                  $this.trigger("goRight");
+                }
+              }, settings.autoScrollInterval);
+            }
           })
-          .on('carousel.clickDot', function (event, li) {
-            $base.data('currentLocation', $(li).data('position'));
-            $("." + settings.classDot).removeClass("active");
-            $(li).toggleClass("active");
-            currentLocation = $base.data('currentLocation');
-            utils.animateTo($base);
-          })
-          .on('carousel.clickPrev', function (event, li) {
+          .on('goLeft', function (e, targetPanelIndex) {
+
+            if ($this.data('animationInProgress') == true) { return; }
+
+            var $panelToHide = $this
+              .data('$panels')
+              .eq($this.data('currentIndex'))
+              .css('z-index', 10);
             
-            if ($base.data('currentLocation') == 1) {
-              $base.data('currentLocation', $base.data('totalPanels'));
+            if (!targetPanelIndex) {
+              $this.data('currentIndex', $this.data('currentIndex') - 1);
+              if ($this.data('currentIndex') < 0) {
+                $this.data('currentIndex', $this.data('totalPanels') - 1);
+              }
+            } else {
+              $this.data('currentIndex', targetPanelIndex);
             }
-            else {
-              $base.data('currentLocation', $base.data('currentLocation') - 1);
+
+            $this.data('$nav')
+              .find('li')
+              .removeClass('active')
+              .eq($this.data('currentIndex'))
+              .addClass('active');
+
+            var $panelToShow = $this
+              .data('$panels')
+              .eq($this.data('currentIndex'))
+              .css('z-index', 20);
+
+            $this.data('animationInProgress', true);
+
+            $panelToShow
+              .css('display', 'block')
+              .css('left', -$this.data('panelWidth') + 'px')
+              .animate(
+                { 'left': '0' },
+                { 'duration': settings.animationDuration }
+              );
+            $panelToHide
+              .animate(
+                { 'left': $this.data('panelWidth') + 'px' },
+                {
+                  'duration': settings.animationDuration,
+                  'complete': function() {
+                    $(this).css('display', 'none');
+                    $this.data('animationInProgress', false);
+                  }
+                }
+              );
+          })
+          .on('goRight', function(e, targetPanelIndex) {
+
+            if ($this.data('animationInProgress') == true) { return; }
+
+            var $panelToHide = $this
+              .data('$panels')
+              .eq($this.data('currentIndex'))
+              .css('z-index', 10);
+
+            if (!targetPanelIndex) {
+              $this.data('currentIndex', $this.data('currentIndex') + 1);
+              if ($this.data('currentIndex') > $this.data('totalPanels') - 1) {
+                $this.data('currentIndex', 0);
+              }
+            } else {
+              $this.data('currentIndex', targetPanelIndex);
             }
-            utils.animateTo($base);
+
+            $this.data('$nav')
+              .find('li')
+              .removeClass('active')
+              .eq($this.data('currentIndex'))
+              .addClass('active');
+
+            var $panelToShow = $this
+              .data('$panels')
+              .eq( $this.data('currentIndex'))
+              .css('z-index', 20);
+
+            $this.data('animationInProgress', true);
+
+            $panelToShow
+              .css('display', 'block')
+              .css('left', $this.data('panelWidth') + 'px')
+              .animate(
+                { 'left': '0' },
+                { 'duration': settings.animationDuration }
+              );
+            $panelToHide
+              .animate(
+                { 'left': -$this.data('panelWidth') + 'px' },
+                {
+                  'duration': settings.animationDuration,
+                  'complete': function() {
+                    $(this).css('display', 'none');
+                    $this.data('animationInProgress', false);
+                  }
+                }
+              );
 
           })
-          .on('carousel.clickNext', function (event, li) {
-            if ($base.data('currentLocation') == $base.data('totalPanels')) {
-              $base.data('currentLocation', 1);
+          .on('navElementClicked', function(e, $targetNavElement) {
+            $this.data('navHasBeenClicked', true);
+            var currentIndex = $this.data('currentIndex');
+            var targetIndex = $targetNavElement.data('navElementIndex');
+            if (currentIndex == targetIndex) { return; }
+
+            // directionBool: true is right, false is left.
+            var directionBool = targetIndex > currentIndex;
+
+            if (directionBool) {
+              $this.trigger('goRight', [targetIndex]);
+            } else {
+              $this.trigger('goLeft', targetIndex);
             }
-            else {
-              $base.data('currentLocation', $base.data('currentLocation') + 1);
-            }
-            var targetDotIndex = $base.data('currentLocation') - 1;
-            $("." + settings.classDot).removeClass("active").eq(targetDotIndex).addClass("active");
-            utils.animateTo($base);
 
           })
-          .trigger('carousel.init')
-
-          // Traverse to the nav dots
-          .closest("body").siblings("." + settings.classNav).children("li." + settings.classDot)
-
-          .on("click", function () {
-            $base.trigger('carousel.clickDot', this);
-
-          })
-          // Traverse to the Prev button
-          .siblings("li." + settings.classPrev)
-          .on("click", function () {
-            $base.trigger('carousel.clickPrev', this);
-          })
-
-          // Traverse to the Next button
-          .siblings("li." + settings.classNext)
-          
-          .on("click", function () {
-            $base.trigger('carousel.clickNext', this);
-          })
-        ;
+          .trigger('init');
 
       });
-
     }
   });
 })(jQuery);

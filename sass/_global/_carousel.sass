@@ -1,36 +1,38 @@
 // _carousel.sass
 
+// Temp
+.modal-whitewash,
+.modal-content
+  display: none !important
+
 $carousel-height: 509px
 $item-width: 1120px
 $carousel-count: 4
 $carousel-offset: -70px
 
 // Hide the previous and next
-.carouselPrev,
-.carouselNext
-  display: none
 
 .carouselNav
   position: absolute
   left: 50%
-  top: 400px
+  top: 270px
   margin-left: 340px
   z-index: 4
-.carouselDot
-  +float(left)
-  +border-radius(10px)
-  text-indent: -999em
-  display: block
-  width: 13px
-  height: 13px
-  border: 2px solid $carousel-dot-border-color
-  margin-right: $grid-gutter / 2
-  background: $carousel-dot-inside-off
-  &:hover
-    cursor: pointer
-    background: $carousel-dot-inside-on
-  &.active
-    background: $carousel-dot-inside-on
+  li
+    +float(left)
+    +border-radius(10px)
+    text-indent: -999em
+    display: block
+    width: 13px
+    height: 13px
+    border: 2px solid $carousel-dot-border-color
+    margin-right: $grid-gutter / 2
+    background: $carousel-dot-inside-off
+    &:hover
+      cursor: pointer
+      background: $carousel-dot-inside-on
+    &.active
+      background: $carousel-dot-inside-on
 
 .carousel-edge-lhs, .carousel-edge-rhs
   position: absolute
@@ -45,22 +47,9 @@ $carousel-offset: -70px
   right: -90px
   background: transparent url('images/carousel_edge_right.png') no-repeat left top
 .carousel
-  position: relative
-  height: $carousel-height
-  width: $item-width
-  overflow: hidden
   margin-left: -70px
-  .line-up
-    position: absolute
-    top: 0
-    left: 0
-    height: $carousel-height
-    width: $item-width * $carousel-count
-  .hideMe
-    display: none
   .line-up li
     // +float(left)
-    float: left
     width: $item-width
     height: $carousel-height
     position: relative

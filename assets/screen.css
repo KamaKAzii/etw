@@ -81,16 +81,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -o-border-radius: 30px;
   border-radius: 30px;
   display: block;
-  line-height: 37px;
   color: white;
   padding: 0 20px;
-  font-size: 18px;
   text-align: center;
   border: 1px solid rgba(246, 246, 246, 0.2);
+  font-size: 14px;
+  line-height: 24px;
+  padding: 7px 30px;
 }
-/* line 13, ../sass/_global/_buttons.sass */
+/* line 14, ../sass/_global/_buttons.sass */
 .button-primary:hover {
   cursor: pointer;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #055988), color-stop(100%, #084c72));
+  background-image: -webkit-linear-gradient(#055988, #084c72);
+  background-image: -moz-linear-gradient(#055988, #084c72);
+  background-image: -o-linear-gradient(#055988, #084c72);
+  background-image: -ms-linear-gradient(#055988, #084c72);
+  background-image: linear-gradient(#055988, #084c72);
 }
 
 /* line 44, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-lucid-grid-0.5.1/stylesheets/lucid/_public.scss */
@@ -120,7 +127,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 48, ../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-lucid-grid-0.5.1/stylesheets/lucid/_public.scss */
-.grid-column-gutterless, .uber.location .state-navigation, .uber.location .current-state {
+.grid-column-gutterless, .uber.location .city-list {
   display: inline;
   float: left;
 }
@@ -276,29 +283,49 @@ h1 {
 }
 /* line 52, ../sass/_global/_base-layout-structure.sass */
 .social-navigation .twitter {
-  background: transparent url("images/social-twitter.jpg") no-repeat left top;
+  background: transparent url("images/social-twitter-off.png") no-repeat left top;
 }
 /* line 54, ../sass/_global/_base-layout-structure.sass */
+.social-navigation .twitter:hover {
+  cursor: pointer;
+  background: transparent url("images/social-twitter-on.png") no-repeat left top;
+}
+/* line 57, ../sass/_global/_base-layout-structure.sass */
 .social-navigation .facebook {
-  background: transparent url("images/social-facebook.jpg") no-repeat left top;
+  background: transparent url("images/social-facebook-off.png") no-repeat left top;
 }
-/* line 56, ../sass/_global/_base-layout-structure.sass */
+/* line 59, ../sass/_global/_base-layout-structure.sass */
+.social-navigation .facebook:hover {
+  cursor: pointer;
+  background: transparent url("images/social-facebook-on.png") no-repeat left top;
+}
+/* line 62, ../sass/_global/_base-layout-structure.sass */
 .social-navigation .vimeo {
-  background: transparent url("images/social-vimeo.jpg") no-repeat left top;
+  background: transparent url("images/social-flickr-off.png") no-repeat left top;
 }
-/* line 58, ../sass/_global/_base-layout-structure.sass */
+/* line 64, ../sass/_global/_base-layout-structure.sass */
+.social-navigation .vimeo:hover {
+  cursor: pointer;
+  background: transparent url("images/social-flickr-on.png") no-repeat left top;
+}
+/* line 67, ../sass/_global/_base-layout-structure.sass */
 .social-navigation .instagram {
-  background: transparent url("images/social-instagram.jpg") no-repeat left top;
+  background: transparent url("images/social-instagram-off.png") no-repeat left top;
+}
+/* line 69, ../sass/_global/_base-layout-structure.sass */
+.social-navigation .instagram:hover {
+  cursor: pointer;
+  background: transparent url("images/social-instagram-on.png") no-repeat left top;
 }
 
-/* line 61, ../sass/_global/_base-layout-structure.sass */
+/* line 73, ../sass/_global/_base-layout-structure.sass */
 .member-navigation {
   display: inline;
   float: right;
   margin-right: 10px;
 }
 
-/* line 65, ../sass/_global/_base-layout-structure.sass */
+/* line 77, ../sass/_global/_base-layout-structure.sass */
 .main-navigation {
   position: absolute;
   right: 0;
@@ -306,7 +333,7 @@ h1 {
   width: 810px;
   height: 75px;
 }
-/* line 71, ../sass/_global/_base-layout-structure.sass */
+/* line 83, ../sass/_global/_base-layout-structure.sass */
 .main-navigation ul {
   *zoom: 1;
 }
@@ -316,7 +343,7 @@ h1 {
   display: table;
   clear: both;
 }
-/* line 73, ../sass/_global/_base-layout-structure.sass */
+/* line 85, ../sass/_global/_base-layout-structure.sass */
 .main-navigation li {
   display: inline;
   float: right;
@@ -327,55 +354,55 @@ h1 {
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 81, ../sass/_global/_base-layout-structure.sass */
+/* line 93, ../sass/_global/_base-layout-structure.sass */
 .main-navigation span {
   display: inline;
   float: left;
 }
-/* line 83, ../sass/_global/_base-layout-structure.sass */
+/* line 95, ../sass/_global/_base-layout-structure.sass */
 .main-navigation .link {
   margin-bottom: 0.61538em;
   background: transparent url("images/nav_arrow_o.png") no-repeat right 7px;
   padding-right: 20px;
 }
-/* line 87, ../sass/_global/_base-layout-structure.sass */
+/* line 99, ../sass/_global/_base-layout-structure.sass */
 .main-navigation .description {
   clear: left;
   font-size: 12px;
   color: black;
 }
 
-/* line 91, ../sass/_global/_base-layout-structure.sass */
+/* line 103, ../sass/_global/_base-layout-structure.sass */
 .active .link {
   background: transparent url("images/nav_arrow_i.png") no-repeat right 7px;
 }
 
-/* line 96, ../sass/_global/_base-layout-structure.sass */
+/* line 108, ../sass/_global/_base-layout-structure.sass */
 .main-navigation li.about {
   width: 115px;
 }
-/* line 98, ../sass/_global/_base-layout-structure.sass */
+/* line 110, ../sass/_global/_base-layout-structure.sass */
 .main-navigation li.train {
   width: 140px;
 }
-/* line 100, ../sass/_global/_base-layout-structure.sass */
+/* line 112, ../sass/_global/_base-layout-structure.sass */
 .main-navigation li.community {
   width: 115px;
 }
-/* line 102, ../sass/_global/_base-layout-structure.sass */
+/* line 114, ../sass/_global/_base-layout-structure.sass */
 .main-navigation li.other-services {
   width: 115px;
 }
-/* line 104, ../sass/_global/_base-layout-structure.sass */
+/* line 116, ../sass/_global/_base-layout-structure.sass */
 .main-navigation li.shop {
   width: 85px;
 }
-/* line 106, ../sass/_global/_base-layout-structure.sass */
+/* line 118, ../sass/_global/_base-layout-structure.sass */
 .main-navigation li.location {
   width: 110px;
 }
 
-/* line 109, ../sass/_global/_base-layout-structure.sass */
+/* line 121, ../sass/_global/_base-layout-structure.sass */
 .section {
   position: relative;
   min-height: 740px;
@@ -446,68 +473,60 @@ h1 {
 }
 
 /* line 47, ../sass/_global/_uber.sass */
-.uber.location .state-navigation {
-  width: 60px;
-  margin-left: 40px;
-}
-/* line 50, ../sass/_global/_uber.sass */
-.uber.location .state-navigation li {
-  text-align: center;
-  line-height: 29px;
+.uber.location .city-list {
+  min-height: 195px;
+  width: 580px;
+  display: inline;
+  float: right;
+  background: #043c57 url("images/location-nsw.jpg") no-repeat 432px 12px;
+  padding: 16px 20px;
 }
 /* line 53, ../sass/_global/_uber.sass */
-.uber.location .state-navigation .active {
-  color: #009ddc;
-  background: #043c57;
-}
-/* line 56, ../sass/_global/_uber.sass */
-.uber.location .current-state {
-  width: 580px;
-  background: #043c57 url("images/location-nsw.jpg") no-repeat 433px 15px;
-  min-height: 195px;
-  padding: 20px;
-}
-/* line 61, ../sass/_global/_uber.sass */
-.uber.location .current-state dt {
-  font-size: 1.07692em;
-  line-height: 1.14286em;
-  border-bottom-style: dotted;
-  border-bottom-width: 0.07143em;
-  padding-bottom: 0.5em;
-  margin-bottom: 0.57143em;
-  color: #009ddc;
-  border-bottom: #009ddc 1px dotted;
-}
-/* line 69, ../sass/_global/_uber.sass */
-.uber.location .current-state dl {
+.uber.location .city-list-group {
   display: inline;
   float: left;
-  width: 116px;
-  margin-left: 0;
-  margin-right: 20px;
+  width: 130px;
+  margin-right: 10px;
 }
-/* line 74, ../sass/_global/_uber.sass */
-.uber.location .current-state dl a {
+/* line 57, ../sass/_global/_uber.sass */
+.uber.location .city-list-group dl {
+  margin-bottom: 1.23077em;
+}
+/* line 59, ../sass/_global/_uber.sass */
+.uber.location .city-list-group dt {
+  color: #0091cc;
+  font-size: 1.07692em;
+  line-height: 1.14286em;
+}
+/* line 62, ../sass/_global/_uber.sass */
+.uber.location .city-list-group dd {
+  line-height: 18px;
+}
+/* line 64, ../sass/_global/_uber.sass */
+.uber.location .city-list-group dd a {
   color: white;
 }
-
-/* line 9, ../sass/_global/_carousel.sass */
-.carouselPrev,
-.carouselNext {
-  display: none;
+/* line 66, ../sass/_global/_uber.sass */
+.uber.location .city-list-group dd a:hover {
+  color: #bbd840;
 }
 
-/* line 13, ../sass/_global/_carousel.sass */
+/* line 4, ../sass/_global/_carousel.sass */
+.modal-whitewash,
+.modal-content {
+  display: none !important;
+}
+
+/* line 15, ../sass/_global/_carousel.sass */
 .carouselNav {
   position: absolute;
   left: 50%;
-  top: 400px;
+  top: 270px;
   margin-left: 340px;
   z-index: 4;
 }
-
-/* line 19, ../sass/_global/_carousel.sass */
-.carouselDot {
+/* line 21, ../sass/_global/_carousel.sass */
+.carouselNav li {
   display: inline;
   float: left;
   -webkit-border-radius: 10px;
@@ -523,17 +542,17 @@ h1 {
   margin-right: 5px;
   background: #005983;
 }
-/* line 29, ../sass/_global/_carousel.sass */
-.carouselDot:hover {
+/* line 31, ../sass/_global/_carousel.sass */
+.carouselNav li:hover {
   cursor: pointer;
   background: white;
 }
-/* line 32, ../sass/_global/_carousel.sass */
-.carouselDot.active {
+/* line 34, ../sass/_global/_carousel.sass */
+.carouselNav li.active {
   background: white;
 }
 
-/* line 35, ../sass/_global/_carousel.sass */
+/* line 37, ../sass/_global/_carousel.sass */
 .carousel-edge-lhs, .carousel-edge-rhs {
   position: absolute;
   top: 0;
@@ -542,57 +561,40 @@ h1 {
   z-index: 800;
 }
 
-/* line 41, ../sass/_global/_carousel.sass */
+/* line 43, ../sass/_global/_carousel.sass */
 .carousel-edge-lhs {
   left: -70px;
   background: transparent url("images/carousel_edge_left.png") no-repeat left top;
 }
 
-/* line 44, ../sass/_global/_carousel.sass */
+/* line 46, ../sass/_global/_carousel.sass */
 .carousel-edge-rhs {
   right: -90px;
   background: transparent url("images/carousel_edge_right.png") no-repeat left top;
 }
 
-/* line 47, ../sass/_global/_carousel.sass */
+/* line 49, ../sass/_global/_carousel.sass */
 .carousel {
-  position: relative;
-  height: 509px;
-  width: 1120px;
-  overflow: hidden;
   margin-left: -70px;
 }
-/* line 53, ../sass/_global/_carousel.sass */
-.carousel .line-up {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 509px;
-  width: 4480px;
-}
-/* line 59, ../sass/_global/_carousel.sass */
-.carousel .hideMe {
-  display: none;
-}
-/* line 61, ../sass/_global/_carousel.sass */
+/* line 51, ../sass/_global/_carousel.sass */
 .carousel .line-up li {
-  float: left;
   width: 1120px;
   height: 509px;
   position: relative;
 }
-/* line 67, ../sass/_global/_carousel.sass */
+/* line 56, ../sass/_global/_carousel.sass */
 .carousel .line-up li h2 {
   position: absolute;
   font-size: 1.84615em;
   line-height: 1.33333em;
 }
-/* line 71, ../sass/_global/_carousel.sass */
+/* line 60, ../sass/_global/_carousel.sass */
 .carousel .line-up li h2 span {
   font-size: 0.54167em;
   line-height: 2.46154em;
 }
-/* line 76, ../sass/_global/_carousel.sass */
+/* line 65, ../sass/_global/_carousel.sass */
 .carousel .line-up li a {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #04496f), color-stop(100%, #063c5a));
   background-image: -webkit-linear-gradient(#04496f, #063c5a);
@@ -615,12 +617,12 @@ h1 {
   text-align: center;
   border: 1px solid rgba(246, 246, 246, 0.2);
 }
-/* line 91, ../sass/_global/_carousel.sass */
+/* line 80, ../sass/_global/_carousel.sass */
 .carousel .line-up li.one {
   background: transparent url("images/carousel_01.jpg") no-repeat center top;
   background-size: 96% 96%;
 }
-/* line 94, ../sass/_global/_carousel.sass */
+/* line 83, ../sass/_global/_carousel.sass */
 .carousel .line-up li.one h2 {
   font-size: 1.38462em;
   line-height: 1.11111em;
@@ -629,18 +631,18 @@ h1 {
   top: 145px;
   width: 300px;
 }
-/* line 100, ../sass/_global/_carousel.sass */
+/* line 89, ../sass/_global/_carousel.sass */
 .carousel .line-up li.one a {
   left: 260px;
   top: 220px;
   width: 240px;
 }
-/* line 104, ../sass/_global/_carousel.sass */
+/* line 93, ../sass/_global/_carousel.sass */
 .carousel .line-up li.two {
   background: transparent url("images/carousel_02.jpg") no-repeat center top;
   background-size: 96% 96%;
 }
-/* line 107, ../sass/_global/_carousel.sass */
+/* line 96, ../sass/_global/_carousel.sass */
 .carousel .line-up li.two h2 {
   font-size: 1.38462em;
   line-height: 1.11111em;
@@ -649,18 +651,18 @@ h1 {
   top: 140px;
   width: 300px;
 }
-/* line 113, ../sass/_global/_carousel.sass */
+/* line 102, ../sass/_global/_carousel.sass */
 .carousel .line-up li.two a {
   right: 390px;
   top: 240px;
   width: 170px;
 }
-/* line 117, ../sass/_global/_carousel.sass */
+/* line 106, ../sass/_global/_carousel.sass */
 .carousel .line-up li.three {
   background: transparent url("images/carousel_03.jpg") no-repeat center top;
   background-size: 96% 96%;
 }
-/* line 120, ../sass/_global/_carousel.sass */
+/* line 109, ../sass/_global/_carousel.sass */
 .carousel .line-up li.three h2 {
   font-size: 1.38462em;
   line-height: 1.11111em;
@@ -669,18 +671,18 @@ h1 {
   top: 75px;
   width: 300px;
 }
-/* line 126, ../sass/_global/_carousel.sass */
+/* line 115, ../sass/_global/_carousel.sass */
 .carousel .line-up li.three a {
   right: 340px;
   top: 160px;
   width: 170px;
 }
-/* line 130, ../sass/_global/_carousel.sass */
+/* line 119, ../sass/_global/_carousel.sass */
 .carousel .line-up li.four {
   background: transparent url("images/carousel_04.jpg") no-repeat center top;
   background-size: 96% 96%;
 }
-/* line 133, ../sass/_global/_carousel.sass */
+/* line 122, ../sass/_global/_carousel.sass */
 .carousel .line-up li.four h2 {
   font-size: 1.38462em;
   line-height: 1.11111em;
@@ -688,7 +690,7 @@ h1 {
   top: 60px;
   width: 445px;
 }
-/* line 138, ../sass/_global/_carousel.sass */
+/* line 127, ../sass/_global/_carousel.sass */
 .carousel .line-up li.four a {
   left: 270px;
   top: 120px;
@@ -989,8 +991,8 @@ form .explanation-input-group select {
   float: left;
   display: block;
   text-indent: -999em;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
 }
 /* line 18, ../sass/_widgets/_timetable-table.sass */
 .date-navigation a.earlier {
@@ -1868,20 +1870,21 @@ form .explanation-input-group select {
   width: 196px;
   margin-right: 1px;
   text-align: center;
-  padding-bottom: 16px;
+  padding-bottom: 32px;
 }
 /* line 19, ../sass/_pages/_membership-pricing.sass */
 .membership-pricing .pricing-matrix li input {
   margin-left: auto;
   margin-right: auto;
   font-size: 14px;
+  line-height: 24px;
   padding: 7px 30px;
 }
-/* line 24, ../sass/_pages/_membership-pricing.sass */
+/* line 25, ../sass/_pages/_membership-pricing.sass */
 .membership-pricing .pricing-matrix .unlimited-flexibility {
   background: #e5e599;
 }
-/* line 26, ../sass/_pages/_membership-pricing.sass */
+/* line 27, ../sass/_pages/_membership-pricing.sass */
 .membership-pricing .pricing-matrix .unlimited-flexibility input {
   border-color: #d0d088;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c8c832), color-stop(100%, #a7a720));
@@ -1891,7 +1894,7 @@ form .explanation-input-group select {
   background-image: -ms-linear-gradient(#c8c832, #a7a720);
   background-image: linear-gradient(#c8c832, #a7a720);
 }
-/* line 29, ../sass/_pages/_membership-pricing.sass */
+/* line 30, ../sass/_pages/_membership-pricing.sass */
 .membership-pricing .pricing-matrix .unlimited-flexibility input:hover {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d8d82f), color-stop(100%, #aaaa23));
   background-image: -webkit-linear-gradient(#d8d82f, #aaaa23);
@@ -1900,7 +1903,7 @@ form .explanation-input-group select {
   background-image: -ms-linear-gradient(#d8d82f, #aaaa23);
   background-image: linear-gradient(#d8d82f, #aaaa23);
 }
-/* line 31, ../sass/_pages/_membership-pricing.sass */
+/* line 32, ../sass/_pages/_membership-pricing.sass */
 .membership-pricing .pricing-matrix .unlimited-flexibility .wrapper {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cccc33), color-stop(100%, #abab24));
   background-image: -webkit-linear-gradient(#cccc33, #abab24);
@@ -1911,7 +1914,7 @@ form .explanation-input-group select {
   position: relative;
   margin-bottom: 32px;
 }
-/* line 35, ../sass/_pages/_membership-pricing.sass */
+/* line 36, ../sass/_pages/_membership-pricing.sass */
 .membership-pricing .pricing-matrix .unlimited-flexibility .wrapper:after {
   content: "";
   display: block;
@@ -1922,11 +1925,11 @@ form .explanation-input-group select {
   left: 1px;
   background: transparent url("images/price-arrow-01.png") no-repeat left top;
 }
-/* line 44, ../sass/_pages/_membership-pricing.sass */
+/* line 45, ../sass/_pages/_membership-pricing.sass */
 .membership-pricing .pricing-matrix .keen-and-committed {
   background: #a1cdec;
 }
-/* line 46, ../sass/_pages/_membership-pricing.sass */
+/* line 47, ../sass/_pages/_membership-pricing.sass */
 .membership-pricing .pricing-matrix .keen-and-committed input {
   border-color: #86c0e8;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #73bcee), color-stop(100%, #3b92ce));
@@ -1936,7 +1939,7 @@ form .explanation-input-group select {
   background-image: -ms-linear-gradient(#73bcee, #3b92ce);
   background-image: linear-gradient(#73bcee, #3b92ce);
 }
-/* line 49, ../sass/_pages/_membership-pricing.sass */
+/* line 50, ../sass/_pages/_membership-pricing.sass */
 .membership-pricing .pricing-matrix .keen-and-committed input:hover {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6eb4e5), color-stop(100%, #2b86c5));
   background-image: -webkit-linear-gradient(#6eb4e5, #2b86c5);
@@ -1945,7 +1948,7 @@ form .explanation-input-group select {
   background-image: -ms-linear-gradient(#6eb4e5, #2b86c5);
   background-image: linear-gradient(#6eb4e5, #2b86c5);
 }
-/* line 51, ../sass/_pages/_membership-pricing.sass */
+/* line 52, ../sass/_pages/_membership-pricing.sass */
 .membership-pricing .pricing-matrix .keen-and-committed .wrapper {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #70b5e6), color-stop(100%, #5aabe3));
   background-image: -webkit-linear-gradient(#70b5e6, #5aabe3);
@@ -1956,7 +1959,7 @@ form .explanation-input-group select {
   position: relative;
   margin-bottom: 32px;
 }
-/* line 55, ../sass/_pages/_membership-pricing.sass */
+/* line 56, ../sass/_pages/_membership-pricing.sass */
 .membership-pricing .pricing-matrix .keen-and-committed .wrapper:after {
   content: "";
   display: block;
@@ -1967,11 +1970,11 @@ form .explanation-input-group select {
   left: 1px;
   background: transparent url("images/price-arrow-02.png") no-repeat left top;
 }
-/* line 64, ../sass/_pages/_membership-pricing.sass */
+/* line 65, ../sass/_pages/_membership-pricing.sass */
 .membership-pricing .pricing-matrix .evo-essentials {
   background: #ccdde6;
 }
-/* line 66, ../sass/_pages/_membership-pricing.sass */
+/* line 67, ../sass/_pages/_membership-pricing.sass */
 .membership-pricing .pricing-matrix .evo-essentials input {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #04527c), color-stop(100%, #063c5b));
   background-image: -webkit-linear-gradient(#04527c, #063c5b);
@@ -1980,7 +1983,7 @@ form .explanation-input-group select {
   background-image: -ms-linear-gradient(#04527c, #063c5b);
   background-image: linear-gradient(#04527c, #063c5b);
 }
-/* line 68, ../sass/_pages/_membership-pricing.sass */
+/* line 69, ../sass/_pages/_membership-pricing.sass */
 .membership-pricing .pricing-matrix .evo-essentials input:hover {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #126e9f), color-stop(100%, #063d5b));
   background-image: -webkit-linear-gradient(#126e9f, #063d5b);
@@ -1989,7 +1992,7 @@ form .explanation-input-group select {
   background-image: -ms-linear-gradient(#126e9f, #063d5b);
   background-image: linear-gradient(#126e9f, #063d5b);
 }
-/* line 70, ../sass/_pages/_membership-pricing.sass */
+/* line 71, ../sass/_pages/_membership-pricing.sass */
 .membership-pricing .pricing-matrix .evo-essentials .wrapper {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #005983), color-stop(100%, #003a6d));
   background-image: -webkit-linear-gradient(#005983, #003a6d);
@@ -2000,7 +2003,7 @@ form .explanation-input-group select {
   position: relative;
   margin-bottom: 32px;
 }
-/* line 74, ../sass/_pages/_membership-pricing.sass */
+/* line 75, ../sass/_pages/_membership-pricing.sass */
 .membership-pricing .pricing-matrix .evo-essentials .wrapper:after {
   content: "";
   display: block;
@@ -2011,18 +2014,18 @@ form .explanation-input-group select {
   left: 1px;
   background: transparent url("images/price-arrow-03.png") no-repeat left top;
 }
-/* line 84, ../sass/_pages/_membership-pricing.sass */
+/* line 85, ../sass/_pages/_membership-pricing.sass */
 .membership-pricing .pricing-matrix h4 {
   font-size: 18px;
   padding: 16px 36px 0;
 }
-/* line 87, ../sass/_pages/_membership-pricing.sass */
+/* line 88, ../sass/_pages/_membership-pricing.sass */
 .membership-pricing .pricing-matrix .price {
   font-size: 35px;
   margin-bottom: 16px;
   font-weight: bold;
 }
-/* line 91, ../sass/_pages/_membership-pricing.sass */
+/* line 92, ../sass/_pages/_membership-pricing.sass */
 .membership-pricing .pricing-matrix .payment-interval {
   padding: 0 30px;
 }

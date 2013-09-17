@@ -50,13 +50,25 @@ h1
     height: 26px
     margin-left: $grid-gutter / 2
   .twitter
-    background: transparent url('images/social-twitter.jpg') no-repeat left top
+    background: transparent url('images/social-twitter-off.png') no-repeat left top
+    &:hover
+      cursor: pointer
+      background: transparent url('images/social-twitter-on.png') no-repeat left top
   .facebook
-    background: transparent url('images/social-facebook.jpg') no-repeat left top
+    background: transparent url('images/social-facebook-off.png') no-repeat left top
+    &:hover
+      cursor: pointer
+      background: transparent url('images/social-facebook-on.png') no-repeat left top
   .vimeo
-    background: transparent url('images/social-vimeo.jpg') no-repeat left top
+    background: transparent url('images/social-flickr-off.png') no-repeat left top
+    &:hover
+      cursor: pointer
+      background: transparent url('images/social-flickr-on.png') no-repeat left top
   .instagram
-    background: transparent url('images/social-instagram.jpg') no-repeat left top
+    background: transparent url('images/social-instagram-off.png') no-repeat left top
+    &:hover
+      cursor: pointer
+      background: transparent url('images/social-instagram-on.png') no-repeat left top
 
 .member-navigation
   +float(right)

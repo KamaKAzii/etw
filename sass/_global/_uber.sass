@@ -44,32 +44,25 @@
 
 // Specific styles per tab.
 .uber.location
-  .state-navigation
-    +columns(1, 0, 0)
-    +offset(0.5)
-    li
-      text-align: center
-      line-height: 29px
-    .active
-      color: $theme-color-light
-      background: $background-color-dark
-  .current-state
-    +columns(10.5, -$grid-gutter * 5, 0)
-    background: $background-color-dark url('images/location-nsw.jpg') no-repeat 433px 15px
+  .city-list
     min-height: 195px
-    padding: $grid-gutter * 2
-    dt
-      +adjust-font-size-to(14px, 1, $font-size-normal)
-      +trailing-border(1px, 0.5, 14px, dotted)
-      +trailer(0.5, 14px)
-      color: $theme-color-light
-      border-bottom: $theme-color-light 1px dotted
-    // Judging by the design these
-    // might require specific styles per state.
+    +columns(10.5, -$grid-gutter * 5, 0)
+    +float(right)
+    background: $background-color-dark url('images/location-nsw.jpg') no-repeat 432px 12px
+    padding: $base-line-height $grid-gutter * 2
+  .city-list-group
+    +float(left)
+    width: 130px
+    margin-right: $grid-gutter 
     dl
-      +float(left)
-      width: 116px
-      margin-left: 0
-      margin-right: $grid-gutter * 2
+      +trailer(1)
+    dt
+      color: #0091cc
+      +adjust-font-size-to(14px, 1)
+    dd
+      line-height: 18px
       a
         color: $text-color-white
+        &:hover
+          color: $theme-color-alternative
+

@@ -134,32 +134,50 @@
           </form>
         </div>
 
-        <ul class="state-navigation">
-          <li class="active">NSW</li>
-        </ul>
-
-        <div class="current-state">
-          <dl>
-            <dt>Sydney Inner West</dt>
-            <dd>Balmain</dd>
-            <dd>Rozelle</dd>
-          </dl>
-          <dl>
-            <dt>Sydney North Sude</dt>
-            <dd>Balmoral</dd>
-            <dd>North Sydney</dd>
-            <dd>Waverton</dd>
-          </dl>
-          <dl>
-            <dt>Sydney East</dt>
-            <dd>Bondi</dd>
-            <dd>Bronte</dd>
-            <dd>Coogee</dd>
-            <dd>Maroubra</dd>
-            <dd>Queens Park</dd>
-            <dd>Rushcutters North</dd>
-            <dd>Rushcutters South</dd>
-          </dl>
+        <div class="city-list">
+          <div class="city-list-group">
+            <dl class="sydney-city">
+              <dt>Sydney City</dt>
+              <dd><a href="#">Glebe</a></a></dd>
+              <a href="#"><dd>Redfern</a></dd>
+              <a href="#"><dd>Sydney Park</a></dd>
+            </dl>
+            <dl class="sydney-north-shore">
+              <dt>Sydney North Shore</dt>
+              <a href="#"><dd>Balmoral</a></dd>
+              <a href="#"><dd>North Sydney</a></dd>
+              <a href="#"><dd>Waverton</a></dd>
+            </dl>
+          </div>
+          <div class="city-list-group">
+            <dl class="sydney-east">
+              <dt>Sydney East</dt>
+              <a href="#"><dd>Bondi</a></dd>
+              <a href="#"><dd>Bronte</a></dd>
+              <a href="#"><dd>Coogee</a></dd>
+              <a href="#"><dd>Maroubra</a></dd>
+              <a href="#"><dd>Queens Park</a></dd>
+              <a href="#"><dd>Rose Bay</a></dd>
+              <a href="#"><dd>Rushcutters Bay</a></dd>
+            </dl>
+          </div>
+          <div class="city-list-group">
+            <dl class="sydney-west">
+              <dt>Sydney West</dt>
+              <a href="#"><dd>Balmain</a></dd>
+              <a href="#"><dd>Roselle</a></dd>
+            </dl>
+            <dl class="melbourne">
+              <dt>Melbourne</dt>
+              <a href="#"><dd>South Yarra</a></dd>
+              <a href="#"><dd>St Kilda</a></dd>
+            </dl>
+            <dl class="brisbane">
+              <dt>Brisbane</dt>
+              <a href="#"><dd>Paddington</a></dd>
+              <a href="#"><dd>St Kilda</a></dd>
+            </dl>
+          </div>
         </div>
 
       </div>
@@ -242,7 +260,7 @@
                     <a href="button-like">Get current timetable</a>
                   </li>
 
-                  <li class="hideMe two">
+                  <li class="two">
                     <h2>
                       "Strength does not come from physical capacity.
                       It comes from an indomitable will."<br /><span>-  Mahatma Ghandi</span>
@@ -250,7 +268,7 @@
                     <a href="button-like">Get 1 week FREE!</a>
                   </li>
 
-                  <li class="hideMe three">
+                  <li class="three">
                     <h2>
                       Our very own Aaron Laurence wins health and wellbeing
                       award wiht American Express.
@@ -258,7 +276,7 @@
                     <a href="button-like">Play Video</a>
                   </li>
 
-                  <li class="hideMe four">
+                  <li class="four">
                     <h2>
                       Evolution unites us as individuals to reach our own personal goals.
                       Fun and fitness is our lifestyle.
@@ -272,21 +290,6 @@
 
             <script type="text/javascript"> 
               $(".carousel .line-up").carousel(); 
-
-              // Manually set the first dot to be active.
-              $(".carouselDot").eq(0).addClass("active");
-
-              var carouselClicked = false;
-
-              $(".carouselDot").bind("click", function() {
-                  carouselClicked = true;
-              });
-
-              setInterval(function() { 
-                  if (!carouselClicked) {
-                    $(".carouselNext").click();
-                  };
-              }, 4500);
             </script>
 
             <div class="articles">
