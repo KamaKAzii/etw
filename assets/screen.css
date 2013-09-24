@@ -1876,15 +1876,12 @@ form .explanation-input-group select {
 .membership-pricing .pricing-matrix li input {
   margin-left: auto;
   margin-right: auto;
-  font-size: 14px;
-  line-height: 24px;
-  padding: 7px 30px;
 }
-/* line 25, ../sass/_pages/_membership-pricing.sass */
+/* line 22, ../sass/_pages/_membership-pricing.sass */
 .membership-pricing .pricing-matrix .unlimited-flexibility {
   background: #e5e599;
 }
-/* line 27, ../sass/_pages/_membership-pricing.sass */
+/* line 24, ../sass/_pages/_membership-pricing.sass */
 .membership-pricing .pricing-matrix .unlimited-flexibility input {
   border-color: #d0d088;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c8c832), color-stop(100%, #a7a720));
@@ -1894,7 +1891,7 @@ form .explanation-input-group select {
   background-image: -ms-linear-gradient(#c8c832, #a7a720);
   background-image: linear-gradient(#c8c832, #a7a720);
 }
-/* line 30, ../sass/_pages/_membership-pricing.sass */
+/* line 27, ../sass/_pages/_membership-pricing.sass */
 .membership-pricing .pricing-matrix .unlimited-flexibility input:hover {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d8d82f), color-stop(100%, #aaaa23));
   background-image: -webkit-linear-gradient(#d8d82f, #aaaa23);
@@ -1903,7 +1900,7 @@ form .explanation-input-group select {
   background-image: -ms-linear-gradient(#d8d82f, #aaaa23);
   background-image: linear-gradient(#d8d82f, #aaaa23);
 }
-/* line 32, ../sass/_pages/_membership-pricing.sass */
+/* line 29, ../sass/_pages/_membership-pricing.sass */
 .membership-pricing .pricing-matrix .unlimited-flexibility .wrapper {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cccc33), color-stop(100%, #abab24));
   background-image: -webkit-linear-gradient(#cccc33, #abab24);
@@ -1914,7 +1911,7 @@ form .explanation-input-group select {
   position: relative;
   margin-bottom: 32px;
 }
-/* line 36, ../sass/_pages/_membership-pricing.sass */
+/* line 33, ../sass/_pages/_membership-pricing.sass */
 .membership-pricing .pricing-matrix .unlimited-flexibility .wrapper:after {
   content: "";
   display: block;
@@ -1925,11 +1922,11 @@ form .explanation-input-group select {
   left: 1px;
   background: transparent url("images/price-arrow-01.png") no-repeat left top;
 }
-/* line 45, ../sass/_pages/_membership-pricing.sass */
+/* line 42, ../sass/_pages/_membership-pricing.sass */
 .membership-pricing .pricing-matrix .keen-and-committed {
   background: #a1cdec;
 }
-/* line 47, ../sass/_pages/_membership-pricing.sass */
+/* line 44, ../sass/_pages/_membership-pricing.sass */
 .membership-pricing .pricing-matrix .keen-and-committed input {
   border-color: #86c0e8;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #73bcee), color-stop(100%, #3b92ce));
@@ -1939,7 +1936,7 @@ form .explanation-input-group select {
   background-image: -ms-linear-gradient(#73bcee, #3b92ce);
   background-image: linear-gradient(#73bcee, #3b92ce);
 }
-/* line 50, ../sass/_pages/_membership-pricing.sass */
+/* line 47, ../sass/_pages/_membership-pricing.sass */
 .membership-pricing .pricing-matrix .keen-and-committed input:hover {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6eb4e5), color-stop(100%, #2b86c5));
   background-image: -webkit-linear-gradient(#6eb4e5, #2b86c5);
@@ -1948,7 +1945,7 @@ form .explanation-input-group select {
   background-image: -ms-linear-gradient(#6eb4e5, #2b86c5);
   background-image: linear-gradient(#6eb4e5, #2b86c5);
 }
-/* line 52, ../sass/_pages/_membership-pricing.sass */
+/* line 49, ../sass/_pages/_membership-pricing.sass */
 .membership-pricing .pricing-matrix .keen-and-committed .wrapper {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #70b5e6), color-stop(100%, #5aabe3));
   background-image: -webkit-linear-gradient(#70b5e6, #5aabe3);
@@ -1959,7 +1956,7 @@ form .explanation-input-group select {
   position: relative;
   margin-bottom: 32px;
 }
-/* line 56, ../sass/_pages/_membership-pricing.sass */
+/* line 53, ../sass/_pages/_membership-pricing.sass */
 .membership-pricing .pricing-matrix .keen-and-committed .wrapper:after {
   content: "";
   display: block;
@@ -1970,11 +1967,11 @@ form .explanation-input-group select {
   left: 1px;
   background: transparent url("images/price-arrow-02.png") no-repeat left top;
 }
-/* line 65, ../sass/_pages/_membership-pricing.sass */
+/* line 62, ../sass/_pages/_membership-pricing.sass */
 .membership-pricing .pricing-matrix .evo-essentials {
   background: #ccdde6;
 }
-/* line 67, ../sass/_pages/_membership-pricing.sass */
+/* line 64, ../sass/_pages/_membership-pricing.sass */
 .membership-pricing .pricing-matrix .evo-essentials input {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #04527c), color-stop(100%, #063c5b));
   background-image: -webkit-linear-gradient(#04527c, #063c5b);
@@ -1983,7 +1980,7 @@ form .explanation-input-group select {
   background-image: -ms-linear-gradient(#04527c, #063c5b);
   background-image: linear-gradient(#04527c, #063c5b);
 }
-/* line 69, ../sass/_pages/_membership-pricing.sass */
+/* line 66, ../sass/_pages/_membership-pricing.sass */
 .membership-pricing .pricing-matrix .evo-essentials input:hover {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #126e9f), color-stop(100%, #063d5b));
   background-image: -webkit-linear-gradient(#126e9f, #063d5b);
@@ -1992,7 +1989,7 @@ form .explanation-input-group select {
   background-image: -ms-linear-gradient(#126e9f, #063d5b);
   background-image: linear-gradient(#126e9f, #063d5b);
 }
-/* line 71, ../sass/_pages/_membership-pricing.sass */
+/* line 68, ../sass/_pages/_membership-pricing.sass */
 .membership-pricing .pricing-matrix .evo-essentials .wrapper {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #005983), color-stop(100%, #003a6d));
   background-image: -webkit-linear-gradient(#005983, #003a6d);
@@ -2003,7 +2000,7 @@ form .explanation-input-group select {
   position: relative;
   margin-bottom: 32px;
 }
-/* line 75, ../sass/_pages/_membership-pricing.sass */
+/* line 72, ../sass/_pages/_membership-pricing.sass */
 .membership-pricing .pricing-matrix .evo-essentials .wrapper:after {
   content: "";
   display: block;
@@ -2014,18 +2011,18 @@ form .explanation-input-group select {
   left: 1px;
   background: transparent url("images/price-arrow-03.png") no-repeat left top;
 }
-/* line 85, ../sass/_pages/_membership-pricing.sass */
+/* line 82, ../sass/_pages/_membership-pricing.sass */
 .membership-pricing .pricing-matrix h4 {
   font-size: 18px;
   padding: 16px 36px 0;
 }
-/* line 88, ../sass/_pages/_membership-pricing.sass */
+/* line 85, ../sass/_pages/_membership-pricing.sass */
 .membership-pricing .pricing-matrix .price {
   font-size: 35px;
   margin-bottom: 16px;
   font-weight: bold;
 }
-/* line 92, ../sass/_pages/_membership-pricing.sass */
+/* line 89, ../sass/_pages/_membership-pricing.sass */
 .membership-pricing .pricing-matrix .payment-interval {
   padding: 0 30px;
 }
